@@ -4,6 +4,7 @@
   --secondary-color: #394852;
   --hover: #5ae79ab3;
   --btn-color: #5ae799;
+  --subtitle: #379f66;
 }
 
 * {
@@ -20,13 +21,13 @@ body {
 
 .container-login-header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 150px;
-  background-color: var(--secondary-color);
 }
 .container-login-header__title {
-  font-size: 3rem;
+  width: 700px;
+  padding-left: 46px;
 }
 
 .welcome {
@@ -34,10 +35,12 @@ body {
   margin-top: 63px;
   display: flex;
   justify-content: center;
+  color: var(--subtitle);
+  font-size: 2rem;
 }
 
 .login-form {
-  margin-top: 125px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
