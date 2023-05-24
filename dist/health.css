@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.container-header {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+  background-color: var(--secondary-color);
+}
+.container-header__title {
+  width: 300px;
+  padding-left: 70px;
+}
+.container-header__nav-main {
+  display: flex;
+  gap: 30px;
+}
+.container-header__nav-main__links-main {
+  color: var(--main-bg-color);
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 15px;
+}
+.container-header__nav-main__links-main:hover {
+  background-color: var(--hover);
+  color: var(--secondary-color);
+}
+.container-header__registration {
+  padding-right: 50px;
+}
+.container-header__registration__sign {
+  color: var(--main-bg-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 10px;
+  border: var(--hover) solid 1px;
+  margin-left: 5px;
+}
+.container-header__registration__sign:hover {
+  background-color: var(--hover);
+}
+
+select {
+  width: 150px;
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+select:focus, select:hover {
+  background-color: var(--hover);
+}
+select option {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  height: 150px;
+  background-color: var(--secondary-color);
+  margin-top: 90px;
+}
+
+.health-title {
+  margin-left: 52px;
+  margin-top: 16px;
+}
+
+.page-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.page-container__most-viewed {
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+  display: flex;
+  width: 561px;
+  height: 800px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.page-container__most-viewed__image {
+  width: 325px;
+  height: 200px;
+  background-image: url(./assets/sport.jpg);
+  margin-top: 60px;
+}
+.page-container__most-viewed__text {
+  padding: 0 40px;
+  margin-top: 30px;
+}
+.page-container__most-viewed__text__h {
+  font-size: 2rem;
+}
+.page-container__most-viewed__text__p {
+  line-height: 30px;
+}
+.page-container__side-headers {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.page-container__side-headers__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 670px;
+  height: 190px;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+  margin-bottom: 35px;
+}
+.page-container__side-headers__container .page-containerr__side-headers__image {
+  height: 150px;
+  width: 180px;
+  background-image: url(./assets/sport.jpg);
+}
+.page-container__side-headers__container .page-containerr__side-headers__text {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 282px;
+  height: 107px;
+}
+.page-container__side-headers__container .page-containerr__side-headers__text .page-containerr__side-headers__text__h {
+  font-size: 1.5rem;
+}
+.page-container__side-headers__container .page-containerr__side-headers__text .page-containerr__side-headers__text__p {
+  line-height: 20px;
+}

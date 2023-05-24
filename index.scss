@@ -8,6 +8,9 @@ body {
   background-color: var(--main-bg-color);
   font-family: "IBM Plex Sans", sans-serif;
 }
+
+//// NAV BAR START ////
+
 .container-header {
   display: flex;
   justify-content: space-between;
@@ -50,6 +53,26 @@ body {
     }
   }
 }
+
+select {
+  width: 150px;
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: var(--hover);
+  }
+  option {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
+}
+
+//// NAV BAR END ////
 
 .about-strip {
   display: flex;
@@ -114,4 +137,11 @@ body {
     grid-area: finance;
     background-color: aquamarine;
   }
+}
+
+footer {
+  display: flex;
+  height: 150px;
+  background-color: var(--secondary-color);
+  margin-top: 90px;
 }

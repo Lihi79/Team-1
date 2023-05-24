@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+//// NAV BAR START ////
+
+.container-header {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+  background-color: var(--secondary-color);
+
+  &__title {
+    width: 300px;
+    padding-left: 70px;
+  }
+  &__nav-main {
+    display: flex;
+    gap: 30px;
+  }
+  &__nav-main__links-main {
+    color: var(--main-bg-color);
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 15px;
+
+    &:hover {
+      background-color: var(--hover);
+      color: var(--secondary-color);
+    }
+  }
+
+  &__registration {
+    padding-right: 50px;
+  }
+  &__registration__sign {
+    color: var(--main-bg-color);
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px;
+    border: var(--hover) solid 1px;
+    margin-left: 5px;
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+}
+
+select {
+  width: 150px;
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: var(--hover);
+  }
+  option {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
+}
+
+//// NAV BAR END ////
+
+footer {
+  display: flex;
+  height: 150px;
+  background-color: var(--secondary-color);
+  margin-top: 90px;
+}
+
+.health-title {
+  margin-left: 52px;
+  margin-top: 16px;
+}
+
+.page-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  &__most-viewed {
+    box-shadow: 1px 2px 5px 0 var(--shadow);
+    display: flex;
+    width: 561px;
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__image {
+      width: 325px;
+      height: 200px;
+      background-image: url(./assets/sport.jpg);
+      margin-top: 60px;
+    }
+    &__text {
+      padding: 0 40px;
+      margin-top: 30px;
+      &__h {
+        font-size: 2rem;
+      }
+      &__p {
+        line-height: 30px;
+      }
+    }
+  }
+
+  &__side-headers {
+    // background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 670px;
+      height: 190px;
+      box-shadow: 1px 2px 5px 0 var(--shadow);
+      margin-bottom: 35px;
+
+      .page-containerr__side-headers__image {
+        height: 150px;
+        width: 180px;
+        background-image: url(./assets/sport.jpg);
+      }
+      .page-containerr__side-headers__text {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        width: 282px;
+        height: 107px;
+        .page-containerr__side-headers__text__h {
+          font-size: 1.5rem;
+        }
+        .page-containerr__side-headers__text__p {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
