@@ -59,7 +59,8 @@ select {
   border: none;
   cursor: pointer;
 }
-select:focus, select:hover {
+select:focus,
+select:hover {
   background-color: var(--hover);
 }
 select option {
@@ -136,9 +137,13 @@ footer {
   width: 282px;
   height: 107px;
 }
-.page-container__side-headers__container .page-containerr__side-headers__text .page-containerr__side-headers__text__h {
+.page-container__side-headers__container
+  .page-containerr__side-headers__text
+  .page-containerr__side-headers__text__h {
   font-size: 1.5rem;
 }
-.page-container__side-headers__container .page-containerr__side-headers__text .page-containerr__side-headers__text__p {
+.page-container__side-headers__container
+  .page-containerr__side-headers__text
+  .page-containerr__side-headers__text__p {
   line-height: 20px;
-}/*# sourceMappingURL=health.css.map */
+} /*# sourceMappingURL=health.css.map */
