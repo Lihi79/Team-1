@@ -131,8 +131,14 @@ select option {
   background-size: cover;
   box-shadow: 1px 2px 5px 0 var(--shadow);
 }
-
-.grid-container-main__h4 {
+.grid-container-main__link {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+.grid-container-main__h4:hover {
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+.grid-container-main .grid-container-main__h4 {
   background-color: rgba(0, 0, 0, 0.237);
   margin-top: 20px;
   margin-left: 20px;
@@ -140,8 +146,7 @@ select option {
   font-size: 1.5rem;
   color: var(--main-bg-color);
 }
-
-footer {
+.grid-container-main footer {
   display: flex;
   height: 150px;
   background-color: var(--secondary-color);
