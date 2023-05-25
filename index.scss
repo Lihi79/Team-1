@@ -113,7 +113,7 @@ select {
   &__item1 {
     grid-area: sport;
     background-image: url(./assets/sport.jpg);
-    background-size: contain;
+    background-size: cover;
   }
   &__item2 {
     grid-area: health;

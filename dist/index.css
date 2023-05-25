@@ -98,7 +98,7 @@ select option {
 .grid-container-main__item1 {
   grid-area: sport;
   background-image: url(./assets/sport.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 .grid-container-main__item2 {
   grid-area: health;

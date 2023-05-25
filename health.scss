@@ -5,8 +5,14 @@
 }
 body {
   min-height: 100vh;
-  background-color: var(--main-bg-color);
+  //   background-color: var(--main-bg-color);
   font-family: "IBM Plex Sans", sans-serif;
+  background: rgb(246, 247, 248);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 247, 248, 1) 0%,
+    rgba(134, 144, 150, 1) 100%
+  );
 }
 
 //// NAV BAR START ////
@@ -92,6 +98,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   &__most-viewed {
+    background-color: var(--main-bg-color);
     box-shadow: 1px 2px 5px 0 var(--shadow);
     display: flex;
     width: 561px;
@@ -123,6 +130,8 @@ footer {
     justify-content: space-evenly;
     flex-direction: column;
     &__container {
+      background-color: var(--main-bg-color);
+
       display: flex;
       align-items: center;
       justify-content: space-evenly;
