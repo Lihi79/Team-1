@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="health.css" />
 
-    <title>Document</title>
+    <title>Health Blog</title>
   </head>
   <body>
     <div class="container-header">
@@ -19,15 +19,22 @@
         />
       </div>
       <div class="container-header__nav-main">
-        <a href="" class="container-header__nav-main__links-main">Home</a>
-        <select name="category" id="category">
+        <a href="./3-health.html" class="container-header__nav-main__links-main"
+          >Home</a
+        >
+        <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
           <option disabled="disabled" select="selected">Choose Category</option>
 
-          <option class="option" value="sport">Sport</option>
-          <option class="option" value="health">Health</option>
-          <option class="option" value="finance">Finance</option>
-          <option class="option" value="tech">Tech</option>
-          <option class="option" value="politics">Politics</option>
+          <option class="option" value="./6-sport.html">Sport</option>
+          <option class="option" value="./3-health.html">Health</option>
+          <option class="option" value="./5-finance.html">Finance</option>
+          <option class="option" value="./4-tech.html">Tech</option>
+          <option class="option" value="./7-politics.html">Politics</option>
         </select>
 
         <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
