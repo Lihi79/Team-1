@@ -99,28 +99,46 @@ select option {
   grid-area: sport;
   background-image: url(./assets/sport.jpg);
   background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
 }
 .grid-container-main__item2 {
   grid-area: health;
   background-image: url(./assets/health.jpg);
-  background-size: contain;
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
 }
 .grid-container-main__item3 {
   grid-area: tech;
   background-image: url(./assets/tech.jpg);
-  background-size: contain;
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
 }
 .grid-container-main__item4 {
   grid-area: trending;
-  background-color: aquamarine;
+  background-image: url(./assets/trending.jpg);
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
 }
 .grid-container-main__item5 {
   grid-area: politics;
-  background-color: aquamarine;
+  background-image: url(./assets/politics.jpg);
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
 }
 .grid-container-main__item6 {
   grid-area: finance;
-  background-color: aquamarine;
+  background-image: url(./assets/finance.jpg);
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.grid-container-main__h4 {
+  background-color: rgba(0, 0, 0, 0.237);
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 30px;
+  font-size: 1.5rem;
+  color: var(--main-bg-color);
 }
 
 footer {
