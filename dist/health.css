@@ -130,6 +130,8 @@ footer {
   height: 150px;
   width: 180px;
   background-image: url(./assets/sport.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .page-container__side-headers__container .page-containerr__side-headers__text {
   overflow: hidden;
