@@ -16,23 +16,44 @@ body {
 }
 .content-page {
   display: flex;
+  position: absolute;
+  top: 209px;
+  left: 472px;
 }
-.content-page .content-area {
-  width: 100%;
-}
+
 .entry-header {
   word-wrap: break-word;
+  font-size: x-large;
+  width: 602px;
+  height: 101px;
+  display: block;
+  margin-left: 383px;
 }
+.entry-content {
+  position: absolute;
+  top: 132px;
+}
+
 .entry-title {
   margin-bottom: 0;
 }
 .gb-container {
-  box-sizing: inherit;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  height: 600px;
 }
 .gb-inside-container {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 1 0 100px;
+  width: 348px;
+  height: 465px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-left: 10px;
 }
 .gb-headline {
   text-align: left;
