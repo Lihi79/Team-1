@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--secondary-color);
+}
+
+#logo-about {
+  width: 453px;
+  padding-left: 12px;
+}
+
+.about-page {
+  display: flex;
+  position: absolute;
+  top: 209px;
+  left: 472px;
+}
+.about-page__title {
+  color: var(--subtitle);
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+}
+.about-page__content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 91px;
+  padding: 0 130px 0 130px;
+}
+.about-page__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.about-page__container__h1 {
+  color: var(--subtitle);
+}
+.about-page__container__p {
+  color: var(--main-bg-color);
+  font-size: 1.2rem;
+}/*# sourceMappingURL=content.css.map */

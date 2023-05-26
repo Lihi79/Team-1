@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="blog.css" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="./dist/content.css" />
-    <title>content page</title>
+    <link rel="stylesheet" href="login.css" />
+    <title>Blog</title>
   </head>
   <body>
     <div class="container-header">
@@ -38,9 +38,7 @@
         </select>
 
         <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
-        <a
-          href="./8-content.html"
-          class="container-header__nav-main__links-main"
+        <a href="./8-about.html" class="container-header__nav-main__links-main"
           >Contact</a
         >
       </div>
@@ -59,34 +57,18 @@
         >
       </div>
     </div>
-    <div class="content-page" id="content">
-      <header class="entry-header">
-        <h1 class="entry-title">about blog site</h1>
-      </header>
-      <div class="entry-content" itemprop="text">
-        <div class="gb-container">
-          <div class="gb-inside-container">
-            <h1 class="gb-headline">Who We Are</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </br>
-              Autem, reprehenderit, temporibus, sequi molestias ex veritatis  </br>
-              pariatur rerum perspiciatis omnis quidem illum fuga dignissimos </br>
-              est voluptates ratione iste iure amet? Incidunt!</p>
-          </div>
-          <div class="gb-inside-container">
-            <h1 class="gb-headline">What We Do</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </br>
-              Autem, reprehenderit, temporibus, sequi molestias ex veritatis  </br>
-              pariatur rerum perspiciatis omnis quidem illum fuga dignissimos </br>
-              est voluptates ratione iste iure amet? Incidunt!</p>
-          </div>
-          <div class="gb-inside-container">
-            <h1 class="gb-headline">How We Do It</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </br>
-              Autem, reprehenderit, temporibus, sequi molestias ex veritatis  </br>
-              pariatur rerum perspiciatis omnis quidem illum fuga dignissimos </br>
-              est voluptates ratione iste iure amet? Incidunt!</p>
-          </div>
-        </div>
+    <!-- nav bar end -->
+
+    <div class="blog">
+      <div class="blog__post">
+        <h1 class="blog__title" id="title"></h1>
+        <h3 class="blog__subtitle" id="subtitle"></h3>
+        <p class="blog__user-name"></p>
+        <p class="blog__date" id="date"></p>
+        <p class="blog__text" id="post-text"></p>
+      </div>
+      <div class="blog__img">
+        <img src="" alt="" id="upload-img" width="700px" height="700px" />
       </div>
     </div>
   </body>
