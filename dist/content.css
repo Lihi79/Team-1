@@ -30,6 +30,7 @@ body {
 .entry-content {
   position: absolute;
   top: 94px;
+  right: -184px;
 }
 
 .entry-title {
@@ -54,6 +55,7 @@ body {
   align-content: center;
   align-items: center;
   padding-left: 10px;
+  margin: 39px;
 }
 
 .gb-headline {
