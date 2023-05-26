@@ -1,13 +1,15 @@
-var signUpBtn = document.querySelector(".singUpBtn");
-var singInBtn = document.querySelector(".singInBtn");
-var nameField = document.querySelector("#nameField");
-var title = document.querySelector("#title");
-singInBtn.onclick = function () {
-    nameField.style.maxHeight = "0";
-    title.innerHTML = "Sing In";
-    signUpBtn.classList.add("disable");
-    singInBtn.classList.remove("disable");
-};
+// const signUpBtn = document.querySelector(".singUpBtn") as HTMLButtonElement;
+// const singInBtn = document.querySelector(".singInBtn") as HTMLButtonElement;
+// const nameField = document.querySelector("#nameField") as HTMLFormElement;
+// const title = document.querySelector("#title") as HTMLFormElement;
+// singInBtn.onclick = () => {
+//   nameField.style.maxHeight = "0";
+//   title.innerHTML = `Sing In`;
+//   signUpBtn.classList.add("disable");
+//   singInBtn.classList.remove("disable");
+// };
+// ------------------------------------------
+// ------------------------------------------
 // signUpBtn.onclick = function () {
 //   nameField.style.maxHeight = "60px";
 //   title.innerHTML = `Sing Up`;
