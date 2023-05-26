@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/sign.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/16cc5b109b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>sign page</title>
   </head>
   <body>
-    <div class="sign-container"></div>
+    <div class="sign-container">
+      <div class="container-login-header">
+        <div class="container-login-header__header">
+          <img
+            class="container-login-header__title"
+            src="./assets/logo.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div class="form-box">
+        <h1 class="form-box__h1" id="title">Sing Up</h1>
+        <form class="form-class">
+          <div class="input-group">
+            <div class="inputField" id="nameField">
+              <i class="fa-solid fa-user"></i>
+              <input class="inputField__input" type="text" placeholder="Name" />
+            </div>
+
+            <div class="inputField">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                class="inputField__input"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="inputField">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                class="inputField__input"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <p class="form-class__p">
+              Already registered? <a href="./2-login.html">Click Here!</a>
+            </p>
+          </div>
+          <div class="btnField">
+            <button
+              class="btnField__singUp"
+              id="btnField__singUpBtn"
+              type="button"
+            >
+              Sing up
+            </button>
+            <!-- <button
+              class="btnField__singIn"
+              id="btnField__singInBtn"
+              type="button"
+            >
+              Sing in
+            </button> -->
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
