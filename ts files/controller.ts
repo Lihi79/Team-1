@@ -38,10 +38,10 @@ function renderBlog(blog: Blog[]): string {
 }
 
 function renderToScreen() {
-  renderBlog.innerHTML = renderBlog(blog);
+  blogRender.innerHTML = renderBlog(blog);
 }
-function saveToLocalStorage(key, items: Blog[]) {
-  localStorage.setItem(key, JSON.stringify(blog));
+function saveToLocalStorage(blog: Blog[]) {
+  localStorage.setItem("blog", JSON.stringify(blog));
 }
 
 // function doneEdit(mealType: string) {

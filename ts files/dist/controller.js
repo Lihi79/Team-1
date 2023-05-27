@@ -24,10 +24,10 @@ function renderBlog(blog) {
     return html;
 }
 function renderToScreen() {
-    renderBlog.innerHTML = renderBlog(blog);
+    blogRender.innerHTML = renderBlog(blog);
 }
-function saveToLocalStorage(key, items) {
-    localStorage.setItem(key, JSON.stringify(blog));
+function saveToLocalStorage(blog) {
+    localStorage.setItem("blog", JSON.stringify(blog));
 }
 // function doneEdit(mealType: string) {
 //   console.log(textArea.value);
