@@ -1,11 +1,13 @@
+// model
 class Blog {
   uid: string;
   constructor(
     public blogTitle: string,
     public subTitle: string,
     // public username: string,
-    public blogText: string // public date: Function
-  ) {
+    public blogText: string
+  ) // public date: Function
+  {
     this.uid = uid();
   }
 }

@@ -1,8 +1,8 @@
+// model
 var Blog = /** @class */ (function () {
     function Blog(blogTitle, subTitle, 
     // public username: string,
-    blogText // public date: Function
-    ) {
+    blogText) {
         this.blogTitle = blogTitle;
         this.subTitle = subTitle;
         this.blogText = blogText;
