@@ -82,12 +82,12 @@ body {
   position: relative;
   width: 180px;
 }
-label {
+.category {
   display: block;
   padding: 2rem 0.5rem;
 }
 
-.button {
+button {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
