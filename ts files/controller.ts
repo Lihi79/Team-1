@@ -1,25 +1,3 @@
-// model
-class Blog {
-  uid: string;
-  constructor(
-    public blogTitle: string,
-    public subTitle: string,
-    // public username: string,
-    public blogText: string // public date: Function
-  ) {
-    this.uid = uid();
-  }
-}
-const blog: Blog[] = [];
-
-// helper
-function uid(): string {
-  return `id- ${Math.random()}`;
-}
-// view
-const blogRender = document.querySelector("#blogRender") as HTMLDivElement;
-
-// controller
 function handleAddItem(evt) {
   {
     evt.preventDefault();
@@ -37,6 +15,7 @@ function handleAddItem(evt) {
 
 // <p class="blog__user-name">${blogs.username}</p>
 // <p class="blog__date">${blogs.date}</p>
+
 function renderBlog(blog: Blog[]): string {
   const html: string = blog
     .map((blogs) => {
@@ -57,3 +36,22 @@ function renderBlog(blog: Blog[]): string {
   blogRender.innerHTML = html;
   return html;
 }
+
+function renderToScreen() {
+  renderBlog.innerHTML = renderBlog(blog);
+}
+function saveToLocalStorage(key, items: Blog[]) {
+  localStorage.setItem(key, JSON.stringify(blog));
+}
+
+// function doneEdit(mealType: string) {
+//   console.log(textArea.value);
+//   localStorage.setItem(mealType, textArea.value);
+
+//   window.location.href = "1-index.html";
+
+//1. Read text from html element
+//2. Save to local storage
+//   localStorage.setItem("bf", text);
+//3. redirect to main page
+//   window.location.href = "/1-....html";
