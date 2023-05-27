@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="edit-screen.css" />
-
+    <link rel="stylesheet" href="./dist/login.css" />
+    <link rel="stylesheet" href="./dist/edit-screen.css" />
+    <script src="./dist/controller.js" defer></script>
+    <script src="./dist/model.js" defer></script>
     <title>Edit</title>
   </head>
   <body>
@@ -59,27 +60,27 @@
     </div>
 
     <div class="edit-screen">
-      <form class="edit-screen__edit-blog">
-        <input type="text" name="title" placeholder=" Title" id="title" />
+      <form onsubmit="handleAddItem(event)" class="edit-screen__edit-blog">
+        <input type="text" name="blogTitle" placeholder=" Title" id="title" />
         <br />
         <input
           type="text"
-          name="subtitle"
+          name="subTitle"
           placeholder=" Subtitle"
           id="subtitle"
         />
         <br />
-        <button id="attach">attach</button>
+        <!-- <button id="attach">attach</button> -->
         <br />
         <textarea
-          name="textarea"
+          name="blogText"
           id="textarea"
           placeholder="  Write down your thoughts..."
         ></textarea>
+        <div class="submit-post-button">
+          <button value="submit-post">post</button>
+        </div>
       </form>
-    </div>
-    <div class="submit-post-button">
-      <button class="submit-post-button__post" id="submit-post">Post</button>
     </div>
   </body>
 </html>

@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="blog-dummy.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="./dist/blog-dummy.css" />
+    <link rel="stylesheet" href="./dist/index.css" />
+    <link rel="stylesheet" href="./dist/login.css" />
+    <script src="./dist/controller.js" defer></script>
+    <!-- <script src="./dist/"></script> -->
     <title>Blog-dummy</title>
   </head>
   <body>
@@ -61,15 +63,75 @@
 
     <div class="blog">
       <div class="blog__post">
-        <h1 class="blog__title"></h1>
-        <h3 class="blog__subtitle"></h3>
-        <p class="blog__user-name"></p>
-        <p class="blog__date"></p>
-        <p class="blog__text"></p>
+        <h1 class="blog__title" id="title">Israel Swings For Gold</h1>
+        <h3 class="blog__subtitle" id="subtitle">
+          Baseball is not exactly a popular sport in Israel, and few Israelis<br />
+          have embraced it. But when the Israeli baseball team qualified for
+          the<br />
+          summer Olympic Games in Tokyo in 2021, some Israelis tuned in and<br />
+          cheered on its players, most of whom were Americans with dual<br />
+          U.S.-Israeli citizenship.
+        </h3>
+        <p class="blog__user-name">written by Bobi Bob</p>
+        <p class="blog__date" id="date">03/05/2020</p>
+        <p class="blog__text" id="post-text">
+          Their quest for a medal — gold, silver or bronze — unfolds in
+          Israel<br />
+          Swings for Gold, a well-crafted documentary by Seth Kramer, Daniel<br />
+          Miller and Jeremy Newberger which opens in theatres in Florida on
+          May<br />
+          5. Interestingly enough, much of the footage was shot by the
+          players<br />
+          themselves because the media was not allowed into the Olympic
+          Village<br />
+          during the Covid-19 pandemic. The film is a sequel to Heading Home,<br />
+          which documented the exploits of Israel’s baseball squad at the
+          2017<br />
+          World Baseball Classic in Seoul, South Korea.<br />
+          At the Olympics, Israel, the lowest-ranking team, faced five
+          opponents<br />
+          — the United States, Japan, South Korea, Mexico and the Dominican<br />
+          Republic. “We were the Jamaican bobsled team of baseball,” says one
+          of<br />
+          the Israelis ruefully but realistically. They faced political<br />
+          hostility at their training games in the United States. Palestinian<br />
+          women chanted, “Free, free Palestine” and “Long live Palestine.”<br />
+          Anti-Zionist haredim held aloft anti-Israel placards. One protester<br />
+          likened Israel to an apartheid state. Security was tight at the<br />
+          Olympic Village, but the team had no compunction in displaying the<br />
+          blue-and-white Israeli flag on the balcony of its living quarters.
+          At<br />
+          the opening ceremony, a moment of silence was observed for the 11<br />
+          Israeli athletes who were killed at the 1972 Olympics in Munich,
+          and<br />
+          the players from Israel were clearly touched by this gesture. Yet
+          they<br />
+          encountered animosity. Some received death threats. Still others
+          were<br />
+          rebuffed when they sought to exchange athletic pins with some
+          athletes<br />
+          from certain nations. The film focuses on the games in which the<br />
+          Israelis appeared. Much to their disappointment, they won only one<br />
+          game. “When you lose, that’s tough,” says one of the players. But
+          at<br />
+          least they moved into the elimination round, which was no small<br />
+          achievement, and enjoyed the privilege of participating in the<br />
+          Olympics. Unfortunately, they will not get a second chance to prove<br />
+          themselves on the field. Baseball has been eliminated from the 2024<br />
+          Olympics, having been replaced by breakdancing.
+        </p>
       </div>
       <div class="blog__img">
-        <img src="" alt="" width="700px" height="700px" />
+        <img
+          src="./assets/sport-image-1.jpg"
+          alt=""
+          id="upload-img"
+          width="700px"
+          height="700px"
+        />
       </div>
     </div>
+
+    <div id="blogRender"></div>
   </body>
 </html>
