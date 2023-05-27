@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blog-dummy.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="edit-screen.css" />
-
-    <title>Edit</title>
+    <title>Blog-dummy</title>
   </head>
   <body>
     <div class="container-header">
@@ -57,29 +57,19 @@
         >
       </div>
     </div>
+    <!-- nav bar end -->
 
-    <div class="edit-screen">
-      <form class="edit-screen__edit-blog">
-        <input type="text" name="title" placeholder=" Title" id="title" />
-        <br />
-        <input
-          type="text"
-          name="subtitle"
-          placeholder=" Subtitle"
-          id="subtitle"
-        />
-        <br />
-        <button id="attach">attach</button>
-        <br />
-        <textarea
-          name="textarea"
-          id="textarea"
-          placeholder="  Write down your thoughts..."
-        ></textarea>
-      </form>
-    </div>
-    <div class="submit-post-button">
-      <button class="submit-post-button__post" id="submit-post">Post</button>
+    <div class="blog">
+      <div class="blog__post">
+        <h1 class="blog__title"></h1>
+        <h3 class="blog__subtitle"></h3>
+        <p class="blog__user-name"></p>
+        <p class="blog__date"></p>
+        <p class="blog__text"></p>
+      </div>
+      <div class="blog__img">
+        <img src="" alt="" width="700px" height="700px" />
+      </div>
     </div>
   </body>
 </html>
