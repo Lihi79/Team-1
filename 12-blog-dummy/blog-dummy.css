@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blog {
+  display: flex;
+  align-content: space-between;
+  margin-top: 31px;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=blog-dummy.css.map */

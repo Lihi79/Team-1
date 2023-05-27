@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/blog-dummy.css" />
-    <link rel="stylesheet" href="./dist/index.css" />
-    <link rel="stylesheet" href="./dist/login.css" />
-    <script src="./dist/controller.js" defer></script>
-    <!-- <script src="./dist/"></script> -->
+    <link rel="stylesheet" href="../1-index/dist/index.css" />
+    <link rel="stylesheet" href="../2-login/dist/login.css" />
+    <!-- <script src="../10-edit-screen/dist/controller.js" defer></script>
+    <script src="../10-edit-screen/dist/helper.js" defer></script>
+    <script src="../10-edit-screen/dist/model.js" defer></script>
+    <script src="../10-edit-screen/dist/view.js" defer></script> -->
+
     <title>Blog-dummy</title>
   </head>
   <body>
@@ -16,12 +19,14 @@
       <div class="container-header__header">
         <img
           class="container-header__title"
-          src="./assets/logo.png"
+          src="../assets/logo.png"
           alt="logo"
         />
       </div>
       <div class="container-header__nav-main">
-        <a href="./1-index.html" class="container-header__nav-main__links-main"
+        <a
+          href="../1-index/1-index.html"
+          class="container-header__nav-main__links-main"
           >Home</a
         >
         <select
@@ -32,27 +37,35 @@
         >
           <option disabled="disabled" select="selected">Choose Category</option>
 
-          <option class="option" value="./6-sport.html">Sport</option>
-          <option class="option" value="./3-health.html">Health</option>
-          <option class="option" value="./5-finance.html">Finance</option>
-          <option class="option" value="./4-tech.html">Tech</option>
-          <option class="option" value="./7-politics.html">Politics</option>
+          <option class="option" value="../6-sport/6-sport.html">Sport</option>
+          <option class="option" value="../3-health/3-health.html">
+            Health
+          </option>
+          <option class="option" value="../5-finance/5-finance.html">
+            Finance
+          </option>
+          <option class="option" value="../4-tech/4-tech.html">Tech</option>
+          <option class="option" value="../7-politics/7-politics.html">
+            Politics
+          </option>
         </select>
 
         <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
-        <a href="./8-about.html" class="container-header__nav-main__links-main"
+        <a
+          href="../8-about/8-about.html"
+          class="container-header__nav-main__links-main"
           >About</a
         >
       </div>
       <div class="container-header__registration">
         <a
-          href="./2-login.html"
+          href="../2-login/2-login.html"
           id="createBlog"
           class="container-header__registration__sign"
           >Create Blog</a
         >
         <a
-          href="./2-login.html"
+          href="../2-login/2-login.html"
           id="signIn"
           class="container-header__registration__sign"
           >Sign In</a
@@ -123,7 +136,7 @@
       </div>
       <div class="blog__img">
         <img
-          src="./assets/sport-image-1.jpg"
+          src="../assets/sport-image-1.jpg"
           alt=""
           id="upload-img"
           width="700px"
@@ -182,7 +195,7 @@
       </div>
       <div class="blog__img">
         <img
-          src="./assets/sport-image-2.jpg"
+          src="../assets/sport-image-2.jpg"
           alt=""
           id="upload-img"
           width="700px"
