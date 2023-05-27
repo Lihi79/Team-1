@@ -4,9 +4,8 @@ class Blog {
     public blogTitle: string,
     public subTitle: string,
     // public username: string,
-    public blogText: string
-  ) // public date: Function
-  {
+    public blogText: string // public date: Function
+  ) {
     this.uid = uid();
   }
 }
@@ -19,7 +18,7 @@ function uid(): string {
 function handleAddItem(evt) {
   {
     evt.preventDefault();
-    // console.log(evt);
+    console.log(evt);
     const blogTitle = evt.target.elements.blogTitle.value;
     const subTitle = evt.target.elements.subTitle.value;
     // const username = evt.target.elements.username.value;
@@ -33,6 +32,7 @@ function handleAddItem(evt) {
 // view
 const blogRender = document.querySelector("#blogRender") as HTMLDivElement;
 // <p class="blog__user-name">${blogs.username}</p>
+// <p class="blog__date">${blogs.date}</p>
 function renderBlog(blog: Blog[]): string {
   const html: string = blog
     .map((blogs) => {
@@ -41,7 +41,7 @@ function renderBlog(blog: Blog[]): string {
       <h1 class="blog__title">${blogs.blogTitle}</h1>
       <h3 class="blog__subtitle">${blogs.subTitle}</h3>
 
-      <p class="blog__date">${blogs.date}</p>
+   
       <p class="blog__text">${blogs.blogText}</p>
     </div>
     <div class="blog__img">
