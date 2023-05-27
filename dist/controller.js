@@ -2,7 +2,8 @@
 var Blog = /** @class */ (function () {
     function Blog(blogTitle, subTitle, 
     // public username: string,
-    blogText) {
+    blogText // public date: Function
+    ) {
         this.blogTitle = blogTitle;
         this.subTitle = subTitle;
         this.blogText = blogText;
@@ -11,9 +12,13 @@ var Blog = /** @class */ (function () {
     return Blog;
 }());
 var blog = [];
+// helper
 function uid() {
     return "id- " + Math.random();
 }
+// view
+var blogRender = document.querySelector("#blogRender");
+// controller
 function handleAddItem(evt) {
     {
         evt.preventDefault();
@@ -27,8 +32,7 @@ function handleAddItem(evt) {
         console.log(blog);
     }
 }
-// view
-var blogRender = document.querySelector("#blogRender");
+// ------------------------------------------------------------
 // <p class="blog__user-name">${blogs.username}</p>
 // <p class="blog__date">${blogs.date}</p>
 function renderBlog(blog) {

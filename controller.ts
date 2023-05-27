@@ -5,18 +5,21 @@ class Blog {
     public blogTitle: string,
     public subTitle: string,
     // public username: string,
-    public blogText: string
-  ) // public date: Function
-  {
+    public blogText: string // public date: Function
+  ) {
     this.uid = uid();
   }
 }
 const blog: Blog[] = [];
 
+// helper
 function uid(): string {
   return `id- ${Math.random()}`;
 }
+// view
+const blogRender = document.querySelector("#blogRender") as HTMLDivElement;
 
+// controller
 function handleAddItem(evt) {
   {
     evt.preventDefault();
@@ -30,9 +33,8 @@ function handleAddItem(evt) {
     console.log(blog);
   }
 }
+// ------------------------------------------------------------
 
-// view
-const blogRender = document.querySelector("#blogRender") as HTMLDivElement;
 // <p class="blog__user-name">${blogs.username}</p>
 // <p class="blog__date">${blogs.date}</p>
 function renderBlog(blog: Blog[]): string {
