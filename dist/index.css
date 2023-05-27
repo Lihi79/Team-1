@@ -136,7 +136,7 @@ select option {
   color: var(--main-bg-color);
 }
 .grid-container-main__h4:hover {
-  box-shadow: 1px 2px 5px 0 var(--shadow);
+  box-shadow: 0 5px 0 0 var(--shadow);
 }
 .grid-container-main .grid-container-main__h4 {
   background-color: rgba(0, 0, 0, 0.237);
