@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blog-dummy.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Blog-dummy</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <div class="container-header__header">
+        <img
+          class="container-header__title"
+          src="./assets/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="container-header__nav-main">
+        <a href="./1-index.html" class="container-header__nav-main__links-main"
+          >Home</a
+        >
+        <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
+          <option disabled="disabled" select="selected">Choose Category</option>
+
+          <option class="option" value="./6-sport.html">Sport</option>
+          <option class="option" value="./3-health.html">Health</option>
+          <option class="option" value="./5-finance.html">Finance</option>
+          <option class="option" value="./4-tech.html">Tech</option>
+          <option class="option" value="./7-politics.html">Politics</option>
+        </select>
+
+        <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
+        <a href="./8-about.html" class="container-header__nav-main__links-main"
+          >Contact</a
+        >
+      </div>
+      <div class="container-header__registration">
+        <a
+          href="./2-login.html"
+          id="createBlog"
+          class="container-header__registration__sign"
+          >Create Blog</a
+        >
+        <a
+          href="./2-login.html"
+          id="signIn"
+          class="container-header__registration__sign"
+          >Sign In</a
+        >
+      </div>
+    </div>
+    <!-- nav bar end -->
+
+    <div class="blog">
+      <div class="blog__post">
+        <h1 class="blog__title"></h1>
+        <h3 class="blog__subtitle"></h3>
+        <p class="blog__user-name"></p>
+        <p class="blog__date"></p>
+        <p class="blog__text"></p>
+      </div>
+      <div class="blog__img">
+        <img src="" alt="" width="700px" height="700px" />
+      </div>
+    </div>
+  </body>
+</html>
