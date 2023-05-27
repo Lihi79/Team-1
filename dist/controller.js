@@ -1,23 +1,40 @@
+var Blog = /** @class */ (function () {
+    function Blog(blogTitle, subTitle, 
+    // public username: string,
+    blogText) {
+        this.blogTitle = blogTitle;
+        this.subTitle = subTitle;
+        this.blogText = blogText;
+        this.uid = uid();
+    }
+    return Blog;
+}());
+var blog = [];
+function uid() {
+    return "id- " + Math.random();
+}
 function handleAddItem(evt) {
     {
         evt.preventDefault();
         // console.log(evt);
-        var title = evt.target.elements.title.value;
-        var subtitle = evt.target.elements.subtitle.value;
-        var username = evt.target.elements.username.value;
-        var text = evt.target.elements.text.value;
-        var date = evt.target.elements.date.value;
-        blog.push(new Blog(title, subtitle, username, text, date));
+        var blogTitle = evt.target.elements.blogTitle.value;
+        var subTitle = evt.target.elements.subTitle.value;
+        // const username = evt.target.elements.username.value;
+        var blogText = evt.target.elements.blogText.value;
+        // const date = evt.target.elements.date.value;
+        blog.push(new Blog(blogTitle, subTitle, blogText));
         console.log(blog);
     }
 }
 // view
 var blogRender = document.querySelector("#blogRender");
-function renderBlog() {
+// <p class="blog__user-name">${blogs.username}</p>
+function renderBlog(blog) {
     var html = blog
         .map(function (blogs) {
-        return "    <div class=\"blog\">\n    <div class=\"blog__post\">\n      <h1 class=\"blog__title\">" + blogs.title + "</h1>\n      <h3 class=\"blog__subtitle\">" + blogs.subtitle + "</h3>\n      <p class=\"blog__user-name\">" + blogs.username + "</p>\n      <p class=\"blog__date\">" + blogs.date + "</p>\n      <p class=\"blog__text\">" + blogs.text + "</p>\n    </div>\n    <div class=\"blog__img\">\n      <img src=\"\" alt=\"\" width=\"700px\" height=\"700px\" />\n    </div>\n  </div>";
+        return "    <div class=\"blog\">\n    <div class=\"blog__post\">\n      <h1 class=\"blog__title\">" + blogs.blogTitle + "</h1>\n      <h3 class=\"blog__subtitle\">" + blogs.subTitle + "</h3>\n\n      <p class=\"blog__date\">" + blogs.date + "</p>\n      <p class=\"blog__text\">" + blogs.blogText + "</p>\n    </div>\n    <div class=\"blog__img\">\n      <img src=\"\" alt=\"\" width=\"700px\" height=\"700px\" />\n    </div>\n  </div>";
     })
         .join(" ");
     blogRender.innerHTML = html;
+    return html;
 }
