@@ -22,16 +22,29 @@ function renderBlog(blog: Blog[]): string {
   const html: string = blog
     .map((blogs) => {
       return `    
-       <div class="blog">
-           <div class="blog__post">
-               <h1 class="blog__title">${blogs.blogTitle}</h1>
-               <h3 class="blog__subtitle">${blogs.subTitle}</h3>
-               <p class="blog__text">${blogs.blogText}</p>
-           </div>
-           <div class="blog__img">
-               <img src="" alt="" width="700px" height="700px" />
-           </div>
-       </div>`;
+      <div class="blog">
+      <div class="blog__post">
+        <div class="blog__text">
+          <h1 class="blog__title" id="title">${blogs.blogTitle}</h1>
+          <h3 class="blog__subtitle" id="subtitle">${blogs.subTitle}</h3>
+          <div class="blog__name-date">
+            <p class="blog__user-name">--user name--</p>
+            <p class="blog__date" id="date">--date--</p>
+          </div>
+          <p class="blog__p">${blogs.blogText}</p>
+        </div>
+      </div>
+      <div class="blog__img">
+        <img
+          src="--upload image--"
+          alt=""
+          id="upload-img"
+          width="700px"
+          height="500px"
+        />
+      </div>
+    </div>
+>`;
     })
     .join(" ");
   // renderToScreen();
@@ -43,6 +56,7 @@ function renderBlog(blog: Blog[]): string {
 
 function renderToScreen() {
   blogRender.innerHTML = renderBlog(blog);
+  // const reverseOrder = blog.map.reverseOrder;
 }
 
 // function renderToScreen(element: HTMLDivElement, date: string) {

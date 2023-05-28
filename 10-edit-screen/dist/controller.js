@@ -17,7 +17,7 @@ function handleAddItem(evt) {
 function renderBlog(blog) {
     var html = blog
         .map(function (blogs) {
-        return "    \n       <div class=\"blog\">\n           <div class=\"blog__post\">\n               <h1 class=\"blog__title\">" + blogs.blogTitle + "</h1>\n               <h3 class=\"blog__subtitle\">" + blogs.subTitle + "</h3>\n               <p class=\"blog__text\">" + blogs.blogText + "</p>\n           </div>\n           <div class=\"blog__img\">\n               <img src=\"\" alt=\"\" width=\"700px\" height=\"700px\" />\n           </div>\n       </div>";
+        return "    \n      <div class=\"blog\">\n      <div class=\"blog__post\">\n        <div class=\"blog__text\">\n          <h1 class=\"blog__title\" id=\"title\">" + blogs.blogTitle + "</h1>\n          <h3 class=\"blog__subtitle\" id=\"subtitle\">" + blogs.subTitle + "</h3>\n          <div class=\"blog__name-date\">\n            <p class=\"blog__user-name\">--user name--</p>\n            <p class=\"blog__date\" id=\"date\">--date--</p>\n          </div>\n          <p class=\"blog__p\">" + blogs.blogText + "</p>\n        </div>\n      </div>\n      <div class=\"blog__img\">\n        <img\n          src=\"--upload image--\"\n          alt=\"\"\n          id=\"upload-img\"\n          width=\"700px\"\n          height=\"500px\"\n        />\n      </div>\n    </div>\n>";
     })
         .join(" ");
     // renderToScreen();
@@ -27,6 +27,7 @@ function renderBlog(blog) {
 }
 function renderToScreen() {
     blogRender.innerHTML = renderBlog(blog);
+    // const reverseOrder = blog.map.reverseOrder;
 }
 // function renderToScreen(element: HTMLDivElement, date: string) {
 //   element.innerHTML = date;
