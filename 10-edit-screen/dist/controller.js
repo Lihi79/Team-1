@@ -1,6 +1,6 @@
 function handleAddItem(evt) {
     evt.preventDefault();
-    console.log(evt);
+    // console.log(evt);
     var blogTitle = evt.target.elements.blogTitle.value;
     var subTitle = evt.target.elements.subTitle.value;
     // const username = evt.target.elements.username.value;
@@ -8,6 +8,7 @@ function handleAddItem(evt) {
     // const date = evt.target.elements.date.value;
     blog.push(new Blog(blogTitle, subTitle, blogText));
     // saveLocalStorage("data", blog);
+    saveLocalStorage(blog);
     renderBlog(blog);
 }
 // ------------------------------------------------------------
@@ -33,8 +34,15 @@ function renderToScreen() {
 function saveLocalStorage(blog) {
     localStorage.setItem("blog", JSON.stringify(blog));
 }
-// function saveLocalStorage(key: string, blog: Blog[] | string) {
-//   localStorage.setItem(key, JSON.stringify(blog));
+// function saveLocalStorage(key, blog: Blog[]) {
+//   try {
+//     if (!blog) {
+//       throw new Error("item i not valid");
+//     }
+//     localStorage.setItem(key, JSON.stringify(blog));
+//   } catch (error) {
+//     console.log(error);
+//   }
 // }
 function doneEdit(blog) {
     localStorage.setItem("blog", JSON.stringify(blog));
@@ -42,10 +50,17 @@ function doneEdit(blog) {
 }
 function getLocalStorage() {
     var getLcPart1 = localStorage.getItem("blog");
-    // if (!getLcPart1) throw new Error("get Local Storage is null");
-    // const getLcPart2 = JSON.parse(getLcPart1);
-    return blog;
+    if (!getLcPart1)
+        throw new Error("get Local Storage is null");
+    var getLcPart2 = JSON.parse(getLcPart1);
+    return getLcPart2;
 }
+// function getItemsFromLocalStorage(key: string): Blog[] | undefined {
+//   const data = localStorage.getItem(key);
+//   if (!data) throw new Error("bad data");
+//   const _blog = JSON.parse(data);
+//   return _blog;
+// }
 // function getLocalStorage(key: string): Blog[] | undefined {
 //   const getLcPart1 = localStorage.getItem(key);
 //   if (!getLcPart1) throw new Error("can't find get Local Storage");
