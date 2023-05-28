@@ -6,19 +6,39 @@
 
 .blog {
   display: flex;
-  margin-top: 100px;
+  margin-top: 25px;
   justify-content: space-evenly;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.blog__text {
+  margin-top: 50px;
+  text-align: center;
+  max-width: 974px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .blog__title {
   font-size: 3rem;
 }
 .blog__subtitle {
+  margin-bottom: 7px;
   margin-top: 50px;
   font-style: oblique;
 }
 .blog__name-date {
+  gap: 19px;
   display: flex;
   font-style: oblique;
+  margin-bottom: 15px;
+}
+.blog__p {
+  font-size: x-large;
+  margin-top: 28px;
+  line-height: 40px;
 }
 
 footer {
