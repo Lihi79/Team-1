@@ -57,7 +57,7 @@ function renderBlog(blog: Blog[]): string {
   // renderToScreen(blogRender, html);
   blogRender.innerHTML = html;
 
-  return html;
+  return html.;
 }
 
 function renderToScreen() {
