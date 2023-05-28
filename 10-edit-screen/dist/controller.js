@@ -23,7 +23,7 @@ function renderBlog(blog) {
     // renderToScreen();
     // renderToScreen(blogRender, html);
     blogRender.innerHTML = html;
-    return html;
+    return html.;
 }
 function renderToScreen() {
     blogRender.innerHTML = renderBlog(blog);
