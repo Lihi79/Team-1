@@ -85,6 +85,8 @@ select option {
   font-family: "IBM Plex Sans", sans-serif;
   font-style: oblique;
   resize: none;
+  background-color: transparent;
+  border: none;
 }
 
 .submit-post-button {
@@ -112,11 +114,9 @@ select option {
 .to-your-blog__a {
   color: var(--subtitle);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 10px;
-}
-.to-your-blog__a:hover {
-  box-shadow: var(--hover) 0px 2px 0px 1px;
+  font-weight: bold;
 }
 
 footer {

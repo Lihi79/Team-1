@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+* .edit-post {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100px;
+  margin: 50px;
+}
+* .edit-post__a {
+  color: var(--subtitle);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: bold;
+}
 
 .blog {
   margin-top: 25px;

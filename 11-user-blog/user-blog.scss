@@ -2,6 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  .edit-post {
+    width: fit-content;
+    height: 100px;
+    margin: 50px;
+    &__a {
+      color: var(--subtitle);
+      text-decoration: none;
+      font-size: 1.5rem;
+      padding: 10px;
+      font-weight: bold;
+    }
+  }
 }
 .blog {
   // display: flex;
