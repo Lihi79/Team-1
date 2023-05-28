@@ -56,11 +56,16 @@ function saveLocalStorage(blog: Blog[]) {
 //   localStorage.setItem(key, JSON.stringify(blog));
 // }
 
+function doneEdit(blog: Blog) {
+  localStorage.setItem("blog", JSON.stringify(blog));
+  window.location.href = "../11-user-blog/11-user-blog.html";
+}
+
 function getLocalStorage(): Blog[] | undefined {
   const getLcPart1 = localStorage.getItem("blog");
-  if (!getLcPart1) throw new Error("get Local Storage is null");
-  const getLcPart2 = JSON.parse(getLcPart1);
-  return getLcPart2;
+  // if (!getLcPart1) throw new Error("get Local Storage is null");
+  // const getLcPart2 = JSON.parse(getLcPart1);
+  return blog;
 }
 
 // function getLocalStorage(key: string): Blog[] | undefined {

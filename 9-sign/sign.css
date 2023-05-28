@@ -8,7 +8,7 @@
 .sign-container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(134, 213, 100, 0.58), rgba(0, 0, 50, 0.8));
+  background-color: var(--main-bg-color);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -21,7 +21,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
   padding: 50px 60px 70px;
   text-align: center;
 }
@@ -82,8 +81,8 @@ input {
 }
 .btnField__singUp {
   flex-basis: 48%;
-  background: rgba(6, 120, 58, 0.7019607843);
-  color: #111010;
+  background: var(--subtitle);
+  color: var(--main-bg-color);
   height: 40px;
   border-radius: 20px;
   border: 0;
@@ -94,8 +93,8 @@ input {
 }
 .btnField__singIn {
   flex-basis: 48%;
-  background: rgba(6, 120, 58, 0.7019607843);
-  color: #fff;
+  background: var(--subtitle);
+  color: var(--main-bg-color);
   height: 40px;
   border-radius: 20px;
   border: 0;

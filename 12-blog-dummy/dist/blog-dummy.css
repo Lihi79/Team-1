@@ -6,9 +6,23 @@
 
 .blog {
   display: flex;
-  align-content: space-between;
-  margin-top: 31px;
+  margin-top: 100px;
   justify-content: space-evenly;
-  align-items: stretch;
-  flex-wrap: wrap;
+}
+.blog__title {
+  font-size: 3rem;
+}
+.blog__subtitle {
+  margin-top: 50px;
+  font-style: oblique;
+}
+.blog__name-date {
+  display: flex;
+  font-style: oblique;
+}
+
+footer {
+  display: flex;
+  height: 150px;
+  background-color: var(--secondary-color);
 }

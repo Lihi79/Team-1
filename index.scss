@@ -163,11 +163,11 @@ select {
     font-size: 1.5rem;
     color: var(--main-bg-color);
   }
+}
 
-  footer {
-    display: flex;
-    height: 150px;
-    background-color: var(--secondary-color);
-    margin-top: 90px;
-  }
+footer {
+  display: flex;
+  height: 150px;
+  background-color: var(--secondary-color);
+  // margin-top: 90px;
 }

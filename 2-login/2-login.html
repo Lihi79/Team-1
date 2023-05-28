@@ -7,45 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/login.css" />
 
-    <title>Login Blog</title>
+    <script
+      src="https://kit.fontawesome.com/16cc5b109b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>sign in</title>
   </head>
   <body>
-    <div class="container-login-header">
-      <div class="container-login-header__header">
-        <img
-          class="container-login-header__title"
-          src="../assets/logo.png"
-          alt="logo"
-        />
+    <div class="sign-container">
+      <div class="container-login-header">
+        <div class="container-login-header__header">
+          <img
+            class="container-login-header__title"
+            src="../assets/logo.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div class="form-box">
+        <h1 class="form-box__h1" id="title">Sign In</h1>
+        <form class="form-class">
+          <div class="input-group">
+            <div class="inputField" id="nameField">
+              <i class="fa-solid fa-user"></i>
+              <input class="inputField__input" type="text" placeholder="Name" />
+            </div>
+
+            <div class="inputField">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                class="inputField__input"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <p class="form-class__p">
+              Guest?
+              <a href="../1-index.html">Click Here!</a>
+            </p>
+            <p class="form-class__p">
+              Or
+              <a href="../9-sign/9-sign.html"> Register</a>
+            </p>
+          </div>
+          <div class="btnField">
+            <button
+              class="btnField__singUp"
+              id="btnField__singUpBtn"
+              type="button"
+            >
+              <a href="../2-login/2-login.html">Sign In</a>
+            </button>
+            <!-- <button
+              class="btnField__singIn"
+              id="btnField__singInBtn"
+              type="button"
+            >
+              Sing in
+            </button> -->
+          </div>
+        </form>
       </div>
     </div>
-    <div class="welcome">
-      <h1>Welcome!</h1>
-    </div>
-
-    <form class="login-form">
-      <label for="User-name">User name/email</label>
-      <input
-        type="text"
-        name="User-name"
-        placeholder="  john@email.com / john1"
-      />
-      <br />
-      <label for="password">Password</label>
-      <input
-        type="password"
-        name="password"
-        maxlength="8"
-        placeholder="  8 characters "
-      />
-      <br />
-      <button id="login-btn">Log In</button>
-      <!-- <button id="log-up-btn">
-        <a href="./9-sign.html" class="movet-to-log-up">Log Up</a>
-      </button> -->
-    </form>
-    <div class="guest">
-      <a href="../1-index/1-index.html">Or enter as a guest</a>
-    </div>
+    <footer></footer>
   </body>
 </html>

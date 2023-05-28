@@ -46,4 +46,10 @@ body {
 .about-page__container__p {
   color: var(--secondary-color);
   font-size: 1.2rem;
+}
+
+footer {
+  display: flex;
+  height: 150px;
+  background-color: var(--secondary-color);
 }/*# sourceMappingURL=about.css.map */

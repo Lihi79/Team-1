@@ -40,48 +40,101 @@ body {
   font-size: 2rem;
 }
 
-.login-form {
-  margin-top: 70px;
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+  &__h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #06783ab3;
+    position: relative;
+  }
+  &__h1::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #06783ab3;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.inputField {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-input {
-  width: 284px;
-  height: 40px;
-}
-label {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-
-#login-btn {
-  margin-top: 30px;
-  width: 150px;
-  height: 50px;
-  background: none;
-  // margin-left: -136px;
-  &:hover {
-    background-color: var(--btn-color);
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  i {
+    margin-left: 15px;
+    color: #9999;
   }
 }
 
-// #log-up-btn {
-//   margin-top: 50px;
-//   width: 150px;
-//   height: 50px;
-//   background: none;
-//   // margin-left: 180px;
-//   // margin-top: -50px;
-//   &:hover {
-//     background-color: #5ae79ab3;
-//   }
-// }
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+.form-class {
+  &__p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: var(--subtitle);
+}
 
-.guest {
-  margin-top: 50px;
+.btnField {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  &__singUp {
+    flex-basis: 48%;
+    background: var(--subtitle);
+    color: var(--main-bg-color);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0s;
+    margin-left: 95px;
+  }
+  &__singIn {
+    flex-basis: 48%;
+    background: #06783ab3;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    // transition: background 1s;
+    background: #eaeaea;
+    color: #555;
+  }
+  a {
+    color: #111010;
+  }
+}
+.input-group {
+  height: 280px;
 }

@@ -73,7 +73,11 @@
     </div>
 
     <!-- nav bar end -->
-    <a href="../11-user-blog/11-user-blog.html">go back</a>
+    <div class="to-your-blog">
+      <a class="to-your-blog__a" href="../11-user-blog/11-user-blog.html"
+        >To your blog</a
+      >
+    </div>
     <div class="edit-screen">
       <form onsubmit="handleAddItem(event)" class="edit-screen__edit-blog">
         <input type="text" name="blogTitle" placeholder=" Title" id="title" />
@@ -93,12 +97,15 @@
           placeholder="  Write down your thoughts..."
         ></textarea>
         <div class="submit-post-button">
-          <button value="submit-post">post</button>
+          <button id="post-button" value="submit-post" onclick="doneEdit()">
+            post
+          </button>
           <!-- onclick="doneEdit()" -->
         </div>
       </form>
     </div>
 
     <div id="blogRender"></div>
+    <footer></footer>
   </body>
 </html>
