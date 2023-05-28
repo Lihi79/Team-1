@@ -82,10 +82,6 @@ body {
   position: relative;
   width: 180px;
 }
-.category {
-  display: block;
-  padding: 2rem 0.5rem;
-}
 
 #button {
   display: flex;
@@ -94,6 +90,9 @@ body {
   width: 100%;
   height: 3.2rem;
   background-color: white;
+}
+.select-group {
+  position: relative;
 }
 .arrow {
   border: solid black;
