@@ -7,7 +7,8 @@ function handleAddItem(evt) {
   const blogText = evt.target.elements.blogText.value;
   // const date = evt.target.elements.date.value;
   blog.push(new Blog(blogTitle, subTitle, blogText));
-  saveLocalStorage(blog);
+
+  // saveLocalStorage("data", blog);
 
   renderBlog(blog);
 }
@@ -33,29 +34,43 @@ function renderBlog(blog: Blog[]): string {
        </div>`;
     })
     .join(" ");
-  blogRender.innerHTML = html;
-  // renderToScreen();
+  renderToScreen();
+  // renderToScreen(blogRender, html);
+  // blogRender.innerHTML = html;
+
   return html;
 }
 
 function renderToScreen() {
   blogRender.innerHTML = renderBlog(blog);
 }
+
+// function renderToScreen(element: HTMLDivElement, date: string) {
+//   element.innerHTML = date;
+// }
 function saveLocalStorage(blog: Blog[]) {
   localStorage.setItem("blog", JSON.stringify(blog));
 }
 
-// function getLocalStorage(blog: Blog[]) {
-//   const getLcPart1 = localStorage.getItem("blog");
-//   if (!getLcPart1) throw new Error("get Local Storage is null");
-//   const getLcPart2 = JSON.parse(getLcPart1);
+// function saveLocalStorage(key: string, blog: Blog[] | string) {
+//   localStorage.setItem(key, JSON.stringify(blog));
 // }
-function getLocalStorage(key: string): Blog[] | undefined {
-  const getLcPart1 = localStorage.getItem(key);
-  if (!getLcPart1) throw new Error("can't find get Local Storage");
+
+function getLocalStorage(): Blog[] | undefined {
+  const getLcPart1 = localStorage.getItem("blog");
+  if (!getLcPart1) throw new Error("get Local Storage is null");
   const getLcPart2 = JSON.parse(getLcPart1);
   return getLcPart2;
 }
+
+// function getLocalStorage(key: string): Blog[] | undefined {
+//   const getLcPart1 = localStorage.getItem(key);
+//   if (!getLcPart1) throw new Error("can't find get Local Storage");
+//   const getLcPart2 = JSON.parse(getLcPart1);
+//   return getLcPart2;
+// }
+
+// ---------------------------------------------------
 // function doneEdit(mealType: string) {
 //   console.log(textArea.value);
 //   localStorage.setItem(mealType, textArea.value);
