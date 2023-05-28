@@ -1,16 +1,17 @@
 function handleAddItem(evt) {
-  {
-    evt.preventDefault();
-    console.log(evt);
-    const blogTitle = evt.target.elements.blogTitle.value;
-    const subTitle = evt.target.elements.subTitle.value;
-    // const username = evt.target.elements.username.value;
-    const blogText = evt.target.elements.blogText.value;
-    // const date = evt.target.elements.date.value;
-    blog.push(new Blog(blogTitle, subTitle, blogText));
-    console.log(blog);
-  }
+  evt.preventDefault();
+  console.log(evt);
+  const blogTitle = evt.target.elements.blogTitle.value;
+  const subTitle = evt.target.elements.subTitle.value;
+  // const username = evt.target.elements.username.value;
+  const blogText = evt.target.elements.blogText.value;
+  // const date = evt.target.elements.date.value;
+  blog.push(new Blog(blogTitle, subTitle, blogText));
+  saveLocalStorage(blog);
+
+  renderBlog(blog);
 }
+
 // ------------------------------------------------------------
 
 // <p class="blog__user-name">${blogs.username}</p>
@@ -19,31 +20,42 @@ function handleAddItem(evt) {
 function renderBlog(blog: Blog[]): string {
   const html: string = blog
     .map((blogs) => {
-      return `    <div class="blog">
-    <div class="blog__post">
-      <h1 class="blog__title">${blogs.blogTitle}</h1>
-      <h3 class="blog__subtitle">${blogs.subTitle}</h3>
-
-   
-      <p class="blog__text">${blogs.blogText}</p>
-    </div>
-    <div class="blog__img">
-      <img src="" alt="" width="700px" height="700px" />
-    </div>
-  </div>`;
+      return `    
+       <div class="blog">
+           <div class="blog__post">
+               <h1 class="blog__title">${blogs.blogTitle}</h1>
+               <h3 class="blog__subtitle">${blogs.subTitle}</h3>
+               <p class="blog__text">${blogs.blogText}</p>
+           </div>
+           <div class="blog__img">
+               <img src="" alt="" width="700px" height="700px" />
+           </div>
+       </div>`;
     })
     .join(" ");
   blogRender.innerHTML = html;
+  // renderToScreen();
   return html;
 }
 
 function renderToScreen() {
   blogRender.innerHTML = renderBlog(blog);
 }
-function saveToLocalStorage(blog: Blog[]) {
+function saveLocalStorage(blog: Blog[]) {
   localStorage.setItem("blog", JSON.stringify(blog));
 }
 
+// function getLocalStorage(blog: Blog[]) {
+//   const getLcPart1 = localStorage.getItem("blog");
+//   if (!getLcPart1) throw new Error("get Local Storage is null");
+//   const getLcPart2 = JSON.parse(getLcPart1);
+// }
+function getLocalStorage(key: string): Blog[] | undefined {
+  const getLcPart1 = localStorage.getItem(key);
+  if (!getLcPart1) throw new Error("can't find get Local Storage");
+  const getLcPart2 = JSON.parse(getLcPart1);
+  return getLcPart2;
+}
 // function doneEdit(mealType: string) {
 //   console.log(textArea.value);
 //   localStorage.setItem(mealType, textArea.value);

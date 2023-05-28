@@ -1,6 +1,7 @@
 var Blog = /** @class */ (function () {
     function Blog(blogTitle, subTitle, 
-    // public username: string, // connect to user login
+    // public username: string,
+    // connect to user login
     blogText // public date: Function
     ) {
         this.blogTitle = blogTitle;
