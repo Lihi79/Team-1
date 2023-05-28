@@ -8,3 +8,9 @@ if (getLcPart2) {
     blog.push.apply(blog, getLcPart2);
 }
 renderBlog(blog);
+// renderBlog(blog);
+// const _blog = getLocalStorage();
+// if (_blog) {
+//   blog.push(..._blog);
+// }
+// renderBlog(blog);
