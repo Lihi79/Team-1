@@ -19,9 +19,9 @@ function renderBlog(blog) {
         return "    \n       <div class=\"blog\">\n           <div class=\"blog__post\">\n               <h1 class=\"blog__title\">" + blogs.blogTitle + "</h1>\n               <h3 class=\"blog__subtitle\">" + blogs.subTitle + "</h3>\n               <p class=\"blog__text\">" + blogs.blogText + "</p>\n           </div>\n           <div class=\"blog__img\">\n               <img src=\"\" alt=\"\" width=\"700px\" height=\"700px\" />\n           </div>\n       </div>";
     })
         .join(" ");
-    renderToScreen();
+    // renderToScreen();
     // renderToScreen(blogRender, html);
-    // blogRender.innerHTML = html;
+    blogRender.innerHTML = html;
     return html;
 }
 function renderToScreen() {

@@ -34,9 +34,9 @@ function renderBlog(blog: Blog[]): string {
        </div>`;
     })
     .join(" ");
-  renderToScreen();
+  // renderToScreen();
   // renderToScreen(blogRender, html);
-  // blogRender.innerHTML = html;
+  blogRender.innerHTML = html;
 
   return html;
 }
