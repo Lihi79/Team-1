@@ -72,11 +72,6 @@ select option {
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
-.edit-screen #attach {
-  margin-bottom: 20px;
-  width: 70px;
-  height: 30px;
-}
 .edit-screen #textarea {
   overflow-y: scroll;
   width: 640px;
@@ -117,6 +112,10 @@ select option {
   font-size: 1.5rem;
   padding: 10px;
   font-weight: bold;
+}
+
+.blog__img {
+  max-width: 100px;
 }
 
 footer {
