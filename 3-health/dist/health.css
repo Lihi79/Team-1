@@ -99,6 +99,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   display: flex;
   height: 150px;
