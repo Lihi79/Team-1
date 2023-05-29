@@ -91,6 +91,7 @@ select option {
   width: 100%;
   height: 1000px;
   padding: 0 240px;
+  margin-bottom: 150px;
   display: grid;
   gap: 15px;
   grid-template-areas: "tech tech finance finance" "sport health health trending" "politics politics politics trending ";

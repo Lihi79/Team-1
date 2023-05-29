@@ -33,6 +33,8 @@ function getUserLocalStorage(): User[] | undefined {
 }
 
 function signUpBtn(user: User[]) {
+  console.log(signUpBtn());
+
   localStorage.setItem("user", JSON.stringify(user));
   window.location.href = "../1-index.html";
 }

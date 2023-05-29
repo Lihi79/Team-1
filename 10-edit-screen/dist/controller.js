@@ -28,6 +28,7 @@ function getUserLocalStorage() {
     return getLcPart2;
 }
 function signUpBtn(user) {
+    console.log(signUpBtn());
     localStorage.setItem("user", JSON.stringify(user));
     window.location.href = "../1-index.html";
 }
