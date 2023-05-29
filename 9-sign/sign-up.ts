@@ -27,3 +27,10 @@ function signUpBtn(user: User[]) {
   localStorage.setItem("user", JSON.stringify(user));
   window.location.href = "../1-index.html";
 }
+
+let userLogged = localStorage.getItem("userName");
+if (userLogged === user) {
+  alert("You are logged in.");
+} else {
+  alert("ERROR.");
+}

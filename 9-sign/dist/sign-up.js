@@ -23,3 +23,10 @@ function signUpBtn(user) {
     localStorage.setItem("user", JSON.stringify(user));
     window.location.href = "../1-index.html";
 }
+var userLogged = localStorage.getItem("userName");
+if (userLogged === user) {
+    alert("You are logged in.");
+}
+else {
+    alert("ERROR.");
+}
