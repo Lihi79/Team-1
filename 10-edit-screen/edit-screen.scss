@@ -66,7 +66,7 @@ select {
 }
 
 .edit-screen {
-  margin-top: 120px;
+  // margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +78,7 @@ select {
   }
   #textarea {
     overflow-y: scroll;
-    width: 640px;
+    width: 850px;
     height: 360px;
     font-size: 1.2rem;
     font-family: "IBM Plex Sans", sans-serif;
@@ -99,9 +99,14 @@ select {
 }
 
 #post-button {
-  width: 118px;
-  height: 50px;
-  margin-bottom: 100px;
+  background: var(--subtitle);
+  color: var(--main-bg-color);
+  height: 40px;
+  width: 230px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 110px;
 }
 .to-your-blog {
   width: fit-content;
