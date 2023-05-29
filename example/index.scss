@@ -4,8 +4,9 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   background: #f7f6ff;
+  font-size: 1.3rem;
 }
 
 h2 {
@@ -19,7 +20,7 @@ h2 {
 
 .select-box {
   display: flex;
-  width: 400px;
+  width: 196px;
   flex-direction: column;
 }
 
@@ -48,10 +49,9 @@ h2 {
 
 .selected::after {
   content: "";
-  background: url("img/arrow-down.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-
+  // background: url("img/arrow-down.svg");
+  // background-size: contain;
+  // background-repeat: no-repeat;
   position: absolute;
   height: 100%;
   width: 32px;
