@@ -15,6 +15,8 @@ function handleAddItem(evt) {
 // user sign up
 
 function signUp(evt) {
+  console.log("evt!!!!!!!!!!!!!!!!!");
+
   const userName = evt.target.elements.userName.value;
   const password = evt.target.elements.password.value;
   const email = evt.target.elements.email.value;
@@ -33,7 +35,7 @@ function getUserLocalStorage(): User[] | undefined {
 }
 
 function signUpBtn(user: User[]) {
-  console.log(signUpBtn());
+  console.log("hello");
 
   localStorage.setItem("user", JSON.stringify(user));
   window.location.href = "../1-index.html";
