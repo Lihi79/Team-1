@@ -58,7 +58,8 @@ select {
   border: none;
   cursor: pointer;
 }
-select:focus, select:hover {
+select:focus,
+select:hover {
   background-color: var(--hover);
 }
 select option {
@@ -152,4 +153,4 @@ footer {
   display: flex;
   height: 150px;
   background-color: var(--secondary-color);
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
