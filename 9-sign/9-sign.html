@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./dist/sign-up.js" defer></script>
     <script src="../dist/controller.js" defer></script>
+    <script src="./dist/sign-up.js" defer></script>
     <script src="../dist/helper.js" defer></script>
-    <script src="../dist/model.js" defer></script>
     <script src="../dist/view.js" defer></script>
+    <script src="../dist/model.js" defer></script>
+    <script src="../dist/index.js" defer></script>
     <link rel="stylesheet" href="./dist/sign.css" />
     <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../2-login/dist/login.css" />
@@ -38,7 +39,7 @@
             <div class="inputField" id="nameField">
               <i class="fa-solid fa-user"></i>
               <input
-                id="name"
+                id="userName"
                 class="inputField__input"
                 type="text"
                 placeholder="Name"
@@ -71,10 +72,14 @@
           </div>
           <div class="btnField">
             <button
+              onclick="SignUpBtn()"
               class="btnField__singUp"
-              id="btnField__singUpBtn"
-              type="submit"
+              id="singUp"
+              value="submit"
             >
+              <!--           <button id="post-button" value="submit-post" onclick="doneEdit()">
+ -->
+
               Sign Up
             </button>
             <!-- <button

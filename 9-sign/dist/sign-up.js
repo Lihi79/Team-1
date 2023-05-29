@@ -1,9 +1,12 @@
 function signUp(evt) {
+    evt.preventDefault();
     console.log("evt!!!!!!!!!!!!!!!!!");
     var userName = evt.target.elements.userName.value;
     var password = evt.target.elements.password.value;
     var email = evt.target.elements.email.value;
     users.push(new User(userName, password, email));
+    saveUserLocalStorage(users);
+    console.log(userName.value);
 }
 function saveUserLocalStorage(user) {
     localStorage.setItem("user", JSON.stringify(user));
