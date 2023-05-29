@@ -18,7 +18,6 @@ body {
 //// NAV BAR START ////
 
 .container-header {
-  position: static;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,65 +60,22 @@ body {
   }
 }
 
-// select {
-//   width: 150px;
-//   background-color: var(--secondary-color);
-//   color: var(--main-bg-color);
-//   font-size: 1.3rem;
-//   border: none;
-//   cursor: pointer;
+select {
+  width: 150px;
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
 
-//   &:focus,
-//   &:hover {
-//     background-color: var(--hover);
-//   }
-//   option {
-//     color: var(--secondary-color);
-//     font-size: 1.5rem;
-//   }
-// }
-.select-group {
-  position: relative;
-  width: 180px;
-}
-
-#button {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  width: 100%;
-  height: 3.2rem;
-  background-color: white;
-}
-.select-group {
-  position: relative;
-}
-.arrow {
-  border: solid black;
-  border-width: 0 2px 0 2px;
-  padding: 4px;
-  transform: rotate(45deg);
-}
-.option {
-  display: none;
-}
-.dropdown {
-  border: 2px solid #d2d9f0;
-  border-radius: 0.3rem;
-  position: absolute;
-  width: 100%;
-  box-sizing: border-box;
-}
-.category {
-  background-color: white;
-  padding: 1rem;
-  color: black;
-}
-.category:hover {
-  background-color: #f2f2f2;
-}
-.hidden {
-  display: none;
+  &:focus,
+  &:hover {
+    background-color: var(--hover);
+  }
+  option {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
 }
 //// NAV BAR END ////
 
