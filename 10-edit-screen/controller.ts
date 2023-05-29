@@ -3,20 +3,41 @@ function handleAddItem(evt) {
   // console.log(evt);
   const blogTitle = evt.target.elements.blogTitle.value;
   const subTitle = evt.target.elements.subTitle.value;
-  // const username = evt.target.elements.username.value;
   const blogText = evt.target.elements.blogText.value;
-  // const date = evt.target.elements.date.value;
-  blog.push(new Blog(blogTitle, subTitle, blogText));
+  const imgUrl = evt.target.elements.imgUrl.value;
+  blog.push(new Blog(blogTitle, subTitle, blogText, imgUrl));
 
   // saveLocalStorage("data", blog);
   saveLocalStorage(blog);
   renderBlog(blog);
 }
 
-// ------------------------------------------------------------
+// user sign up
 
-// <p class="blog__user-name">${blogs.username}</p>
-// <p class="blog__date">${blogs.date}</p>
+function signUp(evt) {
+  const userName = evt.target.elements.userName.value;
+  const password = evt.target.elements.password.value;
+  const email = evt.target.elements.email.value;
+  users.push(new User(userName, password, email));
+}
+
+function saveUserLocalStorage(user: User[]) {
+  localStorage.setItem("user", JSON.stringify(user));
+}
+
+function getUserLocalStorage(): User[] | undefined {
+  const getLcPart1 = localStorage.getItem("user");
+  if (!getLcPart1) throw new Error("get Local Storage is null");
+  const getLcPart2 = JSON.parse(getLcPart1);
+  return getLcPart2;
+}
+
+function signUpBtn(user: User[]) {
+  localStorage.setItem("user", JSON.stringify(user));
+  window.location.href = "../1-index.html";
+}
+
+// ------------------------------------------------------------
 
 function renderBlog(blog: Blog[]): string {
   const html: string = blog
@@ -36,11 +57,9 @@ function renderBlog(blog: Blog[]): string {
 
               <div class="blog__img">
                 <img
-                  src=" "
+                  src="${blogs.imgUrl}"
                   alt=""
                   id="upload-img"
-                  width="700px"
-                  height="500px"
                 />
               </div>
 
@@ -57,17 +76,13 @@ function renderBlog(blog: Blog[]): string {
   // renderToScreen(blogRender, html);
   blogRender.innerHTML = html;
 
-  return html.;
+  return html;
 }
 
 function renderToScreen() {
   blogRender.innerHTML = renderBlog(blog);
-  // const reverseOrder = blog.map.reverseOrder;
 }
 
-// function renderToScreen(element: HTMLDivElement, date: string) {
-//   element.innerHTML = date;
-// }
 function saveLocalStorage(blog: Blog[]) {
   localStorage.setItem("blog", JSON.stringify(blog));
 }
@@ -109,14 +124,3 @@ function getLocalStorage(): Blog[] | undefined {
 // }
 
 // ---------------------------------------------------
-// function doneEdit(mealType: string) {
-//   console.log(textArea.value);
-//   localStorage.setItem(mealType, textArea.value);
-
-//   window.location.href = "1-index.html";
-
-//1. Read text from html element
-//2. Save to local storage
-//   localStorage.setItem("bf", text);
-//3. redirect to main page
-//   window.location.href = "/1-....html";

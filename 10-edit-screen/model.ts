@@ -3,11 +3,22 @@ class Blog {
   constructor(
     public blogTitle: string,
     public subTitle: string,
-    // public username: string,
-    // connect to user login
-    public blogText: string // public date: Function
+    public blogText: string, // public date: Function
+    public imgUrl: string
   ) {
     this.uid = uid();
   }
 }
 const blog: Blog[] = [];
+
+class User {
+  uid: string;
+  constructor(
+    public userName: string,
+    private password: string,
+    public email: string
+  ) {
+    this.uid = uid();
+  }
+}
+const users: User[] = [];

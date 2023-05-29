@@ -76,12 +76,6 @@ select {
     margin-bottom: 20px;
     font-size: 1.2rem;
   }
-  #attach {
-    margin-bottom: 20px;
-
-    width: 70px;
-    height: 30px;
-  }
   #textarea {
     overflow-y: scroll;
     width: 640px;
@@ -120,6 +114,10 @@ select {
     padding: 10px;
     font-weight: bold;
   }
+}
+
+.blog__img {
+  max-width: 100px;
 }
 
 footer {
