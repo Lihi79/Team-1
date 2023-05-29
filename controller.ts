@@ -60,8 +60,8 @@ function renderToScreen() {
   blogRender.innerHTML = renderBlog(blog);
 }
 
-function saveLocalStorage(blog: Blog[]) {
-  localStorage.setItem("blog", JSON.stringify(blog));
+function saveLocalStorage(key, arr: any[]) {
+  localStorage.setItem(key, JSON.stringify(arr));
 }
 
 // function saveLocalStorage(key, blog: Blog[]) {
@@ -80,19 +80,19 @@ function doneEdit(blog: Blog) {
   window.location.href = "../11-user-blog/11-user-blog.html";
 }
 
-function getLocalStorage(): Blog[] | undefined {
-  const getLcPart1 = localStorage.getItem("blog");
-  if (!getLcPart1) throw new Error("get Local Storage is null");
-  const getLcPart2 = JSON.parse(getLcPart1);
-  return getLcPart2;
-}
-
-// function getItemsFromLocalStorage(key: string): Blog[] | undefined {
-//   const data = localStorage.getItem(key);
-//   if (!data) throw new Error("bad data");
-//   const _blog = JSON.parse(data);
-//   return _blog;
+// function getLocalStorage(): Blog[] | undefined {
+//   const getLcPart1 = localStorage.getItem("blog");
+//   if (!getLcPart1) throw new Error("get Local Storage is null");
+//   const getLcPart2 = JSON.parse(getLcPart1);
+//   return getLcPart2;
 // }
+
+function getItemsFromLocalStorage(key: string): any[] | undefined {
+  const data = localStorage.getItem(key);
+  if (!data) throw new Error("bad data");
+  const _data = JSON.parse(data);
+  return _data;
+}
 // function getLocalStorage(key: string): Blog[] | undefined {
 //   const getLcPart1 = localStorage.getItem(key);
 //   if (!getLcPart1) throw new Error("can't find get Local Storage");
