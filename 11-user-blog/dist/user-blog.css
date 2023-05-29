@@ -3,23 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+* .edit-post {
+  width: fit-content;
+  height: 100px;
+  margin: 50px;
+}
+* .edit-post__a {
+  color: var(--subtitle);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: bold;
+}
 
 .blog {
-  display: flex;
   margin-top: 25px;
-  justify-content: space-evenly;
-  flex-direction: column-reverse;
-  align-items: center;
   margin-bottom: 150px;
+  margin-left: 140px;
 }
 .blog__text {
   margin-top: 50px;
-  text-align: center;
   max-width: 974px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .blog__title {
   font-size: 3rem;
