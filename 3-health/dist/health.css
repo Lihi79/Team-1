@@ -97,7 +97,7 @@ footer {
 .page-container__most-viewed__image {
   width: 325px;
   height: 200px;
-  background-image: url(./assets/sport.jpg);
+  background-image: url(../assets/sport.jpg);
   margin-top: 60px;
 }
 .page-container__most-viewed__text {
@@ -128,7 +128,7 @@ footer {
 .page-container__side-headers__container .page-container__side-headers__image {
   height: 150px;
   width: 180px;
-  background-image: url(./assets/sport.jpg);
+  background-image: url(../assets/sport.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
