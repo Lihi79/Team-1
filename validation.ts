@@ -1,7 +1,8 @@
 const submitButton = document.querySelector(
   ".btnField__singUp"
 ) as HTMLButtonElement;
-submitButton.onclick = () => {
+submitButton.onclick = (e) => {
+  e.preventDefault();
   const userName = document.getElementById("userName").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
