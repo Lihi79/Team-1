@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <script src="../dist/controller.js" defer></script> -->
-    <script src="../dist/helper.js" defer></script>
+    <!-- <script src="../dist/helper.js" defer></script>
     <script src="../dist/view.js" defer></script>
     <script src="../dist/model.js" defer></script>
     <script src="../dist/index.js" defer></script>
-    <script src="./dist/sign-up.js" defer></script>
+    <script src="./dist/sign-up.js" defer></script> -->
+    <script src="../dist/validation.js" defer></script>
     <link rel="stylesheet" href="./dist/sign.css" />
-    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../1-home/dist/index.css" />
     <link rel="stylesheet" href="../2-login/dist/login.css" />
 
     <script
       src="https://kit.fontawesome.com/16cc5b109b.js"
       crossorigin="anonymous"
+      defer
     ></script>
-    <script></script>
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      defer
+    ></script>
+    <script src="./dist/sweetalert.js" defer></script>
     <title>sign page</title>
   </head>
   <body>
@@ -39,6 +45,7 @@
             <div class="inputField" id="nameField">
               <i class="fa-solid fa-user"></i>
               <input
+                required
                 id="userName"
                 class="inputField__input"
                 type="text"
@@ -49,6 +56,7 @@
             <div class="inputField">
               <i class="fa-solid fa-envelope"></i>
               <input
+                required
                 id="email"
                 class="inputField__input"
                 type="email"
@@ -59,10 +67,21 @@
             <div class="inputField">
               <i class="fa-solid fa-lock"></i>
               <input
+                required
                 id="password"
                 class="inputField__input"
                 type="password"
                 placeholder="Password"
+              />
+            </div>
+            <div class="inputField">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                required
+                id="cpass"
+                class="inputField__input"
+                type="password"
+                placeholder="Confirm Password"
               />
             </div>
             <p class="form-class__p">
@@ -77,18 +96,9 @@
               id="singUp"
               value="submit"
             >
-              <!--           <button id="post-button" value="submit-post" onclick="doneEdit()">
- -->
-
+              <!-- <button id="post-button" value="submit-post" onclick="doneEdit()"> -->
               Sign Up
             </button>
-            <!-- <button
-              class="btnField__singIn"
-              id="btnField__singInBtn"
-              type="button"
-            >
-              Sing in
-            </button> -->
           </div>
         </form>
       </div>
@@ -97,4 +107,17 @@
   </body>
 </html>
 <!-- onclick="SignUpBtn()" -->
-<a href="../1-index.html"></a>
+<!-- <a href="../1-home/1-index.html"></a> -->
+
+<!--           <button id="post-button" value="submit-post" onclick="doneEdit()">
+ -->
+
+<!-- Sign Up
+</button> -->
+<!-- <button
+  class="btnField__singIn"
+  id="btnField__singInBtn"
+  type="button"
+>
+  Sing in
+</button> -->

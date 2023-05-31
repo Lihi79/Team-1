@@ -112,37 +112,37 @@ select {
 
   &__item1 {
     grid-area: sport;
-    background-image: url(./assets/sport.jpg);
+    background-image: url(../assets/sport.jpg);
     background-size: cover;
     box-shadow: 1px 2px 5px 0 var(--shadow);
   }
   &__item2 {
     grid-area: health;
-    background-image: url(./assets/health.jpg);
+    background-image: url(../assets/health.jpg);
     background-size: cover;
     box-shadow: 1px 2px 5px 0 var(--shadow);
   }
   &__item3 {
     grid-area: tech;
-    background-image: url(./assets/tech.jpg);
+    background-image: url(../assets/tech.jpg);
     background-size: cover;
     box-shadow: 1px 2px 5px 0 var(--shadow);
   }
   &__item4 {
     grid-area: trending;
-    background-image: url(./assets/trending.jpg);
+    background-image: url(../assets/trending.jpg);
     background-size: cover;
     box-shadow: 1px 2px 5px 0 var(--shadow);
   }
   &__item5 {
     grid-area: politics;
-    background-image: url(./assets/politics.jpg);
+    background-image: url(../assets/politics.jpg);
     background-size: cover;
     box-shadow: 1px 2px 5px 0 var(--shadow);
   }
   &__item6 {
     grid-area: finance;
-    background-image: url(./assets/finance.jpg);
+    background-image: url(../assets/finance.jpg);
     background-size: cover;
     box-shadow: 1px 2px 5px 0 var(--shadow);
   }
