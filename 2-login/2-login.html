@@ -6,11 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/login.css" />
-
+    <link rel="stylesheet" href="../9-sign/dist/sign.css" />
+    <link rel="stylesheet" href="../1-home/dist/index.css" />
+    <script src="../dist/validation.js" defer></script>
     <script
       src="https://kit.fontawesome.com/16cc5b109b.js"
       crossorigin="anonymous"
+      defer
     ></script>
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      defer
+    ></script>
+    <script src="../9-sign/dist/sweetalert.js" defer></script>
     <title>sign in</title>
   </head>
   <body>
@@ -30,12 +38,18 @@
           <div class="input-group">
             <div class="inputField" id="nameField">
               <i class="fa-solid fa-user"></i>
-              <input class="inputField__input" type="text" placeholder="Name" />
+              <input
+                id="loginName"
+                class="inputField__input"
+                type="text"
+                placeholder="Name"
+              />
             </div>
 
             <div class="inputField">
               <i class="fa-solid fa-lock"></i>
               <input
+                id="loginPassword"
                 class="inputField__input"
                 type="password"
                 placeholder="Password"
@@ -52,7 +66,7 @@
           </div>
           <div class="btnField">
             <button
-              class="btnField__singUp"
+              class="btnField__singUp login"
               id="btnField__singUpBtn"
               type="button"
             >

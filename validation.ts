@@ -21,3 +21,21 @@ submitButton.onclick = (e) => {
     }
   }
 };
+const login = document.querySelector(".login") as HTMLButtonElement;
+login.onclick = (e) => {
+  e.preventDefault();
+  const loginName = document.getElementById("loginName").value;
+  const loginPassword = document.getElementById("loginPassword").value;
+  const nameUser = localStorage.getItem("userName");
+  const passwordUser = localStorage.getItem("password");
+
+  if (loginName == "" || loginPassword == "") {
+    alert("input field has no value");
+  } else {
+    if (loginName == nameUser && loginPassword == passwordUser) {
+      alert(`welcome back`);
+    } else {
+      alert("Something is wrong! ' try again");
+    }
+  }
+};
