@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<!--//main page// -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../2-login/dist/login.css" />
-    <link rel="stylesheet" href="./dist/index.css" />
-    <script src=""></script>
 
-    <title>Home Blog</title>
+    <link rel="stylesheet" href="./dist/user-blog.css" />
+    <link rel="stylesheet" href="../1-home/dist/index.css" />
+    <link rel="stylesheet" href="../2-login/dist/login.css" />
+
+    <script src="../10-edit-screen/dist/controller.js" defer></script>
+    <script src="../1-home/dist/index.js" defer></script>
+    <script src="../9-sign/dist/sign-up.js" defer></script>
+    <script src="../2-login/dist/login.js" defer></script>
+    <script src="./dist/user-blog.js" defer></script>
+
+    <!-- <script src="../general-TypeScript/dist/controller.js" defer></script>
+    <script src="../general-TypeScript/dist/helper.js" defer></script> -->
+
+    <title>Blog</title>
   </head>
   <body>
     <div class="container-header">
@@ -21,7 +30,11 @@
         />
       </div>
       <div class="container-header__nav-main">
-        <a href="" class="container-header__nav-main__links-main">Home</a>
+        <a
+          href="../1-home/1-index.html"
+          class="container-header__nav-main__links-main"
+          >Home</a
+        >
         <select
           name="category"
           id="category"
@@ -65,65 +78,14 @@
         >
       </div>
     </div>
-
     <!-- nav bar end -->
-
-    <div class="about-strip">
-      <h3 class="about-strip__text">
-        The place where you can share news, articles and ideas
-      </h3>
+    <div class="edit-post">
+      <a class="edit-post__a" href="../10-edit-screen/10-edit-screen.html"
+        >Edit post</a
+      >
     </div>
-    <div class="hot-topic"><h3 class="hot-topic__text">Hot Topics</h3></div>
-    <div class="grid-container-main">
-      <div class="grid-container-main__item1">
-        <h4 class="grid-container-main__h4">
-          <a class="grid-container-main__link" href="../6-sport/6-sport.html"
-            >Sport</a
-          >
-        </h4>
-      </div>
-
-      <div class="grid-container-main__item2">
-        <h4 class="grid-container-main__h4">
-          <a class="grid-container-main__link" href="../3-health/3-health.html"
-            >Health</a
-          >
-        </h4>
-      </div>
-
-      <div class="grid-container-main__item3">
-        <h4 class="grid-container-main__h4">
-          <a class="grid-container-main__link" href="../4-tech/4-tech.html"
-            >Tech</a
-          >
-        </h4>
-      </div>
-
-      <div class="grid-container-main__item4">
-        <h4 class="grid-container-main__h4">
-          <a class="grid-container-main__link" href="">Trending</a>
-        </h4>
-      </div>
-
-      <div class="grid-container-main__item5">
-        <h4 class="grid-container-main__h4">
-          <a
-            class="grid-container-main__link"
-            href="../7-politics/7-politics.html"
-            >Politics</a
-          >
-        </h4>
-      </div>
-      <div class="grid-container-main__item6">
-        <h4 class="grid-container-main__h4">
-          <a
-            class="grid-container-main__link"
-            href="../5-finance/5-finance.html"
-            >Finance</a
-          >
-        </h4>
-      </div>
-    </div>
+    <div id="blogRender"></div>
+    <div id="userRender"></div>
     <footer></footer>
   </body>
 </html>

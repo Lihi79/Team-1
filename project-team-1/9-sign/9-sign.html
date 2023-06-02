@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="../dist/controller.js" defer></script> -->
-    <script src="../dist/helper.js" defer></script>
-    <script src="../dist/view.js" defer></script>
-    <script src="../dist/model.js" defer></script>
-    <script src="../dist/index.js" defer></script>
-    <script src="./dist/sign-up.js" defer></script>
+
     <link rel="stylesheet" href="./dist/sign.css" />
-    <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../2-login/dist/login.css" />
+
+    <script src="./dist/sign-up.js" defer></script>
+    <script src="../2-login/dist/login.js" defer></script>
+    <script src="../1-home/dist/index.js" defer></script>
+    <script src="../11-user-blog/dist/user-blog.js" defer></script>
+
+    <script src="../10-edit-screen/dist/controller.js" defer></script>
+    <!-- <script src="../10-edit-screen/dist/edit-screen.js" defer></script> -->
 
     <script
       src="https://kit.fontawesome.com/16cc5b109b.js"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+
     <title>sign page</title>
   </head>
   <body>
@@ -39,30 +41,55 @@
             <div class="inputField" id="nameField">
               <i class="fa-solid fa-user"></i>
               <input
+                required
+                name="userName"
                 id="userName"
                 class="inputField__input"
                 type="text"
+                value="userName"
                 placeholder="Name"
+                minlength="3"
               />
             </div>
 
             <div class="inputField">
               <i class="fa-solid fa-envelope"></i>
               <input
+                required
+                name="email"
                 id="email"
                 class="inputField__input"
                 type="email"
+                value="email"
                 placeholder="Email"
+                minlength="8"
               />
             </div>
 
             <div class="inputField">
               <i class="fa-solid fa-lock"></i>
               <input
+                required
+                name="password"
                 id="password"
                 class="inputField__input"
                 type="password"
+                value="password"
                 placeholder="Password"
+                minlength="5"
+              />
+            </div>
+            <div class="inputField">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                required
+                name="cpass"
+                id="cpass"
+                class="inputField__input"
+                type="password"
+                value="cpass"
+                placeholder="Confirm Password"
+                minlength="5"
               />
             </div>
             <p class="form-class__p">
@@ -73,22 +100,13 @@
           <div class="btnField">
             <button
               type="submit"
-              class="btnField__singUp"
-              id="singUp"
+              class="btnField__signUp"
+              id="signUp"
               value="submit"
             >
-              <!--           <button id="post-button" value="submit-post" onclick="doneEdit()">
- -->
-
+              <!-- <button id="post-button" value="submit-post" onclick="doneEdit()"> -->
               Sign Up
             </button>
-            <!-- <button
-              class="btnField__singIn"
-              id="btnField__singInBtn"
-              type="button"
-            >
-              Sing in
-            </button> -->
           </div>
         </form>
       </div>
@@ -97,4 +115,17 @@
   </body>
 </html>
 <!-- onclick="SignUpBtn()" -->
-<a href="../1-index.html"></a>
+<!-- <a href="../1-home/1-index.html"></a> -->
+
+<!--           <button id="post-button" value="submit-post" onclick="doneEdit()">
+ -->
+
+<!-- Sign Up
+</button> -->
+<!-- <button
+  class="btnField__singIn"
+  id="btnField__singInBtn"
+  type="button"
+>
+  Sing in
+</button> -->

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.none {
+  display: none;
+}
+
+#userRender {
+  height: 50px;
+  width: 111px;
+  background-color: aqua;
+  margin-left: 20px;
+  margin-top: 9px;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  background-color: var(--secondary-color);
+}
+.container-header__title {
+  width: 300px;
+  padding-left: 70px;
+}
+.container-header__nav-main {
+  display: flex;
+  gap: 30px;
+}
+.container-header__nav-main__links-main {
+  color: var(--main-bg-color);
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 15px;
+}
+.container-header__nav-main__links-main:hover {
+  background-color: var(--hover);
+  color: var(--secondary-color);
+}
+.container-header__registration {
+  padding-right: 50px;
+}
+.container-header__registration__sign {
+  color: var(--main-bg-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 10px;
+  border: var(--hover) solid 1px;
+  margin-left: 5px;
+}
+.container-header__registration__sign:hover {
+  background-color: var(--hover);
+}
+
+select {
+  width: 150px;
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+select:focus, select:hover {
+  background-color: var(--hover);
+}
+select option {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.about-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccd2d6;
+  height: 50px;
+}
+.about-strip__text {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.hot-topic {
+  height: 50px;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+.hot-topic__text {
+  font-size: 1.5rem;
+}
+
+.grid-container-main {
+  width: 100%;
+  height: 1000px;
+  padding: 0 240px;
+  margin-bottom: 150px;
+  display: grid;
+  gap: 15px;
+  grid-template-areas: "tech tech finance finance" "sport health health trending" "politics politics politics trending ";
+}
+.grid-container-main__link {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+.grid-container-main__h4:hover {
+  box-shadow: 0 5px 0 0 var(--shadow);
+}
+.grid-container-main .grid-container-main__h4 {
+  background-color: rgba(0, 0, 0, 0.237);
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 30px;
+  font-size: 1.5rem;
+  color: var(--main-bg-color);
+}
+
+footer {
+  display: flex;
+  height: 150px;
+  background-color: var(--secondary-color);
+}
+
+.item1 {
+  grid-area: sport;
+  background: url("https://images.pexels.com/photos/54326/runners-male-sport-run-54326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+  background-size: 100%;
+}
+
+.item2 {
+  grid-area: health;
+  background-image: url("https://images.pexels.com/photos/806427/pexels-photo-806427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item3 {
+  grid-area: tech;
+  background-image: url("https://images.pexels.com/photos/4144179/pexels-photo-4144179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item4 {
+  grid-area: trending;
+  background-image: url("https://images.pexels.com/photos/4664301/pexels-photo-4664301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item5 {
+  grid-area: politics;
+  background-image: url("https://images.pexels.com/photos/8846784/pexels-photo-8846784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item6 {
+  grid-area: finance;
+  background-image: url("https://images.pexels.com/photos/4968636/pexels-photo-4968636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+select#category {
+  padding: 8px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+select#category option {
+  padding: 8px;
+}

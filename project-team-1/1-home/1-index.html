@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../2-login/dist/login.css" />
     <link rel="stylesheet" href="./dist/index.css" />
-    <script src=""></script>
+
+    <script src="./dist/index.js" defer></script>
+
+    <script src="../9-sign/dist/sign-up.js" defer></script>
+    <script src="../2-login/dist/login.js" defer></script>
+
+    <script src="../10-edit-screen/dist/controller.js" defer></script>
+    <script src="../11-user-blog/dist/user-blog.js" defer></script>
 
     <title>Home Blog</title>
   </head>
@@ -22,7 +29,27 @@
       </div>
       <div class="container-header__nav-main">
         <a href="" class="container-header__nav-main__links-main">Home</a>
+
         <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
+          <option disabled="disabled" selected>Choose Category</option>
+          <option class="option" value="../6-sport/6-sport.html">Sport</option>
+          <option class="option" value="../3-health/3-health.html">
+            Health
+          </option>
+          <option class="option" value="../5-finance/5-finance.html">
+            Finance
+          </option>
+          <option class="option" value="../4-tech/4-tech.html">Tech</option>
+          <option class="option" value="../7-politics/7-politics.html">
+            Politics
+          </option>
+        </select>
+        <!-- <select
           name="category"
           id="category"
           size="1"
@@ -41,7 +68,7 @@
           <option class="option" value="../7-politics/7-politics.html">
             Politics
           </option>
-        </select>
+        </select> -->
 
         <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
         <a
@@ -63,6 +90,13 @@
           class="container-header__registration__sign"
           >Sign In</a
         >
+        <a
+          href="../2-login/2-login.html"
+          id="Disconnected"
+          class="container-header__registration__sign"
+          onclick="DisconnectedUser()"
+          >Disconnected</a
+        >
       </div>
     </div>
 
@@ -73,9 +107,24 @@
         The place where you can share news, articles and ideas
       </h3>
     </div>
+
+    <!-- <div id="userProfile">
+      <div class="userInfo">
+        <p id="showUserName"></p>
+      </div>
+    </div> -->
+    <div id="userRender"></div>
+    <!-- <div>
+  <div class="item1" ></div>
+  <div class="item2"></div>
+  <div class="item3"> </div>
+  <div class="item4"> </div>
+  <div class="item5">  </div>
+  <div class="item6">  </div>
+</div> -->
     <div class="hot-topic"><h3 class="hot-topic__text">Hot Topics</h3></div>
     <div class="grid-container-main">
-      <div class="grid-container-main__item1">
+      <div class="grid-container-main__item1 item1">
         <h4 class="grid-container-main__h4">
           <a class="grid-container-main__link" href="../6-sport/6-sport.html"
             >Sport</a
@@ -83,7 +132,7 @@
         </h4>
       </div>
 
-      <div class="grid-container-main__item2">
+      <div class="grid-container-main__item2 item2">
         <h4 class="grid-container-main__h4">
           <a class="grid-container-main__link" href="../3-health/3-health.html"
             >Health</a
@@ -91,7 +140,7 @@
         </h4>
       </div>
 
-      <div class="grid-container-main__item3">
+      <div class="grid-container-main__item3 item3" id="item3">
         <h4 class="grid-container-main__h4">
           <a class="grid-container-main__link" href="../4-tech/4-tech.html"
             >Tech</a
@@ -99,13 +148,13 @@
         </h4>
       </div>
 
-      <div class="grid-container-main__item4">
+      <div class="grid-container-main__item4 item4">
         <h4 class="grid-container-main__h4">
           <a class="grid-container-main__link" href="">Trending</a>
         </h4>
       </div>
 
-      <div class="grid-container-main__item5">
+      <div class="grid-container-main__item5 item5">
         <h4 class="grid-container-main__h4">
           <a
             class="grid-container-main__link"
@@ -114,7 +163,7 @@
           >
         </h4>
       </div>
-      <div class="grid-container-main__item6">
+      <div class="grid-container-main__item6 item6">
         <h4 class="grid-container-main__h4">
           <a
             class="grid-container-main__link"

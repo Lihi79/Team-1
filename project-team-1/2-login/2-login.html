@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<!-- // log in screen -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/login.css" />
-    <!-- <link rel="stylesheet" href="../9-sign/dist/sign.css" />
-    <link rel="stylesheet" href="../1-home/dist/index.css" /> -->
-    <!-- <script src="../dist/validation.js" defer></script> -->
+    <link rel="stylesheet" href="../9-sign/dist/sign.css" />
+    <link rel="stylesheet" href="../1-home/dist/index.css" />
+
+    <script src="./dist/login.js" defer></script>
+    <script src="../9-sign/dist/sign-up.js" defer></script>
+
+    <script src="../9-sign/dist/sign-up.js" defer></script>
+
+    <script src="./dist/login.js" defer></script>
+    <script src="./dist/login-index.js" defer></script>
+
+    <script src="../10-edit-screen/dist/controller.js" defer></script>
+    <script src="../10-edit-screen/dist/edit-screen.js" defer></script>
+
     <script
       src="https://kit.fontawesome.com/16cc5b109b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>sign in</title>
   </head>
@@ -27,18 +38,26 @@
           />
         </div>
       </div>
-      <div class="form-box">
+      <div class="form-box" id="form-box">
         <h1 class="form-box__h1" id="title">Sign In</h1>
-        <form class="form-class">
+        <form onsubmit="signIn($event)" class="form-class" id="form-class">
           <div class="input-group">
             <div class="inputField" id="nameField">
               <i class="fa-solid fa-user"></i>
-              <input class="inputField__input" type="text" placeholder="Name" />
+              <input
+                name="loginName"
+                id="loginName"
+                class="inputField__input"
+                type="text"
+                placeholder="Name"
+              />
             </div>
 
             <div class="inputField">
               <i class="fa-solid fa-lock"></i>
               <input
+                name="loginPassword"
+                id="loginPassword"
                 class="inputField__input"
                 type="password"
                 placeholder="Password"
@@ -54,20 +73,9 @@
             </p>
           </div>
           <div class="btnField">
-            <button
-              class="btnField__singUp"
-              id="btnField__singUpBtn"
-              type="button"
-            >
-              <a href="../2-login/2-login.html">Sign In</a>
-            </button>
-            <!-- <button
-              class="btnField__singIn"
-              id="btnField__singInBtn"
-              type="button"
-            >
-              Sing in
-            </button> -->
+            <div class="btnField__singUp login" id="btnField__singUpBtn">
+              sign in
+            </div>
           </div>
         </form>
       </div>
