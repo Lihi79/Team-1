@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../12-blog-dummy/dist/blog-dummy.css" />
+    <link rel="stylesheet" href="/1-home/dist/index.css" />
+    <link rel="stylesheet" href="/2-login/dist/login.css" />
+
+    <!-- <script src="../dist/validation.js" defer></script>
+    <script src="../general-TypeScript/dist/controller.js" defer></script>
+    <script src="../general-TypeScript/dist/helper.js" defer></script>
+    <script src="../general-TypeScript/dist/index.js" defer></script>
+    <script src="../general-TypeScript/dist/model.js" defer></script>
+    <script src="../general-TypeScript/dist/view.js" defer></script> -->
+
+    <title>Blog-dummy</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <div class="container-header__header">
+        <img
+          class="container-header__title"
+          src="/assets/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="container-header__nav-main">
+        <a
+          href="/1-home/1-index.html"
+          class="container-header__nav-main__links-main"
+          >Home</a
+        >
+        <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
+          <option disabled="disabled" select="selected">Choose Category</option>
+
+          <option class="option" value="/6-sport/6-sport.html">Sport</option>
+          <option class="option" value="/3-health/3-health.html">Health</option>
+          <option class="option" value="/5-finance/5-finance.html">
+            Finance
+          </option>
+          <option class="option" value="/4-tech/4-tech.html">Tech</option>
+          <option class="option" value="/7-politics/7-politics.html">
+            Politics
+          </option>
+        </select>
+
+        <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
+        <a
+          href="/8-about/8-about.html"
+          class="container-header__nav-main__links-main"
+          >About</a
+        >
+      </div>
+      <div class="container-header__registration">
+        <a
+          href="/2-login/2-login.html"
+          id="createBlog"
+          class="container-header__registration__sign"
+          >Create Blog</a
+        >
+        <a
+          href="/2-login/2-login.html"
+          id="signIn"
+          class="container-header__registration__sign"
+          >Sign In</a
+        >
+      </div>
+    </div>
+    <!-- nav bar end -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              A blog that “helps physicians conquer their finances.”
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              How his blog makes money: It generates leads to his financial
+              planning business.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">momi momo</p>
+              <p class="blog__date" id="date">14.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-1.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson/challenge: "The toughest part is managing the
+              growth and bringing on team members. I've had to really understand
+              search engine optimization (SEO)—still working on it!—and I never
+              thought I'd have to try and be an expert in all the 'other stuff'
+              other than financial planning. The key is being authentic, not
+              worrying about your 'numbers,' and just putting out the best
+              content possible."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 2 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              A blog that “talks about the complete picture regarding
+              entrepreneurship and personal finance, not just the sexy side most
+              focus on.”
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              How his blog makes money: Nisall’s blog primarily drives traffic
+              to his accounting and tax business, though he says he makes some
+              income from ads.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">loli shon</p>
+              <p class="blog__date" id="date">20.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/assets/finance-blog-2.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson: "The most important thing I figured out and
+              impress upon others is to go to the right people— attorneys for
+              incorporating/LLC questions, accountants for tax questions, etc.,
+              and not random online people in Facebook groups or websites. I
+              also think a big key is to not look at what others are doing or
+              making because each person and business is unique. What works for
+              one person/business isn't always going to work for another, and
+              oftentimes people only talk about the sunshine and rainbows
+              without mentioning the negatives like self-employment taxes, time
+              investment, etc."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 3 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              “Will Ruin the Sport”: Toto Wolff Subtly Insults Red Bull for Past
+              Crimes Despite Siding With Max Verstappen & Co. Over Major Change
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              In an ideal world, Red Bull would’ve been basking in the glory of
+              their dominant run in the sport. To some extent, it’s safe to safe
+              that they are, too. However, a dark cloud in the shape of their
+              cost cap breach reprimand hangs over all their accolades. When the
+              news had initially come out, Mercedes boss Toto Wolff made a huge
+              hue and cry about it.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">roli fon</p>
+              <p class="blog__date" id="date">29.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/assets/img-4-dummy.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Almost a year since the Austrian has not changed his stance. The
+              Milton-Keynes-based outfit has nailed the RB19. As a consequence,
+              nobody is fast enough to catch them. Naturally, many have written
+              the 2023 season off. In light of this frustrating reality, ideas
+              are being pushed to introduce regulations that balance out the
+              performance of cars. Mercedes are a country mile behind the Bulls
+              currently. Even with their revised W14 upgrades at Monaco, the
+              team are still quite some way off a championship bid. You’d
+              imagine Wolff to be in favor of a rule change that will bring them
+              closer to Max Verstappen & Co. But he thinks otherwise. When
+              quizzed about such a measure to be adopted, Wolff responded, “If
+              we start balancing performance, we will ruin this sport,” as
+              quoted by Motorsport Week. He then went on to explain his stance,
+              and along the way took a subtle dig at Red Bull’s past
+              misdemeanors. “This is a class of its own, the best driver in the
+              best car, spending the same amount of money (as the other teams,
+              ed.), and winning the championship. If you break the rules, you
+              must be severely punished. Only then, but not for doing a good
+              job.” Wolff seems happy where he and his team are right now. But
+              he does have his eyes firmly set on catching them up eventually.
+              Mercedes will be eagerly awaiting an opportunity to get back to
+              their glory days and dominant ways. But the Austrian team
+              principal is wary of the constraints of this sport, development
+              wise. Hence, he has set himself a cautious deadline to get back to
+              the top again. According to Crash.net, Wolff said, “I think the
+              length [of time before catching Red Bull] is probably between six
+              and 12 months. That’s the time that it really took for us [last
+              year] to figure out what was actually happening with the car.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
