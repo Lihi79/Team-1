@@ -65,7 +65,6 @@ function renderBlog(blog) {
 function renderToScreen() {
     blogRender.innerHTML = renderBlog(blog);
 }
-var blogss = JSON.parse(localStorage.getItem("blog") || "[]");
 function saveLocalStorage(blog) {
     localStorage.setItem("blog", JSON.stringify(blog));
 }
@@ -74,12 +73,10 @@ function doneEdit(blog) {
     window.location.href = "../11-user-blog/11-user-blog.html";
 }
 function getLocalStorage() {
-    return JSON.parse(localStorage.getItem("blog") || "[]");
+    var getLcPart1 = localStorage.getItem("blog");
+    if (!getLcPart1)
+        throw new Error("get Local Storage is null");
+    var getLcPart2 = JSON.parse(getLcPart1);
+    return getLcPart2;
 }
-// function getLocalStorage(): Blog[] | undefined {
-//   const getLcPart1 = localStorage.getItem("blog");
-//   if (!getLcPart1) throw new Error("get Local Storage is null");
-//   const getLcPart2 = JSON.parse(getLcPart1);
-//   return getLcPart2;
-// }
 // -------------------------------------------------
