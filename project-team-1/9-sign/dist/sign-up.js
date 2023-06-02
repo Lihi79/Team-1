@@ -10,7 +10,7 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
-var users = getUserLocalStorage() || [];
+var users = getUserLocalStorage();
 function uid() {
     return "id- " + Math.random();
 }
@@ -50,7 +50,12 @@ function signUp(evt) {
 }
 function isUserNameAvailable(userName) {
     /////מערך של יוזרים
-    var users = JSON.parse(localStorage.getItem("user") || "");
+    /////json parse הופך מסטרינג לדבר האימיתי
+    /////json stirngfy הופך לסטרינג
+    /////object object
+    //////|| אופרטור שאם צד שמאל שלו הוא אנדיפיינד לא קיים אז הוא הולך למה שקורה בצד ימין
+    //////
+    var users = JSON.parse(localStorage.getItem("user") || "[]");
     ///בדיקה האם היוזר קיים
     console.log(users);
     var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length == 0;
@@ -61,11 +66,7 @@ function saveUserLocalStorage(user) {
     localStorage.setItem("user", JSON.stringify(user));
 }
 function getUserLocalStorage() {
-    var getLcPart1 = localStorage.getItem("user");
-    if (!getLcPart1)
-        throw new Error("get Local Storage is null");
-    var getLcPart2 = JSON.parse(getLcPart1);
-    return getLcPart2;
+    return JSON.parse(localStorage.getItem("user") || "[]");
 }
 function signUpBtn(user) {
     console.log("hello");

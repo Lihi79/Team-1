@@ -49,7 +49,7 @@ function signIn(evt) {
 }
 function isValidInfo(userName, Password) {
   /////קח את המערך
-  const users = JSON.parse(localStorage.getItem("user") || "");
+  const users = JSON.parse(localStorage.getItem("user") || "[]");
   ///////תעבור יוזר יוזר ותבדוק האם השם משתמש והסיסמא הם כמו הסיסמא שיש לנו בלמעלה בפונקציה
 
   const isValidInfo =
@@ -64,12 +64,12 @@ function saveRegisterUserLocalStorage(registerUser: RegisteredUser[]) {
   localStorage.setItem("registerUser", JSON.stringify(registerUser));
 }
 
-function getRegisterUserLocalStorage(): RegisteredUser[] | undefined {
-  const getLcPart2 = localStorage.getItem("registerUser");
-  if (!getLcPart2) throw new Error("get Local Storage is null");
-  const getLcPart3 = JSON.parse(getLcPart2);
-  return getLcPart3;
-}
+// function getRegisterUserLocalStorage(): RegisteredUser[] | undefined {
+//   const getLcPart2 = localStorage.getItem("registerUser");
+//   if (!getLcPart2) throw new Error("get Local Storage is null");
+//   const getLcPart3 = JSON.parse(getLcPart2);
+//   return getLcPart3;
+// }
 
 function signIpBtn(registerUser: RegisteredUser[]) {
   console.log("hello");

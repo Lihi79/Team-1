@@ -1,6 +1,7 @@
 const userRender2 = document.getElementById("userRender") as HTMLElement;
 const userNameValue = localStorage.getItem("userName") || "";
 userRender2!.innerHTML = userNameValue;
+
 hideBtns();
 function DisconnectedUser() {
   localStorage.setItem("userName", "");

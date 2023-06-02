@@ -40,7 +40,7 @@ function signIn(evt) {
 }
 function isValidInfo(userName, Password) {
     /////קח את המערך
-    var users = JSON.parse(localStorage.getItem("user") || "");
+    var users = JSON.parse(localStorage.getItem("user") || "[]");
     ///////תעבור יוזר יוזר ותבדוק האם השם משתמש והסיסמא הם כמו הסיסמא שיש לנו בלמעלה בפונקציה
     var isValidInfo = users.filter(function (user) { return user.password == Password && user.userName == userName; }).length == 1;
     return isValidInfo;
@@ -48,13 +48,12 @@ function isValidInfo(userName, Password) {
 function saveRegisterUserLocalStorage(registerUser) {
     localStorage.setItem("registerUser", JSON.stringify(registerUser));
 }
-function getRegisterUserLocalStorage() {
-    var getLcPart2 = localStorage.getItem("registerUser");
-    if (!getLcPart2)
-        throw new Error("get Local Storage is null");
-    var getLcPart3 = JSON.parse(getLcPart2);
-    return getLcPart3;
-}
+// function getRegisterUserLocalStorage(): RegisteredUser[] | undefined {
+//   const getLcPart2 = localStorage.getItem("registerUser");
+//   if (!getLcPart2) throw new Error("get Local Storage is null");
+//   const getLcPart3 = JSON.parse(getLcPart2);
+//   return getLcPart3;
+// }
 function signIpBtn(registerUser) {
     console.log("hello");
     localStorage.setItem("registerUser", JSON.stringify(registerUser));

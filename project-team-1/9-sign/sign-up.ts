@@ -13,7 +13,7 @@ class User {
   }
 }
 
-const users: User[] = getUserLocalStorage() || [];
+const users: User[] = getUserLocalStorage();
 
 function uid(): string {
   return `id- ${Math.random()}`;
@@ -67,7 +67,12 @@ function signUp(evt) {
 
 function isUserNameAvailable(userName) {
   /////מערך של יוזרים
-  const users = JSON.parse(localStorage.getItem("user") || "");
+  /////json parse הופך מסטרינג לדבר האימיתי
+  /////json stirngfy הופך לסטרינג
+  /////object object
+  //////|| אופרטור שאם צד שמאל שלו הוא אנדיפיינד לא קיים אז הוא הולך למה שקורה בצד ימין
+  //////
+  const users = JSON.parse(localStorage.getItem("user") || "[]");
   ///בדיקה האם היוזר קיים
   console.log(users);
   const isUserNameAvailable =
@@ -79,11 +84,8 @@ function saveUserLocalStorage(user: User[]) {
   localStorage.setItem("user", JSON.stringify(user));
 }
 
-function getUserLocalStorage(): User[] | undefined {
-  const getLcPart1 = localStorage.getItem("user");
-  if (!getLcPart1) throw new Error("get Local Storage is null");
-  const getLcPart2 = JSON.parse(getLcPart1);
-  return getLcPart2;
+function getUserLocalStorage() {
+  return JSON.parse(localStorage.getItem("user") || "[]");
 }
 
 function signUpBtn(user: User[]) {
