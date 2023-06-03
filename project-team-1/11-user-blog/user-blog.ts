@@ -16,9 +16,10 @@ renderBlog(users);
 // if (_blog) {
 //   blog.push(..._blog);
 // }
-// renderBlog(blog);
-const getLcPart2 = getLocalStorage();
-if (getLcPart2) {
-  blog.push(...getLcPart2);
+// renderBlog(blog)
+const getLcPart3 = getLocalStorage();
+if (getLcPart3) {
+  blog.push(...getLcPart3);
+  console.log(blog);
 }
 renderBlog(blog);

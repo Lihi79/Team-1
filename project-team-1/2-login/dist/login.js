@@ -41,7 +41,7 @@ function isValidInfo(userName, Password) {
     /////קח את המערך
     var users = JSON.parse(localStorage.getItem("user") || "[]");
     ///////תעבור יוזר יוזר ותבדוק האם השם משתמש והסיסמא הם כמו הסיסמא שיש לנו בלמעלה בפונקציה
-    var isValidInfo = users.filter(function (user) { return user.password == Password && user.userName == userName; }).length == 1;
+    var isValidInfo = users.filter(function (user) { return user.password == Password && user.userName == userName; }).length > 0;
     return isValidInfo;
 }
 function saveRegisterUserLocalStorage(registerUser) {

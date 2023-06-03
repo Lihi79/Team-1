@@ -51,7 +51,7 @@ function renderBlog(blog: Blog[]): string {
     .join(" ");
   // renderToScreen();
   // renderToScreen(blogRender, html);
-  blogRender.innerHTML = html;
+  if (blogRender) blogRender.innerHTML = html;
 
   return html;
 }

@@ -10,7 +10,7 @@ var Blog = /** @class */ (function () {
     }
     return Blog;
 }());
-var blog = getLocalStorage();
+var blog = [];
 // -----------------------------------
 function uid() {
     return "id- " + Math.random();
@@ -20,8 +20,8 @@ function handleAddItem(evt) {
     evt.preventDefault();
     var blogTitle = document.getElementById("title");
     var subTitle = document.getElementById("subtitle");
-    var imgUrl = document.getElementById("textarea");
-    var blogText = document.getElementById("imgUrl");
+    var imgUrl = document.getElementById("imgUrl");
+    var blogText = document.getElementById("textarea");
     var dateUploaded = getCurrentDate();
     var userName = localStorage.getItem("userName") || "";
     console.log(blogTitle, subTitle, imgUrl, blogText);
@@ -50,7 +50,7 @@ var signUpButton = document.querySelector("#singUp");
 var doneEditButton = document.querySelector("#doneEdit");
 ///שיופיע יוזר ניים ודייט
 // ------------------------------------------------------------
-var userNameValue = localStorage.getItem("userName");
+var userNameValue = localStorage.getItem("userName") || "";
 function renderBlog(blog) {
     var _this = this;
     var html = blog
@@ -58,7 +58,8 @@ function renderBlog(blog) {
         return "\n      <div class=\"container\">\n        <div class=\"blog\">\n          <div class=\"blog__post\">\n            <div class=\"blog__text\">\n              <h1 class=\"blog__title\" id=\"title\">" + blogs.blogTitle + "</h1>\n              <h3 class=\"blog__subtitle\" id=\"subtitle\">" + blogs.subTitle + "</h3>\n\n              <div class=\"blog__name-date\">\n                <p class=\"blog__user-name\">" + _this.userNameValue + "</p>\n                <p class=\"blog__date\" id=\"date\">" + getCurrentDate() + "</p>\n              </div>\n\n              <div class=\"blog__img\">\n                <img\n                  src=\"" + blogs.imgUrl + "\"\n                  alt=\"\"\n                  id=\"upload-img\"\n                />\n              </div>\n\n              <p class=\"blog__p\">" + blogs.blogText + "</p>\n            </div>\n          </div>\n        </div>\n      </div>\n  </body>\n    ";
     })
         .join(" ");
-    blogRender.innerHTML = html;
+    if (blogRender)
+        blogRender.innerHTML = html;
     return html;
 }
 function renderToScreen() {
@@ -72,10 +73,9 @@ function doneEdit(blog) {
     window.location.href = "../11-user-blog/11-user-blog.html";
 }
 function getLocalStorage() {
-    var getLcPart1 = localStorage.getItem("blog");
-    if (!getLcPart1)
-        throw new Error("get Local Storage is null");
+    var getLcPart1 = localStorage.getItem("blog") || "[]";
     var getLcPart2 = JSON.parse(getLcPart1);
+    console.log(getLcPart2);
     return getLcPart2;
 }
 // -------------------------------------------------

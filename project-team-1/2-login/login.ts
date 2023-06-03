@@ -54,7 +54,7 @@ function isValidInfo(userName, Password) {
   const isValidInfo =
     users.filter(
       (user) => user.password == Password && user.userName == userName
-    ).length == 1;
+    ).length > 0;
 
   return isValidInfo;
 }

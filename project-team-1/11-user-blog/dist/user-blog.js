@@ -13,9 +13,10 @@ renderBlog(users);
 // if (_blog) {
 //   blog.push(..._blog);
 // }
-// renderBlog(blog);
-var getLcPart2 = getLocalStorage();
-if (getLcPart2) {
-    blog.push.apply(blog, getLcPart2);
+// renderBlog(blog)
+var getLcPart3 = getLocalStorage();
+if (getLcPart3) {
+    blog.push.apply(blog, getLcPart3);
+    console.log(blog);
 }
 renderBlog(blog);

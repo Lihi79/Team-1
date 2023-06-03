@@ -13,7 +13,7 @@ class Blog {
     this.uid = uid();
   }
 }
-const blog: Blog[] = getLocalStorage();
+const blog: Blog[] = [];
 // -----------------------------------
 
 function uid(): string {
@@ -25,8 +25,8 @@ function handleAddItem(evt) {
 
   const blogTitle = document.getElementById("title") as HTMLInputElement;
   const subTitle = document.getElementById("subtitle") as HTMLInputElement;
-  const imgUrl = document.getElementById("textarea") as HTMLInputElement;
-  const blogText = document.getElementById("imgUrl") as HTMLInputElement;
+  const imgUrl = document.getElementById("imgUrl") as HTMLInputElement;
+  const blogText = document.getElementById("textarea") as HTMLInputElement;
 
   const dateUploaded = getCurrentDate();
   const userName = localStorage.getItem("userName") || "";
@@ -71,7 +71,7 @@ const signUpButton = document.querySelector("#singUp") as HTMLButtonElement;
 const doneEditButton = document.querySelector("#doneEdit") as HTMLButtonElement;
 ///שיופיע יוזר ניים ודייט
 // ------------------------------------------------------------
-const userNameValue = localStorage.getItem("userName");
+const userNameValue = localStorage.getItem("userName") || "";
 function renderBlog(blog: Blog[]): string {
   const html: string = blog
     .map((blogs) => {
@@ -105,8 +105,7 @@ function renderBlog(blog: Blog[]): string {
     `;
     })
     .join(" ");
-
-  blogRender.innerHTML = html;
+  if (blogRender) blogRender.innerHTML = html;
 
   return html;
 }
@@ -124,10 +123,10 @@ function doneEdit(blog: Blog) {
   window.location.href = "../11-user-blog/11-user-blog.html";
 }
 
-function getLocalStorage(): Blog[] | undefined {
-  const getLcPart1 = localStorage.getItem("blog");
-  if (!getLcPart1) throw new Error("get Local Storage is null");
+function getLocalStorage(): Blog[] {
+  const getLcPart1 = localStorage.getItem("blog") || "[]";
   const getLcPart2 = JSON.parse(getLcPart1);
+  console.log(getLcPart2);
   return getLcPart2;
 }
 
