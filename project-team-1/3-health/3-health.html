@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./dist/health.css" />
     <link rel="stylesheet" href="../2-login/dist/login.css" />
-    <link rel="stylesheet" href="../1-home/dist/index.css" />
+<link rel="stylesheet" href="../navbar-scss/navbar.css">
 
     <script src="../1-home/dist/index.js" defer></script>
 
@@ -17,9 +17,15 @@
     <script src="../10-edit-screen/dist/controller.js" defer></script>
     <script src="../11-user-blog/dist/user-blog.js" defer></script>
 
-    <title>Health Blog</title>
+    <title>Health</title>
   </head>
   <body>
+    <div class="about-strip">
+      <h3 class="about-strip__text">
+        The place where you can share news, articles and ideas
+      </h3>
+    </div>
+
     <div class="container-header">
       <div class="container-header__header">
         <img
@@ -29,13 +35,28 @@
         />
       </div>
       <div class="container-header__nav-main">
-        <a
-          href="../1-home/1-index.html"
-          class="container-header__nav-main__links-main"
-          >Home</a
-        >
+        <a href="" class="container-header__nav-main__links-main">Home</a>
 
         <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
+          <option disabled="disabled" selected>Category</option>
+          <option class="option" value="../6-sport/6-sport.html">Sport</option>
+          <option class="option" value="../3-health/3-health.html">
+            Health
+          </option>
+          <option class="option" value="../5-finance/5-finance.html">
+            Finance
+          </option>
+          <option class="option" value="../4-tech/4-tech.html">Tech</option>
+          <option class="option" value="../7-politics/7-politics.html">
+            Politics
+          </option>
+        </select>
+        <!-- <select
           name="category"
           id="category"
           size="1"
@@ -54,8 +75,9 @@
           <option class="option" value="../7-politics/7-politics.html">
             Politics
           </option>
-        </select>
+        </select> -->
 
+        <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
         <a
           href="../8-about/8-about.html"
           class="container-header__nav-main__links-main"
@@ -67,7 +89,7 @@
           href="../2-login/2-login.html"
           id="createBlog"
           class="container-header__registration__sign"
-          >Create Blog</a
+          >Edit Blog</a
         >
         <a
           href="../2-login/2-login.html"
@@ -76,21 +98,21 @@
           >Sign In</a
         >
         <a
-        href="../2-login/2-login.html"
-        id="Disconnected"
-        class="container-header__registration__sign"
-        onclick="DisconnectedUser()"
-        >Disconnected</a
-      >
+          href="../2-login/2-login.html"
+          id="Disconnected"
+          class="container-header__registration__sign"
+          onclick="DisconnectedUser()"
+          >Log Out</a
+        >
+        <div id="userRender"></div>
+      </div>
     </div>
-  </div>
 
     <div class="health-title">
       <h2>Health</h2>
     </div>
   </br>
 </br>
-  <div id="userRender"></div>
     <!-- עד כאןןןןןןן -->
     <div class="page-container">
       <div class="page-container__side-headers">
