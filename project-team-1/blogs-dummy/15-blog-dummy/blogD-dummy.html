@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../12-blog-dummy/dist/blog-dummy.css" />
+    <link rel="stylesheet" href="/1-home/dist/index.css" />
+    <link rel="stylesheet" href="/2-login/dist/login.css" />
+    <!-- <script src="../dist/validation.js" defer></script>
+    <script src="../general-TypeScript/dist/controller.js" defer></script>
+    <script src="../general-TypeScript/dist/helper.js" defer></script>
+    <script src="../general-TypeScript/dist/index.js" defer></script>
+    <script src="../general-TypeScript/dist/model.js" defer></script>
+    <script src="../general-TypeScript/dist/view.js" defer></script> -->
+
+    <title>Blog-dummy-Tech</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <div class="container-header__header">
+        <img
+          class="container-header__title"
+          src="/assets/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="container-header__nav-main">
+        <a
+          href="/1-home/1-index.html"
+          class="container-header__nav-main__links-main"
+          >Home</a
+        >
+        <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
+          <option disabled="disabled" select="selected">Choose Category</option>
+
+          <option class="option" value="/6-sport/6-sport.html">Sport</option>
+          <option class="option" value="../3-health/3-health.html">
+            Health
+          </option>
+          <option class="option" value="/5-finance/5-finance.html">
+            Finance
+          </option>
+          <option class="option" value="/4-tech/4-tech.html">Tech</option>
+          <option class="option" value="/7-politics/7-politics.html">
+            Politics
+          </option>
+        </select>
+
+        <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
+        <a
+          href="/8-about/8-about.html"
+          class="container-header__nav-main__links-main"
+          >About</a
+        >
+      </div>
+      <div class="container-header__registration">
+        <a
+          href="/2-login/2-login.html"
+          id="createBlog"
+          class="container-header__registration__sign"
+          >Create Blog-Tech</a
+        >
+        <a
+          href="/2-login/2-login.html"
+          id="signIn"
+          class="container-header__registration__sign"
+          >Sign In</a
+        >
+      </div>
+    </div>
+    <!-- nav bar end -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC1">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Why an Air Force colonel — and many other experts — are so worried
+              about the existential risk of AI
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              Fears about our ability to control powerful AI are growing.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">momi momo</p>
+              <p class="blog__date" id="date">14.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-1.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Correction, June 2, 11 am ET: An earlier version of this story
+              included an anecdote told by US Air Force Col. Tucker Hamilton in
+              a presentation at an international defense conference hosted by
+              the Royal Aeronautical Society (RAS), about an AI-enabled drone
+              that “killed” its operator in a simulation. On Friday morning, the
+              colonel told RAS that he “misspoke,” and that he was actually
+              describing a hypothetical “thought experiment,” rather than an
+              actual simulation. He said that the Air Force has not tested any
+              weaponized AI in this way, either real or simulated. This story
+              has been corrected to reflect the new context of Hamilton’s
+              remarks. At an international defense conference in London this
+              week held by the Royal Aeronautical Society (RAS), Col. Tucker
+              Hamilton, the chief of AI test and operations for the US Air
+              Force, told a funny — and terrifying — story about military AI
+              development. “We were training [an AI-enabled drone] in simulation
+              to identify and target a SAM [surface-to-air missile] threat. And
+              then the operator would say yes, kill that threat. The system
+              started realizing that while it did identify the threat at times,
+              the human operator would tell it not to kill that threat, but it
+              got its points by killing that threat. So what did it do? It
+              killed the operator. It killed the operator because that person
+              was keeping it from accomplishing its objective.” “We trained the
+              system — ‘Hey, don’t kill the operator — that’s bad. You’re gonna
+              lose points if you do that.’ So what does it start doing? It
+              starts destroying the communication tower that the operator uses
+              to communicate with the drone to stop it from killing the target.”
+              In other words, the AI was trained to destroy targets unless its
+              operator told it not to. It quickly figured out that the best way
+              to get as many points as possible was to ensure its human operator
+              couldn’t tell it not to. And so it took the operator off the
+              board. Hamilton’s comments were reported — including by Vox
+              initially — as describing an actual simulation. On Friday morning,
+              Hamilton told RAS that he was actually describing a hypothetical
+              thought experiment, saying, “We’ve never run that experiment, nor
+              would we need to in order to realize that this is a plausible
+              outcome.” He added, “Despite this being a hypothetical example,
+              this illustrates the real-world challenges posed by AI-powered
+              capability and is why the Air Force is committed to the ethical
+              development of AI.” The rise of AI fear As AI systems get more
+              powerful, the fact it’s often hard to get them to do precisely
+              what we want them to do risks going from a fun eccentricity to a
+              very scary problem. That’s one reason there were so many
+              signatories this week to yet another open letter on AI risk, this
+              one from the Center for AI Safety. The open letter is, in its
+              entirety, a single sentence: “Mitigating the risk of extinction
+              from AI should be a global priority alongside other societal-scale
+              risks such as pandemics and nuclear war.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 2 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC2">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Do we really need an app for everything?
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              Not every business needs an app. And yet.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">loli shon</p>
+              <p class="blog__date" id="date">20.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-2.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              On a flight about a year ago, I found myself in a predicament: I
+              could not pay for my customary glass of plane wine to help calm
+              the nerves. The problem wasn’t that I didn’t have cash or a credit
+              card on me but instead that I didn’t have the airline’s app, which
+              was necessary to complete the transaction. I was motivated to get
+              the plane wine, but not that motivated — I gave up somewhere
+              between downloading the app on the shoddy in-flight wifi and
+              uploading my credit card to it. So now it sits idle on my phone,
+              as do countless other apps I’ve had to get for one reason or
+              another over the years, the vast majority of which I do not want
+              or use. It really does feel like there’s an app for everything
+              these days — often for things where they’re not really needed. We
+              all managed to do business with each other for years and years
+              without having to pull out our phones at every corner. Admittedly,
+              the cultural peak of “there’s an app for that” mania was years
+              ago, at a moment when, in many cases, said apps actually proposed
+              making our lives better. But it’s been forever since many people
+              have felt enthusiastic about downloading an application; instead
+              of serving customers, apps now serve companies and have
+              transformed into a sort of necessary evil to receive some product
+              or service. The hotel has an app, the dentist has an app, the
+              restaurant down the street has an app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 3 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC3">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Should we know where our friends are at all times?
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              “I love you, now let me watch your location 24/7.”
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">roli fon</p>
+              <p class="blog__date" id="date">29.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-3.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              A few months ago, sick with a cold on a Saturday morning, feeling
+              miserable about the fact that I was stuck at home alone for the
+              weekend, I checked Find My Friends. It’s an app that comes
+              standard on iPhones these days, the same one that tracks your
+              phone or laptop or Airpods in case you lose them. But instead of
+              devices, it shows the location of your friends, or rather, their
+              phones. I tend to check Find My Friends when I want to see if
+              anyone’s nearby and might be up for a spontaneous hang, or else
+              just to see their little bubbles in some kind of bizarre exercise
+              in virtual closeness. But that morning I noticed one of my
+              friends’ bubbles wasn’t where it usually was. It was miles away,
+              in a neighborhood where neither of us knew anyone. She was, I
+              assumed, at a random person’s apartment where, we can go ahead and
+              assume, she’d slept over the night before. It probably says a lot
+              about me that my first thought was, “Good for her!” and not, “Is
+              she okay?” considering the fact that for many women, the point of
+              location sharing with their friends is to ensure safety — that if
+              they share their location before heading out on a solo trip or a
+              first date, they’ll know that at least one person will know where
+              to find them if the worst happens. But I’m more interested in the
+              knotty social questions that mass location sharing forces us all
+              to ask of each other and ourselves: How do we decide who to share
+              — and not share — our location with? When does looking at your
+              friends’ bubbles go from cute to creepy? Or, in my case, how weird
+              is it to ask my friend for juicy details on her one-night stand?
+              Friends sharing their real-time locations with each other is a
+              pretty recent facet of modern life. Though apps like Foursquare
+              have been around since the dawn of the smartphone age, mass
+              location sharing was only introduced around 2017, when Google
+              rolled out location sharing on its Maps function and Snapchat
+              launched Snap Map, allowing users to see where their contacts were
+              at any moment. By the time Apple merged the Find My iPhone and
+              Find My Friends apps into a single app called “Find My” in 2019,
+              location sharing had become just another type of social
+              networking, despite the fact that for many people, it still feels
+              a little icky. “As a non-location sharer, I see it as the natural
+              conclusion of the digital-age expectation that we’re always
+              online, always available, and have no reasonable expectation of a
+              private, offline life,” explains Scott Nover, a tech reporter at
+              Quartz. “We’re no longer just putting up an ‘away message,’ or
+              occasionally ‘checking in’ somewhere on social media, but
+              broadcasting our whereabouts at all times.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 4 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC4">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              What’s new in the world of generative AI?
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              ello, friends! Much like yourself, the TechCrunch+ crew has been
+              working to get ahead on all things generative AI. With the rapid
+              evolution of AI models, it’s hard to keep up.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">roli fon</p>
+              <p class="blog__date" id="date">29.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-4.jpeg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              But don’t worry. TechCrunch+ has your back. Building off
+              TechCrunch’s regular drumbeat of AI coverage, including sheafs of
+              news from Google and Microsoft in recent weeks, we’re going deeper
+              into the weeds concerning how startups can take advantage of the
+              new technologies. Here’s a smattering of what we’ve published
+              lately on this critical topic: The investor angle: Given the
+              endless news around the boom in AI tech and the myriad roles it is
+              now playing inside software products big and small, you’d expect
+              venture capitalists to be pouring capital into AI startups. And
+              yet, recent data indicates that venture totals in this space are
+              far more modest than many anticipated. Is the slow venture climate
+              too strong a force for even AI-focused startups to buck? We spoke
+              to a few investors about the trend, and it appears that there is
+              some caution about getting in too deep, too quickly. How founders
+              are getting ahead: Founders are putting AI into all sorts of
+              products and services. Heck, one startup is even using AI to help
+              folks learn how to be more socially intelligent. New artificial
+              intelligence tools are being used in internal software as well as
+              companies work to improve developer operations. Startups building
+              to support AI-related work are also making noise, such as
+              SkyFlow’s privacy tech to support companies that want to keep key
+              data out of large language models. And there’s so much more going
+              on: We’ve looked at retail data + AI, what chance startups will
+              have against majors in the AI race, how AI is the least of
+              edtech’s worries, and the battle between open and closed source AI
+              models that founders might have to choose between. Big Tech’s big
+              bets: Major tech companies are hard at work competing with
+              startups for the crown of ‘who can be the busiest bee in AI.’ From
+              rewriting the rules of search, to Nvidia reaching a $1 trillion
+              market cap and even Salesforce getting in on the fun, there’s no
+              limit to the sheer quantity of work being done at large tech firms
+              to get ahead and stay ahead.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 5 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC5">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Competition concerns in the age of AI
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              ntitrust is the engine of free enterprise: it shapes countless
+              lines of commerce, from tech to toilets, beer to baseball and
+              healthcare to hardware. Antitrust drives price, quality, variety,
+              innovation and opportunity.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">roli fon</p>
+              <p class="blog__date" id="date">29.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-5.jpeg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Today, artificial intelligence is rapidly changing how businesses
+              sense, reason and adapt in the market. Across every industry,
+              companies are leveraging machine learning to derive valuable
+              insights without extensive employee involvement. But these
+              groundbreaking capabilities are creating an upheaval in how
+              companies engage with competitors and consumers. Experienced
+              competition and consumer protection lawyers can help companies
+              capitalize on the opportunities AI presents while navigating the
+              terra nova of regulatory and litigation risk. Although it is
+              incorrect to approach AI as a black box, the complexity of AI
+              systems can make reasoning opaque. This means linkages between AI
+              outputs and rational business justifications risk being obscured
+              or even lost entirely. Yet regulators are unlikely to excuse
+              consumer and competitive concerns merely because an organization
+              cannot explain why certain actions were taken and others were not.
+              Legal exposure exists under the Sherman Antitrust Act, Federal
+              Trade Commission Act (FTC), Robinson-Patman Act, as well as state
+              antitrust and consumer protection laws. By implementing policies
+              and processes that preserve human control and accountability,
+              organizations can minimize legal exposure and avoid unintended
+              consequences. A proactive and customized approach is critical. AI
+              affects competition and consumers in countless ways, including
+              when used for core business functions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 6 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC6">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Meta Announces a New Quest Headset, Because Apple
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              The $500 Meta Quest 3 made its debut today, mere days before Apple
+              is rumored to show off its virtual reality headset.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">roli fon</p>
+              <p class="blog__date" id="date">29.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-6.jpeg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              IF YOU’RE IN the business of selling VR or mixed reality headsets,
+              the time to announce your new product is … now. Especially if
+              you’re Meta. This morning the company showed off the Meta Quest 3,
+              which is 40 percent thinner than the previous headset and contains
+              twice the processing power, thanks to a new Snapdragon chipset
+              from Qualcomm. Also, the hand controllers have been redesigned to
+              improve their ergonomics. The new headset will go on sale “this
+              fall” starting at $500. In a blog post, the company teased that
+              more details about the Quest 3 would be revealed at Meta Connect
+              on September 27. The Meta Quest 3 follows—and effectively
+              replaces—the Meta Quest 2, which became available in the fall of
+              2020. It’s been received well in the VR headset market as a
+              relatively inexpensive ($400) stand-alone VR headset with a
+              high-resolution display and what’s known as “inside-out” tracking.
+              The Quest 2’s price will go down to $300 on June 4, and the older
+              headset will get a small performance bump along with the price
+              drop. Bloomberg reporter Mark Gurman scooped Meta’s news earlier
+              this week, after he was able to get his hands on a prototype of
+              the new Meta Quest 3. The Bloomberg report highlighted the
+              headset’s improved video pass-through capabilities, which uses
+              external cameras on the headset to show wearers what’s going on in
+              the real world (versus using clear lenses with some digital
+              imagery overlaid, which is more often described as augmented
+              reality). Gurman also noted that the device, which had been
+              codenamed Eureka, is “far thinner and lighter than the existing
+              Quest 2 from 2020.” Meta’s headset news comes ahead of Apple’s
+              WWDC software event next week, where the company will reportedly
+              reveal a years-in-the-making face computer of its own. Apple has
+              been meeting with app developers in recent months to entice them
+              to build experiences for what the company considers a new
+              platform. This would be the first major launch of a new hardware
+              product line for Apple since it introduced the Apple Watch in
+              2015. (Apple also introduced the HomePod speaker in 2017, but that
+              wasn’t an entirely new platform for apps.) Anticipation for
+              Apple’s new product is so heightened that other companies are
+              scrambling to position their wares ahead of next week. Earlier
+              this week, PC maker Lenovo said its enterprise-focused
+              ThinkReality VRX headset is now shipping, at $1,299. Magic Leap,
+              which has been working on augmented reality technology since 2010
+              and holds thousands of patents around optical technology and AR/VR
+              manufacturing processes, has been meeting with press to
+              demonstrate its Magic Leap 2 headset. The headset is thinner and
+              lighter, with improved optics, than its predecessor, the Magic
+              Leap One; like the Lenovo headset, it’s aimed squarely at
+              enterprise customers. The Meta Quest 3, on the other hand, is more
+              of a consumer-friendly device. The headset was announced just
+              hours before the company’s Meta Quest Gaming Showcase, an online
+              event which shows off the library of games and experiences
+              available for Meta’s platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>

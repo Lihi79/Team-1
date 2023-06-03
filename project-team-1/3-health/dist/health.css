@@ -97,7 +97,7 @@ footer {
 .page-container__most-viewed__image {
   width: 325px;
   height: 200px;
-  background-image: url("https://images.pexels.com/photos/54326/runners-male-sport-run-54326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("/project-team-1/assets/Finance- main-page.jpg");
   margin-top: 60px;
 }
 .page-container__most-viewed__text {
@@ -128,7 +128,7 @@ footer {
 .page-container__side-headers__container .page-container__side-headers__image {
   height: 150px;
   width: 180px;
-  background-image: url("https://images.pexels.com/photos/54326/runners-male-sport-run-54326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("/project-team-1/assets/Finance- main-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

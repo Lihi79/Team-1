@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../12-blog-dummy/dist/blog-dummy.css" />
+    <link rel="stylesheet" href="/1-home/dist/index.css" />
+    <link rel="stylesheet" href="/2-login/dist/login.css" />
+
+    <!-- <script src="../dist/validation.js" defer></script>
+    <script src="../general-TypeScript/dist/controller.js" defer></script>
+    <script src="../general-TypeScript/dist/helper.js" defer></script>
+    <script src="../general-TypeScript/dist/index.js" defer></script>
+    <script src="../general-TypeScript/dist/model.js" defer></script>
+    <script src="../general-TypeScript/dist/view.js" defer></script> -->
+
+    <title>Blog-dummy-Finance</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <div class="container-header__header">
+        <img
+          class="container-header__title"
+          src="/assets/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="container-header__nav-main">
+        <a
+          href="/1-home/1-index.html"
+          class="container-header__nav-main__links-main"
+          >Home</a
+        >
+        <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
+          <option disabled="disabled" select="selected">Choose Category</option>
+
+          <option class="option" value="/6-sport/6-sport.html">Sport</option>
+          <option class="option" value="/3-health/3-health.html">Health</option>
+          <option class="option" value="/5-finance/5-finance.html">
+            Finance
+          </option>
+          <option class="option" value="/4-tech/4-tech.html">Tech</option>
+          <option class="option" value="/7-politics/7-politics.html">
+            Politics
+          </option>
+        </select>
+
+        <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
+        <a
+          href="/8-about/8-about.html"
+          class="container-header__nav-main__links-main"
+          >About</a
+        >
+      </div>
+      <div class="container-header__registration">
+        <a
+          href="/2-login/2-login.html"
+          id="createBlog"
+          class="container-header__registration__sign"
+          >Create Blog</a
+        >
+        <a
+          href="/2-login/2-login.html"
+          id="signIn"
+          class="container-header__registration__sign"
+          >Sign In</a
+        >
+      </div>
+    </div>
+    <!-- nav bar end -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeA">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              A blog that “helps physicians conquer their finances.”
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              How his blog makes money: It generates leads to his financial
+              planning business.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Ryan Inman</p>
+              <p class="blog__date" id="date">14.05.2021</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-1.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson/challenge: "The toughest part is managing the
+              growth and bringing on team members. I've had to really understand
+              search engine optimization (SEO)—still working on it!—and I never
+              thought I'd have to try and be an expert in all the 'other stuff'
+              other than financial planning. The key is being authentic, not
+              worrying about your 'numbers,' and just putting out the best
+              content possible."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 2 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeB">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              A blog that “talks about the complete picture regarding
+              entrepreneurship and personal finance, not just the sexy side most
+              focus on.”
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              How his blog makes money: Nisall’s blog primarily drives traffic
+              to his accounting and tax business, though he says he makes some
+              income from ads.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Eric Nisall</p>
+              <p class="blog__date" id="date">20.05.2020</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-2.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson: "The most important thing I figured out and
+              impress upon others is to go to the right people— attorneys for
+              incorporating/LLC questions, accountants for tax questions, etc.,
+              and not random online people in Facebook groups or websites. I
+              also think a big key is to not look at what others are doing or
+              making because each person and business is unique. What works for
+              one person/business isn't always going to work for another, and
+              oftentimes people only talk about the sunshine and rainbows
+              without mentioning the negatives like self-employment taxes, time
+              investment, etc."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 3 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeC">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">“We make investing easy”</h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              How his blog makes money: Ads, affiliate marketing, and sponsored
+              posts.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Kevin Panitch</p>
+              <p class="blog__date" id="date">29.12.2019</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-3.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson/challenge: "The biggest challenge also happens to
+              be the piece I like most about running Just Start
+              Investing—everything is on you. I own every decision, which is
+              both empowering and stressful. Over the past few months, I've
+              found it useful to type up a simple one-line mission statement:
+              Make investing (and personal finance) easy. If my answer or
+              solution to a problem helps drive that mission, then I know I am
+              on the right track. It helps keep the stress down with all these
+              daily decisions! "If you're running your own business, my other
+              piece of advice would be to just keep going. Just Start Investing
+              is nowhere close to where I want it to be, and sometimes the
+              amount of work that needs to get done can be daunting. But I just
+              keep chipping away, every day, because it's fun and I want to see
+              where I can take it."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 4 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeD">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              “A place for women to talk about money without shame or blame.””
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              How her blog makes money: Digital products, online events,
+              advertising, affiliate marketing, and sponsored posts.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Chelsea Brennan</p>
+              <p class="blog__date" id="date">09.03.2017</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-4.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson/challenge: "My biggest struggle as a business owner
+              has been learning when to dig in on an idea until it works, when
+              to pivot, and when to pick up a new concept completely. As an
+              entrepreneur, you have so many options, and the roller coaster of
+              'This is going to be awesome' and 'What was I thinking?' can
+              sometimes give you whiplash. It's been important to learn how to
+              step back, ignore what other businesses are doing, and evaluate
+              our progress. What is working? What isn't? What does the audience
+              think? Then I make choices based on what I'm actively seeing,
+              without letting emotion or 'shiny object syndrome' take over."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 5 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeE">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">use your money as a tool</h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              helping people use their money as a tool to live a life they love
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Eric Roberge</p>
+              <p class="blog__date" id="date">27.01.2015</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-5.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson/challenge: "One major factor in our success is the
+              fact that I was extremely cognizant of our profit margin for a
+              long, long time. Most independent advisors have profit margins
+              around 30%, but until last year we were consistently at 80% or
+              90%. Staying lean has allowed me to be really flexible and forced
+              me to be innovative. It also has allowed me to build a solid
+              foundation for my personal finances, so that now, as we look to
+              reinvest more in the business and know that our profit margin will
+              start dropping (at least to some degree) as we hire and scale, I
+              feel confident that we can truly afford to take those risks that
+              are necessary to get the business to the next level. It's much
+              more of a calculated risk because we're not putting ourselves in a
+              do-or-die situation, and that allows for clearer thinking and less
+              emotional/irrational decision-making.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 6 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeF">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">“Stock Market</h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              The Stock Market Will Pick the Winners For You
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Ben Carlson</p>
+              <p class="blog__date" id="date">27.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-6.jpeg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              The AI craze is in full effect so everyone is trying to figure out
+              who the winners will be. Maybe it will be the upstarts, some new
+              start-up that gives you your own personal assistant in your ear,
+              on your iPhone and at your desk. Or maybe it will be the big tech
+              players who have gobs of money to throw at AI like Microsoft,
+              Google and Facebook. Maybe it’s a company like NVIDIA that
+              supplies the chips and software. As the old saying goes: don’t dig
+              for the gold, sell the picks and shovels.1 I’m sure there are
+              plenty of people out there with all kinds of useful and useless
+              strategies for picking the winners in this space. My stance on
+              this subject is that it‘s hard to pick the winners. That may sound
+              like a copout but it’s the truth. There was a story in Bloomberg
+              this week about how Cathie Wood’s ARKK fund missed out2 on the
+              mammoth gains in NVIDIA this year: Cathie Wood’s flagship
+              exchange-traded fund closed out its Nvidia Corp. stake in early
+              January. Then, came the artificial intelligence frenzy that sent
+              the stock and its big tech peers on a tear. The chipmaker has
+              added around $560 billion in market capitalization since Wood
+              dumped her shares — with the last $200 billion of that surge
+              coming overnight after the company handily beat earnings. Although
+              Wood holds Nvidia across several of her smaller funds, investors
+              in the flagship ARK Innovation ETF (ticker ARKK) have mostly been
+              left out of this year’s blistering 159.90% rally. In February,
+              when Nvidia traded for $234 a share, roughly 50 times forward
+              earnings, Wood said the valuation was “very high.” A lot of people
+              dunked on this news because an innovation fund missed out on one
+              of the biggest beneficiaries of the highest innovation potential
+              we’ve seen in years. My takeaway from this is how difficult it can
+              be to spot these trends in advance. Every tech person on the
+              planet has been pushing crypto, Web3 and the metaverse incessantly
+              for the past 3-4 years. Then ChatGPT seemingly comes out of
+              nowhere, gets 100+ million users and AI takes the tech world by
+              storm. Out of all the innovations we’ve been beaten over the head
+              with during this cycle, no one was really talking about the
+              potential for AI yet here we are. This stuff is not easy. So
+              what’s my strategy? I prefer to let the indexes pick the winners
+              for me. Sure, that’s boring and it’s not going to get me rich
+              overnight but I have time. And I know for sure that the biggest
+              winners from AI are eventually going to find their way to the top.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
