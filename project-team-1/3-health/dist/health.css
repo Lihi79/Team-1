@@ -11,6 +11,10 @@ body {
   background: linear-gradient(180deg, #f6f7f8 0%, #869096 100%);
 }
 
+.none {
+  display: none;
+}
+
 .container-header {
   display: flex;
   justify-content: space-between;

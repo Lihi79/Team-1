@@ -17,6 +17,9 @@ body {
 
 //// NAV BAR START ////
 
+.none {
+  display: none;
+}
 .container-header {
   display: flex;
   justify-content: space-between;
