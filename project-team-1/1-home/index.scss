@@ -13,81 +13,81 @@ body {
 }
 
 //// NAV BAR START ////
-#userRender {
-  // height: 50px;
-  width: auto;
-  background-color: none;
-  color: var(--btn-color);
-  font-size: larger;
-  text-align: center;
+// #userRender {
+//   // height: 50px;
+//   width: auto;
+//   background-color: none;
+//   color: var(--btn-color);
+//   font-size: larger;
+//   text-align: center;
 
-  margin-left: 20px;
-  // margin-top: 9px;
-}
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 100px;
-  // height: 250px;
-  background-color: var(--secondary-color);
+//   margin-left: 20px;
+//   // margin-top: 9px;
+// }
+// .container-header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 0 100px;
+//   // height: 250px;
+//   background-color: var(--secondary-color);
 
-  &__title {
-    width: 300px;
-    padding-left: 70px;
-  }
-  &__nav-main {
-    display: flex;
-    gap: 30px;
-  }
-  &__nav-main__links-main {
-    color: var(--main-bg-color);
-    font-size: 1.3rem;
-    text-decoration: none;
-    padding: 15px;
+//   &__title {
+//     width: 300px;
+//     padding-left: 70px;
+//   }
+//   &__nav-main {
+//     display: flex;
+//     gap: 30px;
+//   }
+//   &__nav-main__links-main {
+//     color: var(--main-bg-color);
+//     font-size: 1.3rem;
+//     text-decoration: none;
+//     padding: 15px;
 
-    &:hover {
-      background-color: var(--hover);
-      color: var(--secondary-color);
-    }
-  }
+//     &:hover {
+//       background-color: var(--hover);
+//       color: var(--secondary-color);
+//     }
+//   }
 
-  &__registration {
-    padding-right: 50px;
-    display: flex;
-    // flex-direction: row-reverse;
-    align-items: center;
-  }
-  &__registration__sign {
-    color: var(--main-bg-color);
-    font-size: 1.1rem;
-    text-decoration: none;
-    padding: 10px;
-    border: var(--hover) solid 1px;
-    margin-left: 5px;
-    &:hover {
-      background-color: var(--hover);
-    }
-  }
-}
+//   &__registration {
+//     padding-right: 50px;
+//     display: flex;
+//     // flex-direction: row-reverse;
+//     align-items: center;
+//   }
+//   &__registration__sign {
+//     color: var(--main-bg-color);
+//     font-size: 1.1rem;
+//     text-decoration: none;
+//     padding: 10px;
+//     border: var(--hover) solid 1px;
+//     margin-left: 5px;
+//     &:hover {
+//       background-color: var(--hover);
+//     }
+//   }
+// }
 
-select {
-  width: 150px;
-  background-color: var(--secondary-color);
-  color: var(--main-bg-color);
-  font-size: 1.3rem;
-  border: none;
-  cursor: pointer;
+// select {
+//   width: 150px;
+//   background-color: var(--secondary-color);
+//   color: var(--main-bg-color);
+//   font-size: 1.3rem;
+//   border: none;
+//   cursor: pointer;
 
-  &:focus,
-  &:hover {
-    background-color: var(--hover);
-  }
-  option {
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-  }
-}
+//   &:focus,
+//   &:hover {
+//     background-color: var(--hover);
+//   }
+//   option {
+//     color: var(--secondary-color);
+//     font-size: 1.1rem;
+//   }
+// }
 
 //// NAV BAR END ////
 

@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  padding: 20px 100px;
   background-color: var(--secondary-color);
 }
 .container-header__title {
@@ -29,8 +29,8 @@
   padding: 15px;
 }
 .container-header__nav-main__links-main:hover {
-  background-color: var(--hover);
-  color: var(--secondary-color);
+  transition: color 0.2s ease-in-out;
+  color: var(--hover);
 }
 .container-header__registration {
   padding-right: 50px;
@@ -46,6 +46,7 @@
   margin-left: 5px;
 }
 .container-header__registration__sign:hover {
+  transition: background-color 0.2s ease-in-out;
   background-color: var(--hover);
 }
 
@@ -58,6 +59,7 @@ select {
   cursor: pointer;
 }
 select:focus, select:hover {
+  transition: background-color 0.2s ease-in-out;
   background-color: var(--hover);
 }
 select option {
