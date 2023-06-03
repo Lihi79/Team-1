@@ -15,70 +15,6 @@ body {
   );
 }
 
-//// NAV BAR START ////
-
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 95px;
-  background-color: var(--secondary-color);
-
-  &__title {
-    width: 300px;
-    padding-left: 70px;
-  }
-  &__nav-main {
-    display: flex;
-    gap: 30px;
-  }
-  &__nav-main__links-main {
-    color: var(--main-bg-color);
-    font-size: 1.3rem;
-    text-decoration: none;
-    padding: 15px;
-
-    &:hover {
-      background-color: var(--hover);
-      color: var(--secondary-color);
-    }
-  }
-
-  &__registration {
-    padding-right: 50px;
-  }
-  &__registration__sign {
-    color: var(--main-bg-color);
-    font-size: 1.1rem;
-    text-decoration: none;
-    padding: 10px;
-    border: var(--hover) solid 1px;
-    margin-left: 5px;
-    &:hover {
-      background-color: var(--hover);
-    }
-  }
-}
-
-select {
-  width: 150px;
-  background-color: var(--secondary-color);
-  color: var(--main-bg-color);
-  font-size: 1.3rem;
-  border: none;
-  cursor: pointer;
-
-  &:focus,
-  &:hover {
-    background-color: var(--hover);
-  }
-  option {
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-  }
-}
-//// NAV BAR END ////
-
 footer {
   display: flex;
   height: 150px;
@@ -115,6 +51,8 @@ footer {
       margin-top: 30px;
       &__h {
         font-size: 2rem;
+        text-decoration: none;
+        color: var(--secondary-color);
       }
       &__p {
         line-height: 30px;
@@ -155,6 +93,9 @@ footer {
         height: 107px;
         .page-container__side-headers__text__h {
           font-size: 1.5rem;
+          text-decoration: none;
+          color: black;
+          font-weight: 700;
         }
         .page-container__side-headers__text__p {
           line-height: 20px;

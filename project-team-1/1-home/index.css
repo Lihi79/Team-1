@@ -33,7 +33,7 @@ body {
 }
 .hot-topic__text {
   font-size: 1.5rem;
-  color: var(--subtitle);
+  color: #ff801f;
 }
 
 .grid-container-main {

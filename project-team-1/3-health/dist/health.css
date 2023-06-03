@@ -11,62 +11,6 @@ body {
   background: linear-gradient(180deg, #f6f7f8 0%, #869096 100%);
 }
 
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 95px;
-  background-color: var(--secondary-color);
-}
-.container-header__title {
-  width: 300px;
-  padding-left: 70px;
-}
-.container-header__nav-main {
-  display: flex;
-  gap: 30px;
-}
-.container-header__nav-main__links-main {
-  color: var(--main-bg-color);
-  font-size: 1.3rem;
-  text-decoration: none;
-  padding: 15px;
-}
-.container-header__nav-main__links-main:hover {
-  background-color: var(--hover);
-  color: var(--secondary-color);
-}
-.container-header__registration {
-  padding-right: 50px;
-}
-.container-header__registration__sign {
-  color: var(--main-bg-color);
-  font-size: 1.1rem;
-  text-decoration: none;
-  padding: 10px;
-  border: var(--hover) solid 1px;
-  margin-left: 5px;
-}
-.container-header__registration__sign:hover {
-  background-color: var(--hover);
-}
-
-select {
-  width: 150px;
-  background-color: var(--secondary-color);
-  color: var(--main-bg-color);
-  font-size: 1.3rem;
-  border: none;
-  cursor: pointer;
-}
-select:focus, select:hover {
-  background-color: var(--hover);
-}
-select option {
-  color: var(--secondary-color);
-  font-size: 1.5rem;
-}
-
 footer {
   display: flex;
   height: 150px;
@@ -106,6 +50,8 @@ footer {
 }
 .page-container__most-viewed__text__h {
   font-size: 2rem;
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 .page-container__most-viewed__text__p {
   line-height: 30px;
@@ -142,6 +88,9 @@ footer {
 }
 .page-container__side-headers__container .page-container__side-headers__text .page-container__side-headers__text__h {
   font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 .page-container__side-headers__container .page-container__side-headers__text .page-container__side-headers__text__p {
   line-height: 20px;
