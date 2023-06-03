@@ -14,7 +14,7 @@ function uid(): string {
   return `id- ${Math.random()}`;
 }
 
-/////אם אורח יתן לו להכנס לדף הבית ורק לראות את הדברים
+/////אם אורח תן לו להכנס לדף הבית ורק לראות את הדברים
 /////
 const userRender = document.querySelector("#userRender") as HTMLDivElement;
 const signInBtn = document.getElementById(
@@ -22,7 +22,6 @@ const signInBtn = document.getElementById(
 ) as HTMLInputElement;
 signInBtn?.addEventListener("click", (event) => {
   signIn(event);
-  alert("ËDEDEDED");
 });
 function signIn(evt) {
   evt.preventDefault();
@@ -37,11 +36,11 @@ function signIn(evt) {
     new RegisteredUser(loginName.value, loginPassword.value)
   );
   if (isValidInfo(loginName.value, loginPassword.value)) {
-    alert("goooood");
+    alert("Successfully logged in");
     window.location.href = "../1-home/1-index.html";
     localStorage.setItem("userName", loginName.value);
   } else {
-    alert("bad ");
+    alert("No user found. Try again");
   }
 
   saveRegisterUserLocalStorage(registerUsersArray);

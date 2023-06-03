@@ -53,7 +53,6 @@ var doneEditButton = document.querySelector("#doneEdit");
 var userNameValue = localStorage.getItem("userName");
 function renderBlog(blog) {
     var _this = this;
-    alert("ef");
     var html = blog
         .map(function (blogs) {
         return "\n      <div class=\"container\">\n        <div class=\"blog\">\n          <div class=\"blog__post\">\n            <div class=\"blog__text\">\n              <h1 class=\"blog__title\" id=\"title\">" + blogs.blogTitle + "</h1>\n              <h3 class=\"blog__subtitle\" id=\"subtitle\">" + blogs.subTitle + "</h3>\n\n              <div class=\"blog__name-date\">\n                <p class=\"blog__user-name\">" + _this.userNameValue + "</p>\n                <p class=\"blog__date\" id=\"date\">" + getCurrentDate() + "</p>\n              </div>\n\n              <div class=\"blog__img\">\n                <img\n                  src=\"" + blogs.imgUrl + "\"\n                  alt=\"\"\n                  id=\"upload-img\"\n                />\n              </div>\n\n              <p class=\"blog__p\">" + blogs.blogText + "</p>\n            </div>\n          </div>\n        </div>\n      </div>\n  </body>\n    ";

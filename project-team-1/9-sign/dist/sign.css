@@ -66,8 +66,7 @@ input {
 }
 
 .form-class__p {
-  text-align: left;
-  font-size: 13px;
+  text-align: center;
 }
 .form-class a {
   text-decoration: none;

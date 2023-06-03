@@ -30,7 +30,6 @@ function comparePassword(password, comparePassword) {
 const signUpButton = document.getElementById("signUp") as HTMLElement;
 signUpButton?.addEventListener("click", (event) => {
   signUp(event);
-  alert("ËDEDEDED");
 });
 
 function signUp(evt) {

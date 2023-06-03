@@ -23,7 +23,6 @@ function comparePassword(password, comparePassword) {
 var signUpButton = document.getElementById("signUp");
 signUpButton === null || signUpButton === void 0 ? void 0 : signUpButton.addEventListener("click", function (event) {
     signUp(event);
-    alert("ËDEDEDED");
 });
 function signUp(evt) {
     evt.preventDefault();

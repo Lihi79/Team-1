@@ -14,17 +14,21 @@ body {
 
 //// NAV BAR START ////
 #userRender {
-  height: 50px;
-  width: 111px;
-  background-color: aqua;
+  // height: 50px;
+  width: auto;
+  background-color: none;
+  color: var(--btn-color);
+  font-size: larger;
+  text-align: center;
+
   margin-left: 20px;
-  margin-top: 9px;
+  // margin-top: 9px;
 }
 .container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
+  // height: 250px;
   background-color: var(--secondary-color);
 
   &__title {
@@ -49,6 +53,9 @@ body {
 
   &__registration {
     padding-right: 50px;
+    display: flex;
+    // flex-direction: row-reverse;
+    align-items: center;
   }
   &__registration__sign {
     color: var(--main-bg-color);
@@ -88,20 +95,20 @@ select {
   justify-content: center;
   align-items: center;
   background-color: #ccd2d6;
-  height: 50px;
+  height: 30px;
   &__text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--secondary-color);
   }
 }
 
 .hot-topic {
   height: 50px;
-  //   background-color: aquamarine;
-  margin-left: 150px;
+  margin-left: 238px;
   margin-top: 100px;
   &__text {
     font-size: 1.5rem;
+    color: var(--subtitle);
   }
 }
 

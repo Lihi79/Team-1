@@ -19,6 +19,12 @@
     <title>Home Blog</title>
   </head>
   <body>
+    <div class="about-strip">
+      <h3 class="about-strip__text">
+        The place where you can share news, articles and ideas
+      </h3>
+    </div>
+
     <div class="container-header">
       <div class="container-header__header">
         <img
@@ -36,7 +42,7 @@
           size="1"
           onchange="window.location.href=this.value;"
         >
-          <option disabled="disabled" selected>Choose Category</option>
+          <option disabled="disabled" selected>Category</option>
           <option class="option" value="../6-sport/6-sport.html">Sport</option>
           <option class="option" value="../3-health/3-health.html">
             Health
@@ -82,7 +88,7 @@
           href="../2-login/2-login.html"
           id="createBlog"
           class="container-header__registration__sign"
-          >Create Blog</a
+          >Edit Blog</a
         >
         <a
           href="../2-login/2-login.html"
@@ -95,25 +101,20 @@
           id="Disconnected"
           class="container-header__registration__sign"
           onclick="DisconnectedUser()"
-          >Disconnected</a
+          >Log Out</a
         >
+        <div id="userRender"></div>
       </div>
     </div>
 
     <!-- nav bar end -->
-
-    <div class="about-strip">
-      <h3 class="about-strip__text">
-        The place where you can share news, articles and ideas
-      </h3>
-    </div>
 
     <!-- <div id="userProfile">
       <div class="userInfo">
         <p id="showUserName"></p>
       </div>
     </div> -->
-    <div id="userRender"></div>
+    <!-- <div id="userRender"></div> -->
     <!-- <div>
   <div class="item1" ></div>
   <div class="item2"></div>

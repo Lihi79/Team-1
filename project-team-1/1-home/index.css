@@ -9,16 +9,24 @@ body {
   background-color: var(--main-bg-color);
   font-family: "IBM Plex Sans", sans-serif;
 }
-#userRender {
-  height: 50px;
-  width: 50px;
-  background-color: aqua;
+
+.none {
+  display: none;
 }
+
+#userRender {
+  width: auto;
+  background-color: none;
+  color: var(--btn-color);
+  font-size: larger;
+  text-align: center;
+  margin-left: 20px;
+}
+
 .container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 95px;
   background-color: var(--secondary-color);
 }
 .container-header__title {
@@ -41,6 +49,8 @@ body {
 }
 .container-header__registration {
   padding-right: 50px;
+  display: flex;
+  align-items: center;
 }
 .container-header__registration__sign {
   color: var(--main-bg-color);
@@ -62,13 +72,12 @@ select {
   border: none;
   cursor: pointer;
 }
-select:focus,
-select:hover {
+select:focus, select:hover {
   background-color: var(--hover);
 }
 select option {
   color: var(--secondary-color);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .about-strip {
@@ -76,20 +85,21 @@ select option {
   justify-content: center;
   align-items: center;
   background-color: #ccd2d6;
-  height: 50px;
+  height: 30px;
 }
 .about-strip__text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--secondary-color);
 }
 
 .hot-topic {
   height: 50px;
-  margin-left: 150px;
+  margin-left: 238px;
   margin-top: 100px;
 }
 .hot-topic__text {
   font-size: 1.5rem;
+  color: var(--subtitle);
 }
 
 .grid-container-main {
@@ -100,42 +110,6 @@ select option {
   display: grid;
   gap: 15px;
   grid-template-areas: "tech tech finance finance" "sport health health trending" "politics politics politics trending ";
-}
-.grid-container-main__item1 {
-  grid-area: sport;
-  background-image: url(./assets/sport.jpg);
-  background-size: cover;
-  box-shadow: 1px 2px 5px 0 var(--shadow);
-}
-.grid-container-main__item2 {
-  grid-area: health;
-  background-image: url(./assets/health.jpg);
-  background-size: cover;
-  box-shadow: 1px 2px 5px 0 var(--shadow);
-}
-.grid-container-main__item3 {
-  grid-area: tech;
-  background-image: url(./assets/tech.jpg);
-  background-size: cover;
-  box-shadow: 1px 2px 5px 0 var(--shadow);
-}
-.grid-container-main__item4 {
-  grid-area: trending;
-  background-image: url(./assets/trending.jpg);
-  background-size: cover;
-  box-shadow: 1px 2px 5px 0 var(--shadow);
-}
-.grid-container-main__item5 {
-  grid-area: politics;
-  background-image: url(./assets/politics.jpg);
-  background-size: cover;
-  box-shadow: 1px 2px 5px 0 var(--shadow);
-}
-.grid-container-main__item6 {
-  grid-area: finance;
-  background-image: url(./assets/finance.jpg);
-  background-size: cover;
-  box-shadow: 1px 2px 5px 0 var(--shadow);
 }
 .grid-container-main__link {
   text-decoration: none;
@@ -157,4 +131,59 @@ footer {
   display: flex;
   height: 150px;
   background-color: var(--secondary-color);
-} /*# sourceMappingURL=index.css.map */
+}
+
+.item1 {
+  grid-area: sport;
+  background: url("https://images.pexels.com/photos/54326/runners-male-sport-run-54326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+  background-size: 100%;
+}
+
+.item2 {
+  grid-area: health;
+  background-image: url("https://images.pexels.com/photos/806427/pexels-photo-806427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item3 {
+  grid-area: tech;
+  background-image: url("https://images.pexels.com/photos/4144179/pexels-photo-4144179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item4 {
+  grid-area: trending;
+  background-image: url("https://images.pexels.com/photos/4664301/pexels-photo-4664301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item5 {
+  grid-area: politics;
+  background-image: url("https://images.pexels.com/photos/8846784/pexels-photo-8846784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+.item6 {
+  grid-area: finance;
+  background-image: url("https://images.pexels.com/photos/4968636/pexels-photo-4968636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  box-shadow: 1px 2px 5px 0 var(--shadow);
+}
+
+select#category {
+  padding: 8px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+select#category option {
+  padding: 8px;
+}/*# sourceMappingURL=index.css.map */

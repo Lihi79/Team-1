@@ -66,8 +66,7 @@ input {
 }
 
 .form-class__p {
-  text-align: left;
-  font-size: 13px;
+  text-align: center;
 }
 .form-class a {
   text-decoration: none;
@@ -79,7 +78,7 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.btnField__singUp {
+.btnField__signUp {
   flex-basis: 48%;
   background: var(--subtitle);
   color: var(--main-bg-color);
@@ -109,4 +108,5 @@ input {
 
 .input-group {
   height: 280px;
+  margin-bottom: 18px;
 }/*# sourceMappingURL=sign.css.map */

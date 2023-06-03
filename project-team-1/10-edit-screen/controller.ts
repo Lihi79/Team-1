@@ -73,7 +73,6 @@ const doneEditButton = document.querySelector("#doneEdit") as HTMLButtonElement;
 // ------------------------------------------------------------
 const userNameValue = localStorage.getItem("userName");
 function renderBlog(blog: Blog[]): string {
-  alert("ef");
   const html: string = blog
     .map((blogs) => {
       return `
