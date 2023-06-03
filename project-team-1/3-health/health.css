@@ -94,4 +94,8 @@ footer {
 }
 .page-container__side-headers__container .page-container__side-headers__text .page-container__side-headers__text__p {
   line-height: 20px;
+}
+
+.none {
+  display: none;
 }/*# sourceMappingURL=health.css.map */
