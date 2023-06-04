@@ -20,11 +20,7 @@
   overflow: hidden;
 }
 .blog {
-  // display: flex;
   margin-top: 25px;
-  // justify-content: space-evenly;
-  // flex-direction: column-reverse;
-  // align-items: center;
   margin-bottom: 150px;
   margin-left: 140px;
   &__text {
@@ -59,5 +55,4 @@ footer {
   display: flex;
   height: 150px;
   background-color: var(--secondary-color);
-  // margin-top: 90px;
 }

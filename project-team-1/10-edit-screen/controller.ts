@@ -1,25 +1,6 @@
-class Blog {
-  uid: string;
+// controller
+// ------------
 
-  constructor(
-    public blogTitle: string,
-    public subTitle: string,
-    public blogText: string,
-
-    public imgUrl: string,
-    public dateUploaded: string,
-    public userName: string
-  ) {
-    this.uid = uid();
-  }
-}
-const blog: Blog[] = [];
-// -----------------------------------
-
-function uid(): string {
-  return `id- ${Math.random()}`;
-}
-// -----------------------------------
 function handleAddItem(evt) {
   evt.preventDefault();
 
@@ -47,16 +28,14 @@ function handleAddItem(evt) {
   saveLocalStorage(blog);
   renderBlog(blog);
 }
-// -----------------------------------
 
 function getCurrentDate(): string {
   const currentDate: Date = new Date();
 
   const year: number = currentDate.getFullYear();
-  const month: number = currentDate.getMonth() + 1; // Months are zero-based
+  const month: number = currentDate.getMonth() + 1;
   const day: number = currentDate.getDate();
 
-  // Format the date as 'YYYY-MM-DD'
   const formattedDate: string = `${year}-${month
     .toString()
     .padStart(2, "0")}-${day.toString().padStart(2, "0")}`;
@@ -64,13 +43,6 @@ function getCurrentDate(): string {
   return formattedDate;
 }
 
-// ------------------------------------------------------------
-const blogRender = document.querySelector("#blogRender") as HTMLDivElement;
-const img = document.querySelector("#upload-img") as HTMLImageElement;
-const signUpButton = document.querySelector("#singUp") as HTMLButtonElement;
-const doneEditButton = document.querySelector("#doneEdit") as HTMLButtonElement;
-///שיופיע יוזר ניים ודייט
-// ------------------------------------------------------------
 const userNameValue = localStorage.getItem("userName") || "";
 function renderBlog(blog: Blog[]): string {
   const html: string = blog
@@ -110,24 +82,7 @@ function renderBlog(blog: Blog[]): string {
   return html;
 }
 
-function renderToScreen() {
-  blogRender.innerHTML = renderBlog(blog);
-}
-
-function saveLocalStorage(blog: Blog[]) {
-  localStorage.setItem("blog", JSON.stringify(blog));
-}
-
 function doneEdit(blog: Blog) {
   localStorage.setItem("blog", JSON.stringify(blog));
   window.location.href = "../11-user-blog/11-user-blog.html";
 }
-
-function getLocalStorage(): Blog[] {
-  const getLcPart1 = localStorage.getItem("blog") || "[]";
-  const getLcPart2 = JSON.parse(getLcPart1);
-  console.log(getLcPart2);
-  return getLcPart2;
-}
-
-// -------------------------------------------------

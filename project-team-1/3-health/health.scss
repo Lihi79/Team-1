@@ -5,7 +5,6 @@
 }
 body {
   min-height: 100vh;
-  //   background-color: var(--main-bg-color);
   font-family: "IBM Plex Sans", sans-serif;
   background: rgb(246, 247, 248);
   background: linear-gradient(
@@ -46,7 +45,6 @@ footer {
     text-align: center;
 
     &__image {
-      // width: 325px;
       width: 363px;
       height: 200px;
       background-image: url("/project-team-1/assets/b-2.jpg");
@@ -68,7 +66,6 @@ footer {
   }
 
   &__side-headers {
-    // background-color: var(--main-bg-color);
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
