@@ -1,6 +1,32 @@
+// model
+// --------
+class Blog {
+  uid: string;
+
+  constructor(
+    public blogTitle: string,
+    public subTitle: string,
+    public blogText: string,
+
+    public imgUrl: string,
+    public dateUploaded: string,
+    public userName: string
+  ) {
+    this.uid = uid();
+  }
+}
+const blog: Blog[] = [];
+// -----------------------------------
+
+// helper
+// ---------
+function uid(): string {
+  return `id- ${Math.random()}`;
+}
+// -----------------------------------
+
 // controller
 // ------------
-
 function handleAddItem(evt) {
   evt.preventDefault();
 
@@ -28,7 +54,10 @@ function handleAddItem(evt) {
   saveLocalStorage(blog);
   renderBlog(blog);
 }
+// -----------------------------------
 
+// controller
+// ------------
 function getCurrentDate(): string {
   const currentDate: Date = new Date();
 
@@ -43,6 +72,18 @@ function getCurrentDate(): string {
   return formattedDate;
 }
 
+// ------------------------------------------------------------
+// view
+// --------
+const blogRender = document.querySelector("#blogRender") as HTMLDivElement;
+const img = document.querySelector("#upload-img") as HTMLImageElement;
+const signUpButton = document.querySelector("#singUp") as HTMLButtonElement;
+const doneEditButton = document.querySelector("#doneEdit") as HTMLButtonElement;
+
+// ------------------------------------------------------------
+
+// controller
+// ------------
 const userNameValue = localStorage.getItem("userName") || "";
 function renderBlog(blog: Blog[]): string {
   const html: string = blog
@@ -82,7 +123,29 @@ function renderBlog(blog: Blog[]): string {
   return html;
 }
 
+// helper
+// ---------
+function renderToScreen() {
+  blogRender.innerHTML = renderBlog(blog);
+}
+
+function saveLocalStorage(blog: Blog[]) {
+  localStorage.setItem("blog", JSON.stringify(blog));
+}
+
+// controller
+// ------------
 function doneEdit(blog: Blog) {
   localStorage.setItem("blog", JSON.stringify(blog));
   window.location.href = "../11-user-blog/11-user-blog.html";
 }
+// helper
+// ---------
+function getLocalStorage(): Blog[] {
+  const getLcPart1 = localStorage.getItem("blog") || "[]";
+  const getLcPart2 = JSON.parse(getLcPart1);
+  console.log(getLcPart2);
+  return getLcPart2;
+}
+
+

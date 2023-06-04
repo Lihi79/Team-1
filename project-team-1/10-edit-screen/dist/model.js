@@ -1,15 +1,16 @@
-// model
-// --------
-var Blog = /** @class */ (function () {
-    function Blog(blogTitle, subTitle, blogText, imgUrl, dateUploaded, userName) {
-        this.blogTitle = blogTitle;
-        this.subTitle = subTitle;
-        this.blogText = blogText;
-        this.imgUrl = imgUrl;
-        this.dateUploaded = dateUploaded;
-        this.userName = userName;
-        this.uid = uid();
-    }
-    return Blog;
-}());
-var blog = [];
+// // model
+// // --------
+// class Blog {
+//   uid: string;
+//   constructor(
+//     public blogTitle: string,
+//     public subTitle: string,
+//     public blogText: string,
+//     public imgUrl: string,
+//     public dateUploaded: string,
+//     public userName: string
+//   ) {
+//     this.uid = uid();
+//   }
+// }
+// const blog: Blog[] = [];
