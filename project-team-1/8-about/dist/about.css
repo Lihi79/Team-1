@@ -10,6 +10,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.none {
+  display: none;
+}
+
 #logo-about {
   width: 453px;
   padding-left: 12px;
