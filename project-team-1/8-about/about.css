@@ -10,6 +10,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.none {
+  display: none;
+}
+
 #logo-about {
   width: 453px;
   padding-left: 12px;
@@ -48,8 +52,13 @@ body {
   font-size: 1.2rem;
 }
 
-footer {
+.about-H3 {
   display: flex;
+  justify-content: center;
+}
+
+footer {
   height: 150px;
   background-color: var(--secondary-color);
+  margin-top: 8px;
 }/*# sourceMappingURL=about.css.map */

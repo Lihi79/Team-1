@@ -52,8 +52,12 @@ body {
   font-size: 1.2rem;
 }
 
-footer {
+.about-H3 {
   display: flex;
+  justify-content: center;
+}
+
+footer {
   height: 150px;
   background-color: var(--secondary-color);
   margin-top: 8px;
