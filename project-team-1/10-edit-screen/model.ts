@@ -7,7 +7,6 @@ class Blog {
     public blogTitle: string,
     public subTitle: string,
     public blogText: string,
-
     public imgUrl: string,
     public dateUploaded: string,
     public userName: string
