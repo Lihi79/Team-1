@@ -13,9 +13,7 @@ function hideBtns() {
     if (isUserLogged) {
         signIn.classList.add("none");
         createBlog.href = "../10-edit-screen/10-edit-screen.html";
-        /////מערך של כל המחלקות של התגית
     }
     else
         Disconnected.classList.add("none");
-    ////להסויף את זה לכל המוקמות שצריך לא לשכוח להוסיף גם את המחלקה של נאן
 }
