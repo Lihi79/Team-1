@@ -43,10 +43,11 @@ footer {
   text-align: center;
 }
 .page-container__most-viewed__image {
-  width: 325px;
+  width: 363px;
   height: 200px;
-  background-image: url("/project-team-1/assets/Finance- main-page.jpg");
+  background-image: url("/project-team-1/assets/b-2.jpg");
   margin-top: 60px;
+  background-repeat: no-repeat;
 }
 .page-container__most-viewed__text {
   padding: 0 40px;
@@ -78,7 +79,7 @@ footer {
 .page-container__side-headers__container .page-container__side-headers__image {
   height: 150px;
   width: 180px;
-  background-image: url("/project-team-1/assets/Finance- main-page.jpg");
+  background-image: url("https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=1600");
   background-repeat: no-repeat;
   background-size: cover;
 }
