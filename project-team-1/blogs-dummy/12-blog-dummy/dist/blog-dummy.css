@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.none {
+  display: none;
+}
+
 .blog {
   margin-top: 25px;
   margin-bottom: 150px;

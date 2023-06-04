@@ -1,4 +1,4 @@
-// import Swal from "sweetalert2";
+// @import (Swal from "sweetalert2");
 // יוזר שכבר רשום ורצה להכנס
 
 class RegisteredUser {
@@ -37,10 +37,12 @@ function signIn(evt) {
   );
   if (isValidInfo(loginName.value, loginPassword.value)) {
     alert("Successfully logged in");
+    // swal("Good job!", "Successfully logged in!", "success");
     window.location.href = "../1-home/1-index.html";
     localStorage.setItem("userName", loginName.value);
   } else {
     alert("No user found. Try again");
+    // swal("Opps!", "No user found. Try again!", "error");
   }
 
   saveRegisterUserLocalStorage(registerUsersArray);

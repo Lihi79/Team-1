@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../12-blog-dummy/dist/blog-dummy.css" />
+    <link rel="stylesheet" href="/project-team-1/1-home/dist/index.css" />
+    <link rel="stylesheet" href="/project-team-1/2-login/dist/login.css" />
+    <link rel="stylesheet" href="/project-team-1/navbar-scss/dist/navbar.css" />
+
+    <script src="/project-team-1/1-home/dist/index.js" defer></script>
+
+    <title>Blog-dummy-Politics</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <div class="container-header__header">
+        <img
+          class="container-header__title"
+          src="/project-team-1/assets/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="container-header__nav-main">
+        <a
+          href="/project-team-1/1-home/1-index.html"
+          class="container-header__nav-main__links-main"
+          >Home</a
+        >
+        <select
+          name="category"
+          id="category"
+          size="1"
+          onchange="window.location.href=this.value;"
+        >
+          <option disabled="disabled" select="selected">Choose Category</option>
+
+          <option class="option" value="/project-team-1/6-sport/6-sport.html">
+            Sport
+          </option>
+          <option class="option" value="/project-team-1/3-health/3-health.html">
+            Health
+          </option>
+          <option
+            class="option"
+            value="/project-team-1/5-finance/5-finance.html"
+          >
+            Finance
+          </option>
+          <option class="option" value="/project-team-1/4-tech/4-tech.html">
+            Tech
+          </option>
+          <option
+            class="option"
+            value="/project-team-1/7-politics/7-politics.html"
+          >
+            Politics
+          </option>
+        </select>
+
+        <!-- <a href="" class="container-header__nav-main__links-main">Categories</a> -->
+        <a
+          href="/8-about/8-about.html"
+          class="container-header__nav-main__links-main"
+          >About</a
+        >
+      </div>
+      <div class="container-header__registration">
+        <a
+          href="/project-team-1/2-login/dist/login.css"
+          id="createBlog"
+          class="container-header__registration__sign"
+          >Edit Blog</a
+        >
+        <a
+          href="/project-team-1/2-login/dist/login.css"
+          id="signIn"
+          class="container-header__registration__sign"
+          >Sign In</a
+        >
+        <a
+          href="/project-team-1/2-login/dist/login.css"
+          id="Disconnected"
+          class="container-header__registration__sign"
+          onclick="DisconnectedUser()"
+          >Log Out</a
+        >
+        <div id="userRender"></div>
+      </div>
+    </div>
+    <!-- nav bar end -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC3">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Should we know where our friends are at all times?
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              “I love you, now let me watch your location 24/7.”
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">roli fon</p>
+              <p class="blog__date" id="date">29.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-3.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              A few months ago, sick with a cold on a Saturday morning, feeling
+              miserable about the fact that I was stuck at home alone for the
+              weekend, I checked Find My Friends. It’s an app that comes
+              standard on iPhones these days, the same one that tracks your
+              phone or laptop or Airpods in case you lose them. But instead of
+              devices, it shows the location of your friends, or rather, their
+              phones. I tend to check Find My Friends when I want to see if
+              anyone’s nearby and might be up for a spontaneous hang, or else
+              just to see their little bubbles in some kind of bizarre exercise
+              in virtual closeness. But that morning I noticed one of my
+              friends’ bubbles wasn’t where it usually was. It was miles away,
+              in a neighborhood where neither of us knew anyone. She was, I
+              assumed, at a random person’s apartment where, we can go ahead and
+              assume, she’d slept over the night before. It probably says a lot
+              about me that my first thought was, “Good for her!” and not, “Is
+              she okay?” considering the fact that for many women, the point of
+              location sharing with their friends is to ensure safety — that if
+              they share their location before heading out on a solo trip or a
+              first date, they’ll know that at least one person will know where
+              to find them if the worst happens. But I’m more interested in the
+              knotty social questions that mass location sharing forces us all
+              to ask of each other and ourselves: How do we decide who to share
+              — and not share — our location with? When does looking at your
+              friends’ bubbles go from cute to creepy? Or, in my case, how weird
+              is it to ask my friend for juicy details on her one-night stand?
+              Friends sharing their real-time locations with each other is a
+              pretty recent facet of modern life. Though apps like Foursquare
+              have been around since the dawn of the smartphone age, mass
+              location sharing was only introduced around 2017, when Google
+              rolled out location sharing on its Maps function and Snapchat
+              launched Snap Map, allowing users to see where their contacts were
+              at any moment. By the time Apple merged the Find My iPhone and
+              Find My Friends apps into a single app called “Find My” in 2019,
+              location sharing had become just another type of social
+              networking, despite the fact that for many people, it still feels
+              a little icky. “As a non-location sharer, I see it as the natural
+              conclusion of the digital-age expectation that we’re always
+              online, always available, and have no reasonable expectation of a
+              private, offline life,” explains Scott Nover, a tech reporter at
+              Quartz. “We’re no longer just putting up an ‘away message,’ or
+              occasionally ‘checking in’ somewhere on social media, but
+              broadcasting our whereabouts at all times.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 2 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeD">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              “A place for women to talk about money without shame or blame.”
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              How her blog makes money: Digital products, online events,
+              advertising, affiliate marketing, and sponsored posts.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Chelsea Brennan</p>
+              <p class="blog__date" id="date">09.03.2017</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/finance-blog-4.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              Biggest lesson/challenge: "My biggest struggle as a business owner
+              has been learning when to dig in on an idea until it works, when
+              to pivot, and when to pick up a new concept completely. As an
+              entrepreneur, you have so many options, and the roller coaster of
+              'This is going to be awesome' and 'What was I thinking?' can
+              sometimes give you whiplash. It's been important to learn how to
+              step back, ignore what other businesses are doing, and evaluate
+              our progress. What is working? What isn't? What does the audience
+              think? Then I make choices based on what I'm actively seeing,
+              without letting emotion or 'shiny object syndrome' take over."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 3 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC2">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Do we really need an app for everything?
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              Not every business needs an app. And yet.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">loli shon</p>
+              <p class="blog__date" id="date">20.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-2.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              On a flight about a year ago, I found myself in a predicament: I
+              could not pay for my customary glass of plane wine to help calm
+              the nerves. The problem wasn’t that I didn’t have cash or a credit
+              card on me but instead that I didn’t have the airline’s app, which
+              was necessary to complete the transaction. I was motivated to get
+              the plane wine, but not that motivated — I gave up somewhere
+              between downloading the app on the shoddy in-flight wifi and
+              uploading my credit card to it. So now it sits idle on my phone,
+              as do countless other apps I’ve had to get for one reason or
+              another over the years, the vast majority of which I do not want
+              or use. It really does feel like there’s an app for everything
+              these days — often for things where they’re not really needed. We
+              all managed to do business with each other for years and years
+              without having to pull out our phones at every corner. Admittedly,
+              the cultural peak of “there’s an app for that” mania was years
+              ago, at a moment when, in many cases, said apps actually proposed
+              making our lives better. But it’s been forever since many people
+              have felt enthusiastic about downloading an application; instead
+              of serving customers, apps now serve companies and have
+              transformed into a sort of necessary evil to receive some product
+              or service. The hotel has an app, the dentist has an app, the
+              restaurant down the street has an app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 4 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="financeA6">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Unlock the Power of Prioritizing Yourself
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              If you want to feel your best, you need to make time for
+              self-improvement. Time for yourself isn’t something you find, it’s
+              something you need to schedule, prioritize and make the most of.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">Elyse miller</p>
+              <p class="blog__date" id="date">19.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/health-blog-6.jpeg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              As women, we already have a lot on our agenda. Oftentimes, we’re
+              may find ourselves accepting additional tasks and responsibilities
+              that help others and taking on more of the “mental load” of
+              running a household. This unfortunately leaves us very little time
+              to care for ourselves. As a busy wife and mother of two, I know
+              the guilt that can accompany carving our time for self-care.
+              According to a USA Today poll, 1 in 3 people in the U.S. feel
+              guilty when they take time for themselves, yet, 67% say they need
+              more of it. We need to change the way we look at self-care. Making
+              time to better yourself equips you to better care for those around
+              you and it allows you to lift those up who depend on you. In my
+              own experience, and what I hear from those that I coach, we feel
+              and operate our best when we regularly exercise our mind, body and
+              spirit. This can look different for each person but here are some
+              examples: The MIND: Freeing and strengthening your mind might mean
+              reading a book, doing a crossword puzzle or learning something
+              new. Challenging ourselves mentally can help us to feel more
+              capable, confident and empowered. The SPIRIT: A joyful, peaceful
+              spirit can be built through prayer, meditation, gratitude
+              journaling or soaking in a sunset. Harvard studies show that
+              people who write down a few “gratitude sentences” each day are
+              more positive and optimistic about life. When we dwell on the
+              positive thoughts and events in our lives, there’s little room for
+              the negativity. The BODY: Exercising the body can bring all three
+              components together. Exercise can oftentimes be intentionally
+              uncomfortable, which is a mental challenge. There’s also a
+              spiritual connection when we push, and connect to, our bodies,
+              especially when practicing mindful movement. With discipline,
+              you’ll begin to discover the incredible rewards of going for a
+              run, taking a yoga class, or a strenuous lifting session. Research
+              shows that exercise reduces stress and anxiety, improves self
+              esteem, energizes your spirit and increases focus. Not to mention
+              all of the physical benefits. Making time for all three of these
+              might seem impossible, but I have some tips for how to squeeze
+              them in, even on your busiest days. Remember, it’s all about
+              prioritizing, scheduling and making the most of your time. 1.
+              PRIORITIZE: You must schedule priorities rather than prioritizing
+              your schedule. What I mean is, self-care must be more important
+              than your to-do list. Write down your priorities and set time
+              aside to make them happen. Set an appointment with yourself and
+              don’t back out! 2. SAY "NO." It’s impossible say “yes” to
+              everything and still have time for yourself. Sometimes “no” is
+              necessary. 3. GET CREATIVE: Find small moments during your day to
+              reset the body, mind and spirit. Roll down your windows on your
+              drive home. Listen to an encouraging podcast. Go for a short walk
+              and take note of all that you have to be grateful for. Making time
+              is a challenge, but it’s worth it. A better, happier you is an
+              appointment (with yourself) away. My morning mind, body and spirit
+              routine usually takes about 40 minutes, but here’s a quick
+              15-minute morning practice that can be done even on the busiest
+              days. - 5 minute of reading: Read something that motivates or
+              challenges you. I like following daily devotional reading plans.
+              Each day is mapped out for me and only takes a few minutes. - 5
+              minutes of gratitude: Write down 2-3 things you’re grateful for.
+              Next, jot down 2-3 positive affirmations about yourself and say
+              them out loud. - 5 minutes of movement: Get outside for a quick
+              walk, jog down the street, work through a yoga flow, pump out as
+              many push-ups, squats and sit ups as you can... anything to get
+              the body moving! You can also break these up throughout the day,
+              but I challenge you to take at least 15 minutes a day for 15 days
+              and unlock the power of prioritizing YOU!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 5 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="politicsD3">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">How to dance in democracy</h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              In an era where most people have already made up their mind about
+              how they shall vote in the next Lok Sabha elections, how can BJP
+              (favourites) and Congress (featherweight) woo voters?
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">roli fon</p>
+              <p class="blog__date" id="date">29.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/politics-blog-3.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              We are less than one year away from the biggest dance of
+              democracy, the Lok Sabha elections of 2024, which will bring most
+              Indian adults to the polling booths. Given India’s size and scale,
+              anybody serious about forming the government in 2024 should not
+              wait to get into LS election mode. In some ways, election season
+              never really stops in India, with frequent state assembly polls,
+              municipal polls etc. TV debates and social media are a permanent
+              political battleground for various parties, with 24×7 praise and
+              criticism. But most of our public debate goes into shouting about
+              who should be running the country, rather than how they should be
+              running it. Still, general elections are a different beast,
+              India’s perennial election mode on heavy steroids. What should you
+              expect this year? The most bitter, brutal, undignified and
+              cringeworthy statements. Fake news. Truth will be irrelevant where
+              ‘feels right’ is another way of saying ‘confirms my already
+              existing bias’.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- atrial num 6 -->
+    <div class="container">
+      <div class="blog">
+        <div class="blog__post" id="techC2">
+          <div class="blog__text">
+            <h1 class="blog__title" id="title">
+              Do we really need an app for everything?
+            </h1>
+            <h3 class="blog__subtitle" id="subtitle">
+              Not every business needs an app. And yet.
+            </h3>
+
+            <div class="blog__name-date">
+              <p class="blog__user-name">loli shon</p>
+              <p class="blog__date" id="date">20.05.2023</p>
+            </div>
+
+            <div class="blog__img">
+              <img
+                src="/project-team-1/assets/tech-blog-2.jpg"
+                alt=""
+                id="upload-img"
+                width="700px"
+                height="500px"
+              />
+            </div>
+
+            <p class="blog__p">
+              On a flight about a year ago, I found myself in a predicament: I
+              could not pay for my customary glass of plane wine to help calm
+              the nerves. The problem wasn’t that I didn’t have cash or a credit
+              card on me but instead that I didn’t have the airline’s app, which
+              was necessary to complete the transaction. I was motivated to get
+              the plane wine, but not that motivated — I gave up somewhere
+              between downloading the app on the shoddy in-flight wifi and
+              uploading my credit card to it. So now it sits idle on my phone,
+              as do countless other apps I’ve had to get for one reason or
+              another over the years, the vast majority of which I do not want
+              or use. It really does feel like there’s an app for everything
+              these days — often for things where they’re not really needed. We
+              all managed to do business with each other for years and years
+              without having to pull out our phones at every corner. Admittedly,
+              the cultural peak of “there’s an app for that” mania was years
+              ago, at a moment when, in many cases, said apps actually proposed
+              making our lives better. But it’s been forever since many people
+              have felt enthusiastic about downloading an application; instead
+              of serving customers, apps now serve companies and have
+              transformed into a sort of necessary evil to receive some product
+              or service. The hotel has an app, the dentist has an app, the
+              restaurant down the street has an app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
