@@ -118,6 +118,7 @@ function renderBlog(blog: Blog[]): string {
     `;
     })
     .join(" ");
+
   if (blogRender) blogRender.innerHTML = html;
 
   return html;
