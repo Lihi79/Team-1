@@ -97,7 +97,7 @@ function renderBlog(blog: Blog[]): string {
               <h3 class="blog__subtitle" id="subtitle">${blogs.subTitle}</h3>
 
               <div class="blog__name-date">
-                <p class="blog__user-name">${this.userNameValue}</p>
+                <p class="blog__user-name">${blogs.userName}</p>
                 <p class="blog__date" id="date">${getCurrentDate()}</p>
               </div>
 
@@ -147,5 +147,3 @@ function getLocalStorage(): Blog[] {
   console.log(getLcPart2);
   return getLcPart2;
 }
-
-
