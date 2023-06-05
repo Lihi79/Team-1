@@ -12,4 +12,4 @@ class User {
   }
 }
 
-const users: User[] = getUserLocalStorage();
+const users: User[] = [];

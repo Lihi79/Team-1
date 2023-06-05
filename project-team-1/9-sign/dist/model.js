@@ -10,4 +10,4 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
-var users = getUserLocalStorage();
+var users = [];

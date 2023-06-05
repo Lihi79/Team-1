@@ -44,7 +44,7 @@ function signUp(evt) {
 function isUserNameAvailable(userName) {
   const users = JSON.parse(localStorage.getItem("user") || "[]");
 
-  console.log(users);
+  // console.log(users);
   const isUserNameAvailable =
     users.filter((user) => user.userName == userName).length == 0;
   console.log(users.filter((user) => user.userName == userName));
@@ -52,7 +52,7 @@ function isUserNameAvailable(userName) {
 }
 
 function signUpBtn(user: User[]) {
-  console.log("hello");
+  // console.log("hello");
 
   localStorage.setItem("user", JSON.stringify(user));
   window.location.href = "../1-index.html";
