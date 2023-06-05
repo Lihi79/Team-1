@@ -1,13 +1,20 @@
 // controller
 // ------------
+var signUpButton = document.getElementById("signUpBtn");
+signUpButton === null || signUpButton === void 0 ? void 0 : signUpButton.addEventListener("click", function (event) {
+    signUp(event);
+});
 function comparePassword(password, comparePassword) {
     var isPasswordValid = password == comparePassword ? true : false;
     return isPasswordValid;
 }
-var signUpButton = document.getElementById("signUp");
-signUpButton === null || signUpButton === void 0 ? void 0 : signUpButton.addEventListener("click", function (event) {
-    signUp(event);
-});
+function isUserNameAvailable(userName) {
+    var users = JSON.parse(localStorage.getItem("user") || "[]");
+    // console.log(users);
+    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length == 0;
+    // console.log(users.filter((user) => user.userName == userName));
+    return isUserNameAvailable;
+}
 function signUp(evt) {
     evt.preventDefault();
     var userName = document.getElementById("userName");
@@ -22,18 +29,11 @@ function signUp(evt) {
     if (isUserNameAvailable(userName.value)) {
         saveUserLocalStorage(users);
         window.location.href = "../2-login/2-login.html";
-        console.log(userName.value);
+        // console.log(userName.value);
     }
     else {
         alert("userName not Available");
     }
-}
-function isUserNameAvailable(userName) {
-    var users = JSON.parse(localStorage.getItem("user") || "[]");
-    // console.log(users);
-    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length == 0;
-    console.log(users.filter(function (user) { return user.userName == userName; }));
-    return isUserNameAvailable;
 }
 function signUpBtn(user) {
     // console.log("hello");

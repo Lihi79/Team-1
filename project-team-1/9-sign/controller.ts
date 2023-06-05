@@ -1,16 +1,26 @@
 // controller
 // ------------
 
+const signUpButton = document.getElementById("signUpBtn") as HTMLElement;
+signUpButton?.addEventListener("click", (event) => {
+  signUp(event);
+});
+
 function comparePassword(password, comparePassword) {
   const isPasswordValid = password == comparePassword ? true : false;
 
   return isPasswordValid;
 }
 
-const signUpButton = document.getElementById("signUp") as HTMLElement;
-signUpButton?.addEventListener("click", (event) => {
-  signUp(event);
-});
+function isUserNameAvailable(userName) {
+  const users = JSON.parse(localStorage.getItem("user") || "[]");
+
+  // console.log(users);
+  const isUserNameAvailable =
+    users.filter((user) => user.userName == userName).length == 0;
+  // console.log(users.filter((user) => user.userName == userName));
+  return isUserNameAvailable;
+}
 
 function signUp(evt) {
   evt.preventDefault();
@@ -35,20 +45,10 @@ function signUp(evt) {
   if (isUserNameAvailable(userName.value)) {
     saveUserLocalStorage(users);
     window.location.href = "../2-login/2-login.html";
-    console.log(userName.value);
+    // console.log(userName.value);
   } else {
     alert("userName not Available");
   }
-}
-
-function isUserNameAvailable(userName) {
-  const users = JSON.parse(localStorage.getItem("user") || "[]");
-
-  // console.log(users);
-  const isUserNameAvailable =
-    users.filter((user) => user.userName == userName).length == 0;
-  console.log(users.filter((user) => user.userName == userName));
-  return isUserNameAvailable;
 }
 
 function signUpBtn(user: User[]) {
