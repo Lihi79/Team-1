@@ -1,6 +1,6 @@
 // controller
 // ------------
-var signUpButton = document.getElementById("signUpBtn");
+var signUpButton = document.getElementById("signUp");
 signUpButton === null || signUpButton === void 0 ? void 0 : signUpButton.addEventListener("click", function (event) {
     signUp(event);
 });
@@ -11,7 +11,7 @@ function comparePassword(password, comparePassword) {
 function isUserNameAvailable(userName) {
     var users = JSON.parse(localStorage.getItem("user") || "[]");
     // console.log(users);
-    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length == 0;
+    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length > 0;
     // console.log(users.filter((user) => user.userName == userName));
     return isUserNameAvailable;
 }

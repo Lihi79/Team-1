@@ -1,7 +1,7 @@
 // controller
 // ------------
 
-const signUpButton = document.getElementById("signUpBtn") as HTMLElement;
+const signUpButton = document.getElementById("signUp") as HTMLElement;
 signUpButton?.addEventListener("click", (event) => {
   signUp(event);
 });
@@ -17,7 +17,7 @@ function isUserNameAvailable(userName) {
 
   // console.log(users);
   const isUserNameAvailable =
-    users.filter((user) => user.userName == userName).length == 0;
+    users.filter((user) => user.userName == userName).length > 0;
   // console.log(users.filter((user) => user.userName == userName));
   return isUserNameAvailable;
 }
