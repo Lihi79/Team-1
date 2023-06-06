@@ -10,7 +10,7 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
-var users = [];
+var users = getUserLocalStorage();
 // helper
 // ---------
 function uid() {
@@ -55,7 +55,7 @@ function signUp(evt) {
 function isUserNameAvailable(userName) {
     var users = JSON.parse(localStorage.getItem("user") || "[]");
     console.log(users);
-    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length == 0;
+    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length > 1;
     console.log(users.filter(function (user) { return user.userName == userName; }));
     return isUserNameAvailable;
 }
@@ -69,8 +69,8 @@ function getUserLocalStorage() {
 }
 // controller
 // ------------
-// function signUpBtn(user: User[]) {
-//   console.log("hello");
-//   localStorage.setItem("user", JSON.stringify(user));
-//   window.location.href = "../1-index.html";
-// }
+function signUpBtn(user) {
+    console.log("hello");
+    localStorage.setItem("user", JSON.stringify(user));
+    window.location.href = "../1-index.html";
+}

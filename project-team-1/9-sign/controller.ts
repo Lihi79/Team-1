@@ -12,7 +12,7 @@ class User {
   }
 }
 
-const users: User[] = [];
+const users: User[] = getUserLocalStorage();
 
 // helper
 // ---------
@@ -74,7 +74,7 @@ function isUserNameAvailable(userName) {
 
   console.log(users);
   const isUserNameAvailable =
-    users.filter((user) => user.userName == userName).length == 0;
+    users.filter((user) => user.userName == userName).length > 1;
   console.log(users.filter((user) => user.userName == userName));
   return isUserNameAvailable;
 }
@@ -91,10 +91,9 @@ function getUserLocalStorage() {
 
 // controller
 // ------------
-// function signUpBtn(user: User[]) {
+function signUpBtn(user: User[]) {
+  console.log("hello");
 
-//   console.log("hello");
-
-//   localStorage.setItem("user", JSON.stringify(user));
-//   window.location.href = "../1-index.html";
-// }
+  localStorage.setItem("user", JSON.stringify(user));
+  window.location.href = "../1-index.html";
+}

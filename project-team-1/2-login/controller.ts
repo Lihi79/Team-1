@@ -1,10 +1,30 @@
-// controller
-// ------------
+// @import (Swal from "sweetalert2");
 
+// model
+// --------
+class RegisteredUser {
+  uid: string;
+  constructor(public loginName: string, public loginPassword: string) {
+    this.uid = uid();
+  }
+}
+
+const registerUsersArray: RegisteredUser[] = [];
+
+// helper
+// ---------
+function uid(): string {
+  return `id- ${Math.random()}`;
+}
+// view
+// --------
+const userRender = document.querySelector("#userRender") as HTMLDivElement;
 const signInBtn = document.getElementById(
   "btnField__singUpBtn"
 ) as HTMLInputElement;
 
+// controller
+// ------------
 signInBtn?.addEventListener("click", (event) => {
   signIn(event);
 });
@@ -30,8 +50,8 @@ function signIn(evt) {
     // swal("Opps!", "No user found. Try again!", "error");
   }
 
-  // saveRegisterUserLocalStorage(registerUsersArray);
-  // console.log(loginName.value);
+  saveRegisterUserLocalStorage(registerUsersArray);
+  console.log(loginName.value);
 }
 
 function isValidInfo(userName, Password) {
@@ -44,25 +64,33 @@ function isValidInfo(userName, Password) {
 
   return isValidInfo;
 }
+// helper
+// ---------
+function saveRegisterUserLocalStorage(registerUser: RegisteredUser[]) {
+  localStorage.setItem("registerUser", JSON.stringify(registerUser));
+}
 
+// controller
+// ------------
 function signIpBtn(registerUser: RegisteredUser[]) {
   console.log("hello");
   localStorage.setItem("registerUser", JSON.stringify(registerUser));
   window.location.href = "../1-index.html";
 }
-
+// controller
+// ------------
 function renderRegisterUser(registerUsersArray: RegisteredUser[]): string {
   const html2: string = registerUsersArray
     .map((us) => {
       return `
-          <div class="container">
-            <div class="user">
-              <div class="name">
-                 <h1 class="blog__title" id="title">${us.loginName}</h1>
-                </div>
+        <div class="container">
+          <div class="user">
+            <div class="name">
+               <h1 class="blog__title" id="title">${us.loginName}</h1>
               </div>
             </div>
-        `;
+          </div>
+      `;
     })
     .join(" ");
 

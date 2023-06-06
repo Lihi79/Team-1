@@ -1,6 +1,6 @@
-// view
-// --------
-var userRender = document.querySelector("#userRender");
-// const signInBtn = document.getElementById(
-//   "btnField__singUpBtn"
-// ) as HTMLInputElement;
+// // view
+// // --------
+// const userRender = document.querySelector("#userRender") as HTMLDivElement;
+// // const signInBtn = document.getElementById(
+// //   "btnField__singUpBtn"
+// // ) as HTMLInputElement;
