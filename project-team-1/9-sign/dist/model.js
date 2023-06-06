@@ -1,5 +1,5 @@
-// // model
-// // --------
+// model
+// --------
 // class User {
 //   uid: string;
 //   constructor(

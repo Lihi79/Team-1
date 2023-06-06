@@ -1,3 +1,3 @@
 // view
 // --------
-// const signUpButton = document.getElementById("signUp") as HTMLElement;
+var signUpButton = document.getElementById("signUpBtn");

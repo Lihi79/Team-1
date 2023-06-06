@@ -1,3 +1,5 @@
+// model
+// --------
 class User {
   uid: string;
   constructor(
@@ -12,6 +14,8 @@ class User {
 
 const users: User[] = [];
 
+// helper
+// ---------
 function uid(): string {
   return `id- ${Math.random()}`;
 }
@@ -22,8 +26,12 @@ function isPasswordCompared(password, comparePassword) {
   return isPasswordValid;
 }
 
+// view
+// --------
 const signUpButton = document.getElementById("signUpBtn") as HTMLElement;
 
+// controller
+// ---------------
 signUpButton?.addEventListener("click", (event) => {
   signUp(event);
 });

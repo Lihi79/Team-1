@@ -1,3 +1,5 @@
+// model
+// --------
 var User = /** @class */ (function () {
     function User(userName, email, password, cpass) {
         this.userName = userName;
@@ -9,6 +11,8 @@ var User = /** @class */ (function () {
     return User;
 }());
 var users = [];
+// helper
+// ---------
 function uid() {
     return "id- " + Math.random();
 }
@@ -16,7 +20,11 @@ function isPasswordCompared(password, comparePassword) {
     var isPasswordValid = password == comparePassword ? true : false;
     return isPasswordValid;
 }
+// view
+// --------
 var signUpButton = document.getElementById("signUpBtn");
+// controller
+// ---------------
 signUpButton === null || signUpButton === void 0 ? void 0 : signUpButton.addEventListener("click", function (event) {
     signUp(event);
 });
