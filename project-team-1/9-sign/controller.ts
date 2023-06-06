@@ -91,8 +91,8 @@ function getUserLocalStorage() {
   return JSON.parse(localStorage.getItem("user") || "[]");
 }
 
-// function signUpBtn(user: User[]) {
-//   localStorage.setItem("user", JSON.stringify(user));
+function signUpBtn(user: User[]) {
+  localStorage.setItem("user", JSON.stringify(user));
 
-//   window.location.href = "../1-index.html";
-// }
+  window.location.href = "../1-index.html";
+}
