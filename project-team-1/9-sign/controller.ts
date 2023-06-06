@@ -1,4 +1,3 @@
-//
 class User {
   uid: string;
   constructor(
@@ -13,32 +12,22 @@ class User {
 
 const users: User[] = [];
 
-// helper
-// ---------
 function uid(): string {
   return `id- ${Math.random()}`;
 }
 
-// controller
-// ------------
-function comparePassword(password, comparePassword) {
+function isPasswordCompared(password, comparePassword) {
   const isPasswordValid = password == comparePassword ? true : false;
 
   return isPasswordValid;
 }
 
-// view
-// --------
-const signUpButton = document.getElementById("signUp") as HTMLElement;
+const signUpButton = document.getElementById("signUpBtn") as HTMLElement;
 
-// controller
-// ------------
 signUpButton?.addEventListener("click", (event) => {
   signUp(event);
 });
 
-// controller
-// ------------
 function signUp(evt) {
   evt.preventDefault();
 
@@ -50,11 +39,20 @@ function signUp(evt) {
 
   const confirmPassword = document.getElementById("cpass") as HTMLInputElement;
 
+  if (
+    userName.value.length == 0 ||
+    email.value.length == 0 ||
+    confirmPassword.value.length == 0
+  ) {
+    alert("you need to fill all the fields!!!");
+    return false;
+  }
+
   users.push(
     new User(userName.value, email.value, password.value, confirmPassword.value)
   );
 
-  if (!comparePassword(password.value, confirmPassword.value)) {
+  if (!isPasswordCompared(password.value, confirmPassword.value)) {
     alert("the 2 of the password need to be matched");
     return;
   }
@@ -71,15 +69,12 @@ function signUp(evt) {
 function isUserNameAvailable(userName) {
   const users = JSON.parse(localStorage.getItem("user") || "[]");
 
-  console.log(users);
-  const isUserNameAvailable =
-    users.filter((user) => user.userName == userName).length == 0;
-  console.log(users.filter((user) => user.userName == userName));
+  const isUserNameAvailable = [];
+
+  users.filter((user) => user.userName == userName).length == 0;
   return isUserNameAvailable;
 }
 
-// helper
-// ---------
 function saveUserLocalStorage(user: User[]) {
   localStorage.setItem("user", JSON.stringify(user));
 }
@@ -88,11 +83,8 @@ function getUserLocalStorage() {
   return JSON.parse(localStorage.getItem("user") || "[]");
 }
 
-// controller
-// ------------
-function signUpBtn(user: User[]) {
-  console.log("hello");
+// function signUpBtn(user: User[]) {
+//   localStorage.setItem("user", JSON.stringify(user));
 
-  localStorage.setItem("user", JSON.stringify(user));
-  window.location.href = "../1-index.html";
-}
+//   window.location.href = "../1-index.html";
+// }
