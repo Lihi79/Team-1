@@ -1,27 +1,45 @@
+// model
+// --------
+class User {
+  uid: string;
+  constructor(
+    public userName: string,
+    public email: string,
+    public password: string,
+    public cpass: string
+  ) {
+    this.uid = uid();
+  }
+}
+
+const users: User[] = [];
+
+// helper
+// ---------
+function uid(): string {
+  return `id- ${Math.random()}`;
+}
+
 // controller
 // ------------
-
-const signUpButton = document.getElementById("signUp") as HTMLElement;
-signUpButton?.addEventListener("click", (event) => {
-  signUp(event);
-});
-
 function comparePassword(password, comparePassword) {
   const isPasswordValid = password == comparePassword ? true : false;
 
   return isPasswordValid;
 }
 
-function isUserNameAvailable(userName) {
-  const users = JSON.parse(localStorage.getItem("user") || "[]");
+// view
+// --------
+const signUpButton = document.getElementById("signUp") as HTMLElement;
 
-  // console.log(users);
-  const isUserNameAvailable =
-    users.filter((user) => user.userName == userName).length > 0;
-  // console.log(users.filter((user) => user.userName == userName));
-  return isUserNameAvailable;
-}
+// controller
+// ------------
+signUpButton?.addEventListener("click", (event) => {
+  signUp(event);
+});
 
+// controller
+// ------------
 function signUp(evt) {
   evt.preventDefault();
 
@@ -45,15 +63,38 @@ function signUp(evt) {
   if (isUserNameAvailable(userName.value)) {
     saveUserLocalStorage(users);
     window.location.href = "../2-login/2-login.html";
-    // console.log(userName.value);
+    console.log(userName.value);
   } else {
     alert("userName not Available");
   }
 }
 
-function signUpBtn(user: User[]) {
-  // console.log("hello");
+function isUserNameAvailable(userName) {
+  const users = JSON.parse(localStorage.getItem("user") || "[]");
 
-  localStorage.setItem("user", JSON.stringify(user));
-  window.location.href = "../1-index.html";
+  console.log(users);
+  const isUserNameAvailable =
+    users.filter((user) => user.userName == userName).length == 0;
+  console.log(users.filter((user) => user.userName == userName));
+  return isUserNameAvailable;
 }
+
+// helper
+// ---------
+function saveUserLocalStorage(user: User[]) {
+  localStorage.setItem("user", JSON.stringify(user));
+}
+
+function getUserLocalStorage() {
+  return JSON.parse(localStorage.getItem("user") || "[]");
+}
+
+// controller
+// ------------
+// function signUpBtn(user: User[]) {
+
+//   console.log("hello");
+
+//   localStorage.setItem("user", JSON.stringify(user));
+//   window.location.href = "../1-index.html";
+// }

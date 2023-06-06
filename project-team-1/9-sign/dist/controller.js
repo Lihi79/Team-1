@@ -1,20 +1,37 @@
+// model
+// --------
+var User = /** @class */ (function () {
+    function User(userName, email, password, cpass) {
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+        this.cpass = cpass;
+        this.uid = uid();
+    }
+    return User;
+}());
+var users = [];
+// helper
+// ---------
+function uid() {
+    return "id- " + Math.random();
+}
 // controller
 // ------------
-var signUpButton = document.getElementById("signUp");
-signUpButton === null || signUpButton === void 0 ? void 0 : signUpButton.addEventListener("click", function (event) {
-    signUp(event);
-});
 function comparePassword(password, comparePassword) {
     var isPasswordValid = password == comparePassword ? true : false;
     return isPasswordValid;
 }
-function isUserNameAvailable(userName) {
-    var users = JSON.parse(localStorage.getItem("user") || "[]");
-    // console.log(users);
-    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length > 0;
-    // console.log(users.filter((user) => user.userName == userName));
-    return isUserNameAvailable;
-}
+// view
+// --------
+var signUpButton = document.getElementById("signUp");
+// controller
+// ------------
+signUpButton === null || signUpButton === void 0 ? void 0 : signUpButton.addEventListener("click", function (event) {
+    signUp(event);
+});
+// controller
+// ------------
 function signUp(evt) {
     evt.preventDefault();
     var userName = document.getElementById("userName");
@@ -29,14 +46,31 @@ function signUp(evt) {
     if (isUserNameAvailable(userName.value)) {
         saveUserLocalStorage(users);
         window.location.href = "../2-login/2-login.html";
-        // console.log(userName.value);
+        console.log(userName.value);
     }
     else {
         alert("userName not Available");
     }
 }
-function signUpBtn(user) {
-    // console.log("hello");
-    localStorage.setItem("user", JSON.stringify(user));
-    window.location.href = "../1-index.html";
+function isUserNameAvailable(userName) {
+    var users = JSON.parse(localStorage.getItem("user") || "[]");
+    console.log(users);
+    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length == 0;
+    console.log(users.filter(function (user) { return user.userName == userName; }));
+    return isUserNameAvailable;
 }
+// helper
+// ---------
+function saveUserLocalStorage(user) {
+    localStorage.setItem("user", JSON.stringify(user));
+}
+function getUserLocalStorage() {
+    return JSON.parse(localStorage.getItem("user") || "[]");
+}
+// controller
+// ------------
+// function signUpBtn(user: User[]) {
+//   console.log("hello");
+//   localStorage.setItem("user", JSON.stringify(user));
+//   window.location.href = "../1-index.html";
+// }
