@@ -74,7 +74,7 @@ function isUserNameAvailable(userName) {
 
   console.log(users);
   const isUserNameAvailable =
-    users.filter((user) => user.userName == userName).length > 1;
+    users.filter((user) => user.userName == userName).length > 0;
   console.log(users.filter((user) => user.userName == userName));
   return isUserNameAvailable;
 }
