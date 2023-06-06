@@ -1,5 +1,4 @@
-// model
-// --------
+//
 class User {
   uid: string;
   constructor(
@@ -12,7 +11,7 @@ class User {
   }
 }
 
-const users: User[] = getUserLocalStorage();
+const users: User[] = [];
 
 // helper
 // ---------
@@ -74,7 +73,7 @@ function isUserNameAvailable(userName) {
 
   console.log(users);
   const isUserNameAvailable =
-    users.filter((user) => user.userName == userName).length > 0;
+    users.filter((user) => user.userName == userName).length == 0;
   console.log(users.filter((user) => user.userName == userName));
   return isUserNameAvailable;
 }

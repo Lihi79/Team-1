@@ -1,5 +1,4 @@
-// model
-// --------
+//
 var User = /** @class */ (function () {
     function User(userName, email, password, cpass) {
         this.userName = userName;
@@ -10,7 +9,7 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
-var users = getUserLocalStorage();
+var users = [];
 // helper
 // ---------
 function uid() {
@@ -55,7 +54,7 @@ function signUp(evt) {
 function isUserNameAvailable(userName) {
     var users = JSON.parse(localStorage.getItem("user") || "[]");
     console.log(users);
-    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length > 0;
+    var isUserNameAvailable = users.filter(function (user) { return user.userName == userName; }).length == 0;
     console.log(users.filter(function (user) { return user.userName == userName; }));
     return isUserNameAvailable;
 }

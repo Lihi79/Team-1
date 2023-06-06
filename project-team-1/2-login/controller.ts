@@ -50,8 +50,8 @@ function signIn(evt) {
     // swal("Opps!", "No user found. Try again!", "error");
   }
 
-  saveRegisterUserLocalStorage(registerUsersArray);
-  console.log(loginName.value);
+  // saveRegisterUserLocalStorage(registerUsersArray);
+  // console.log(loginName.value);
 }
 
 function isValidInfo(userName, Password) {
