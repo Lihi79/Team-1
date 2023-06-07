@@ -66,8 +66,8 @@ function isValidInfo(userName, Password) {
   return isValidInfo;
 }
 
-// function signIpBtn(registerUser: RegisteredUser[]) {
-//   localStorage.setItem("registerUser", JSON.stringify(registerUser));
+function signIpBtn(registerUser: RegisteredUser[]) {
+  localStorage.setItem("registerUser", JSON.stringify(registerUser));
 
-//   window.location.href = "../1-index.html";
-// }
+  window.location.href = "../1-index.html";
+}

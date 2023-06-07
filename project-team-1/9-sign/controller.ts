@@ -76,10 +76,9 @@ function signUp(evt) {
 
 function isUserNameAvailable(userName) {
   const users = JSON.parse(localStorage.getItem("user") || "[]");
-
-  const isUserNameAvailable = [];
-
-  users.filter((user) => user.userName == userName).length == 0;
+  const userNotFoundInLocalStorage =
+    users.filter((user) => user.userName == userName).length == 0;
+  const isUserNameAvailable = userNotFoundInLocalStorage;
   return isUserNameAvailable;
 }
 

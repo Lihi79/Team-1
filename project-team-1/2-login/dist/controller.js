@@ -44,7 +44,7 @@ function isValidInfo(userName, Password) {
     var isValidInfo = isArrayIsntEmpty;
     return isValidInfo;
 }
-// function signIpBtn(registerUser: RegisteredUser[]) {
-//   localStorage.setItem("registerUser", JSON.stringify(registerUser));
-//   window.location.href = "../1-index.html";
-// }
+function signIpBtn(registerUser) {
+    localStorage.setItem("registerUser", JSON.stringify(registerUser));
+    window.location.href = "../1-index.html";
+}
