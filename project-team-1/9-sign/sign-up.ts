@@ -75,13 +75,12 @@
 // }
 
 // function isUserNameAvailable(userName) {
-//   const users = JSON.parse(localStorage.getItem("user") || "[]");
-
-//   const isUserNameAvailable = [];
-
-//   users.filter((user) => user.userName == userName).length == 0;
-//   return isUserNameAvailable;
-// }
+//     const users = JSON.parse(localStorage.getItem("user") || "[]");
+//     const userNotFoundInLocalStorage =
+//       users.filter((user) => user.userName == userName).length == 0;
+//     const isUserNameAvailable = userNotFoundInLocalStorage;
+//     return isUserNameAvailable;
+//   }
 
 // function saveUserLocalStorage(user: User[]) {
 //   localStorage.setItem("user", JSON.stringify(user));
