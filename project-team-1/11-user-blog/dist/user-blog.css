@@ -21,6 +21,11 @@
   overflow: hidden;
 }
 
+#blogRender {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .blog {
   margin-top: 25px;
   margin-bottom: 150px;

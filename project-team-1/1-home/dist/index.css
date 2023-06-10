@@ -98,14 +98,14 @@ footer {
 
 .item5 {
   grid-area: politics;
-  background-image: url("https://images.pexels.com/photos/8846784/pexels-photo-8846784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("https://images.pexels.com/photos/8846627/pexels-photo-8846627.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
   box-shadow: 1px 2px 5px 0 var(--shadow);
 }
 
 .item6 {
   grid-area: finance;
-  background-image: url("/project-team-1/assets/Finance- main-page1.jpg");
+  background-image: url("https://images.pexels.com/photos/4968631/pexels-photo-4968631.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
   box-shadow: 1px 2px 5px 0 var(--shadow);
 }

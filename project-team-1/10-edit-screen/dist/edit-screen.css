@@ -70,7 +70,7 @@ select option {
   align-items: center;
 }
 .edit-screen input {
-  width: 640px;
+  width: 848px;
   height: 60px;
   margin-bottom: 20px;
   font-size: 1.2rem;
@@ -78,13 +78,13 @@ select option {
 .edit-screen #textarea {
   overflow-y: scroll;
   width: 850px;
-  height: 360px;
+  height: 285px;
   font-size: 1.2rem;
   font-family: "IBM Plex Sans", sans-serif;
   font-style: oblique;
   resize: none;
   background-color: transparent;
-  border: none;
+  border: 2px solid black;
 }
 
 .submit-post-button {
@@ -106,11 +106,12 @@ select option {
   border: 0;
   outline: 0;
   margin-bottom: 110px;
+  font-size: x-large;
 }
 
 .to-your-blog {
   width: fit-content;
-  height: 100px;
+  height: 67px;
   margin: 50px;
 }
 .to-your-blog__a {
