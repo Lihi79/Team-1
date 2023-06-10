@@ -51,9 +51,12 @@ footer {
       padding: 0 40px;
       margin-top: 30px;
       &__h {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-decoration: none;
         color: var(--secondary-color);
+        &:hover {
+          color: #c413be;
+        }
       }
       &__p {
         line-height: 30px;
@@ -92,10 +95,13 @@ footer {
         width: 282px;
         height: 107px;
         .page-container__side-headers__text__h {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           text-decoration: none;
           color: black;
-          font-weight: 700;
+          // font-weight: 700;
+          &:hover {
+            color: #c413be;
+          }
         }
         .page-container__side-headers__text__p {
           line-height: 20px;
@@ -105,6 +111,11 @@ footer {
   }
 }
 
+.page-container__most-viewed__p {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
 .none {
   display: none;
 }

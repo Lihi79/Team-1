@@ -50,9 +50,12 @@ footer {
   margin-top: 30px;
 }
 .page-container__most-viewed__text__h {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: var(--secondary-color);
+}
+.page-container__most-viewed__text__h:hover {
+  color: #c413be;
 }
 .page-container__most-viewed__text__p {
   line-height: 30px;
@@ -88,13 +91,21 @@ footer {
   height: 107px;
 }
 .page-container__side-headers__container .page-container__side-headers__text .page-container__side-headers__text__h {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: black;
-  font-weight: 700;
+}
+.page-container__side-headers__container .page-container__side-headers__text .page-container__side-headers__text__h:hover {
+  color: #c413be;
 }
 .page-container__side-headers__container .page-container__side-headers__text .page-container__side-headers__text__p {
   line-height: 20px;
+}
+
+.page-container__most-viewed__p {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
 }
 
 .none {
