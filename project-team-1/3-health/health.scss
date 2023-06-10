@@ -35,7 +35,7 @@ footer {
     box-shadow: 1px 2px 5px 0 var(--shadow);
     display: flex;
     width: 561px;
-    height: 800px;
+    height: 1091px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -49,17 +49,19 @@ footer {
     }
     &__text {
       padding: 0 40px;
-      margin-top: 30px;
+      margin-top: 35px;
       &__h {
         font-size: 1.8rem;
         text-decoration: none;
         color: var(--secondary-color);
+        margin-bottom: 24px;
         &:hover {
           color: #c413be;
         }
       }
       &__p {
         line-height: 30px;
+        margin-top: 40px;
       }
     }
   }
@@ -95,9 +97,10 @@ footer {
         width: 282px;
         height: 107px;
         .page-container__side-headers__text__h {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
           text-decoration: none;
           color: black;
+          margin-bottom: 24px;
           // font-weight: 700;
           &:hover {
             color: #c413be;
